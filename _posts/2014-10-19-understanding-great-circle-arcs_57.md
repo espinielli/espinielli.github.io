@@ -23,17 +23,17 @@ Google helped and I discovered [Roger Stafford's post][roger] in Matlab newsgrou
 You have two great circle arcs on a sphere, \\(a\\) from point \\(\mathbf{a_0}\\) to \\(\mathbf{a_1}\\), and \\(b\\) from \\(\mathbf{b_0}\\) to \\(\mathbf{b_1}\\), whose coordinates are expressed as longitude \\(\theta\\) (positive going East of Greenwich) and latitude \\(\phi\\) (positive going North).
 Transform theses coordinates over to Cartesian coordinates using the equations:
 
-\begin{aligned}
+\\begin{aligned}
 x  & = cos(\theta) cos(\phi) \\
 y  & = sin(\theta) cos(\phi) \\
 z  & = sin(\phi)
-\end{aligned}
+\\end{aligned}
 
 where
-\begin{equation} 
+\\begin{equation} 
 -\pi  \le  \theta  \le \pi \\
 -\frac{\pi}{2} \le \phi \le \frac{\pi}{2}. 
-\end{equation}
+\\end{equation}
 
 These Cartesian coordinates correspond to a hypothetical spherical "earth" of unit radius, but that does not interfere in the following computations.
 
