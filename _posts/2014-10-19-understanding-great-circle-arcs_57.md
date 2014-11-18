@@ -24,8 +24,8 @@ You have two great circle arcs on a sphere, \\(a\\) from point \\(\mathbf{a_0}\\
 Transform theses coordinates over to Cartesian coordinates using the equations:
 
 \\begin{aligned}
-x  & = cos(\theta) cos(\phi) \\
-y  & = sin(\theta) cos(\phi) \\
+x  & = cos(\theta) cos(\phi) \\\\
+y  & = sin(\theta) cos(\phi) \\\\
 z  & = sin(\phi)
 \\end{aligned}
 
