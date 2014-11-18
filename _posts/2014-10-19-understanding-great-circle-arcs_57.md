@@ -20,7 +20,7 @@ Google helped and I discovered [Roger Stafford's post][roger] in Matlab newsgrou
  
 
 ## The algorithm ##
-You have two great circle arcs on a sphere, \$a\$ from point $\mathbf{a_0}$ to $\mathbf{a_1}$, and $b$ from $\mathbf{b_0}$ to $\mathbf{b_1}$, whose coordinates are expressed as longitude $\theta$ (positive going East of Greenwich) and latitude $\phi$ (positive going North).
+You have two great circle arcs on a sphere, \\(a\\) from point \\(\mathbf{a_0}\\) to \\(\mathbf{a_1}\\), and \\(b\\) from \\(\mathbf{b_0}\\) to \\(\mathbf{b_1}\\), whose coordinates are expressed as longitude \\(\theta\\) (positive going East of Greenwich) and latitude \\(\phi\\) (positive going North).
 Transform theses coordinates over to Cartesian coordinates using the equations:
 
 \begin{aligned}
