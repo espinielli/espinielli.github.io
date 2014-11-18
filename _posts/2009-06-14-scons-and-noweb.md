@@ -3,6 +3,7 @@ layout: post
 title: Scons and noweb
 date: '2009-06-14T11:21:00.006+02:00'
 author: enrico_spinielli
+comments: true
 tags:
 - scons
 - latex

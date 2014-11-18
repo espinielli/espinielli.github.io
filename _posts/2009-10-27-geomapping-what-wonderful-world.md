@@ -3,6 +3,7 @@ layout: post
 title: 'Geomapping: what a wonderful world!'
 date: '2009-10-27T23:56:00.003+01:00'
 author: enrico_spinielli
+comments: true
 tags:
 - geomapping
 - web services

@@ -3,6 +3,7 @@ layout: post
 title: "(What was) Croquet is maybe still alive"
 date: '2011-03-26T21:15:00.000+01:00'
 author: enrico_spinielli
+comments: true
 tags:
 - smalltalk
 - kay

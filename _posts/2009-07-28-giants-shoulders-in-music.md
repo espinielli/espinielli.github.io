@@ -3,6 +3,7 @@ layout: post
 title: Giants' Shoulders in music
 date: '2009-07-28T23:56:00.002+02:00'
 author: enrico_spinielli
+comments: true
 tags: 
 modified_time: '2009-07-29T00:00:42.698+02:00'
 blogger_id: tag:blogger.com,1999:blog-1947405997418753543.post-4328571631056794641

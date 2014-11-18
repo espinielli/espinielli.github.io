@@ -3,6 +3,7 @@ layout: post
 title: LaTeX, Python and Literate Programming
 date: '2009-02-24T10:45:00.001+01:00'
 author: enrico_spinielli
+comments: true
 tags:
 - scons
 - latex

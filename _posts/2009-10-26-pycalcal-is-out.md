@@ -3,6 +3,7 @@ layout: post
 title: PyCalCal is out!
 date: '2009-10-26T15:44:00.002+01:00'
 author: enrico_spinielli
+comments: true
 tags:
 - python
 - calendar
