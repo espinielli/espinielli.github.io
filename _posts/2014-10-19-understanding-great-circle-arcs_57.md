@@ -8,7 +8,7 @@ tags:
 - Spherical
 - D3.js
 - Geometry
-modified_time: '2014-11-07T15:14:14.879+01:00'
+modified_time: '2015-01-18T15:46:11.833+01:00'
 blogger_id: tag:blogger.com,1999:blog-1947405997418753543.post-4563888999264398405
 blogger_orig_url: http://ongiantsshoulders.blogspot.com/2014/10/understanding-great-circle-arcs_57.html
 ---
@@ -80,4 +80,4 @@ If they do intersect, you can transform the corresponding vector, \\(\mathbf{t}\
 [geotoolkitintersect]: http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html "intersection"
 [geotoolkit]: http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/ "spherical geometry toolkit"
 
-> Written and published with [StackEdit](https://stackedit.io/).
+> Originally written and published with [StackEdit](https://stackedit.io/), later moved to [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
