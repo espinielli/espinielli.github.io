@@ -3,7 +3,7 @@
 title:            Home Page
 locale:           en_US
 url:              http://enrico.spinielli.net
-#url:              http://localhost:4000
+# url:              http://localhost:4000
 
 
 # Jekyll configuration
