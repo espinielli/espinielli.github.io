@@ -10,12 +10,16 @@ comments: false
 
 * [Structure and Interpretation of Computer Programs][sicp] (and an [interactive version][isicp])
 * Smalltalk:
-   - [Squeak][squeak], [Squeakland][squeakland]
+   - [Squeak][squeak], [Squeakland][squeakland], [SqueakJS][squeakjs]
    - [olpc][olpc]
    - [Scratch][scratch]
    - [Croquet][croquet], [OpenQwaq][openqwaq]
    - [Newspeak][newspeak]
 * [Virtual World Framework][vwf], [Virtual Worlds][vw]
+* Python & Co.
+   - [IPython Notebook][ipython]
+   - [SageMath on the Cloud!][sagemathcloud]
+* [R][r], [RStudio][rstudio]
 * [Inventing fundamental new computing technologies][ifnct]
    - [Fonc][fonc], [Ian's ee380 at Stanford][ian_ee380], [To trap a better mouse][trap]
 * [N. Dershowitz](http://www.math.tau.ac.il/~nachumd/), [E. M. Reingold](http://emr.cs.iit.edu/~reingold/) "[Calendrical Calculations, 3rd Edition][calcal]"
@@ -31,11 +35,15 @@ comments: false
 * (some of) the ones I [read](http://www.goodreads.com/review/list/2866523-enrico?shelf=read)
 * the ones I own and would like [to read someday](http://www.goodreads.com/review/list/2866523-enrico?shelf=to-read)
 
-
+[r]: http://www.r-project.org/ "R language for Statistical Computing"
+[rstudio]: http://www.rstudio.com/ "RStudio"
 [sicp]: http://mitpress.mit.edu/sicp/full-text/book/book.html "Structure and Interpretation of Computer Programs"
 [isicp]: http://xuanji.appspot.com/isicp/index.html "Interactive SICP"
 [squeak]: http://www.squeak.org/ "Squeak"
 [squeakland]: http://www.squeakland.org/ "Squeakland"
+[squeakjs]: http://bertfreudenberg.github.io/SqueakJS/ "SqueakJS"
+[ipython]: http://ipython.org/notebook.html "IPython"
+[sagemathcloud]: https://cloud.sagemath.com "SageMath Cloud"
 [olpc]: http://laptop.org/ "One Laptop Per Child"
 [scratch]: http://scratch.mit.edu/ "Scratch"
 [croquet]: http://www.opencroquet.org/ "Croquet"
