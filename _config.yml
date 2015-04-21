@@ -9,13 +9,16 @@ url:              http://enrico.spinielli.net
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown:    redcarpet
 highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
+
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 kramdown:
   input: GFM
