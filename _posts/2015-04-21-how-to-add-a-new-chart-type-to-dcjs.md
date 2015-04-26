@@ -10,7 +10,7 @@ tags:
 - dataviz
 - bullet-chart
 - javascript
-modified_time: '2015-04-21 17:57:02'
+modified_time: '2015-04-26 14:38:55'
 ---
 
 This is a step by step description of how I extended dc.js with a new chart type. It is inspired by a [wiki page](https://github.com/loganalysis/analytics/wiki/Adding-a-new-chart) by [Thomas Robert](http://www.thomas-robert.fr/en/).
@@ -19,6 +19,17 @@ This is a step by step description of how I extended dc.js with a new chart type
 [Mike Bostock](http://bost.ocks.org/mike/) already implemented a [bullet chart](http://bl.ocks.org/mbostock/4061961) in [D3.js](http://d3js.org). The [vertical version](http://bl.ocks.org/jasondavies/5452290) from [Jason Davies](http://www.jasondavies.com/) uses the official code which is available as a [d3-plugin](https://github.com/d3/d3-plugins/tree/master/bullet). (I have submitted a [proposal for a bug fix](https://github.com/d3/d3-plugins/issues/130) and will use it instead.)
 
 So how can I make it available in [dc.js](http://dc-js.github.io/dc.js/)?
+
+<br>
+<br>
+Below you can find the description of what I did and what is still in the todo list.
+
+The result is not too bad:
+
+
+<iframe src="http://bl.ocks.org/espinielli/raw/e7625ce617e4d9c87cae/af63bae2ab20491d80006e6616d1dbde4747b1d5/" marginwidth="0" marginheight="0" scrolling="no" width="200px"></iframe>
+<p><aside><a style="position:relative;top:6px;" href="http://bl.ocks.org/espinielli/raw/e7625ce617e4d9c87cae/" target="_blank">Open in a new window.</a></aside>
+<br>
 
 ## Scaffolding ##
 
@@ -386,16 +397,65 @@ button {
 ```
 
 ## <a name="todo"></a> To Do ##
-The current implementation lacks an automatic layout calculation.
-From a user perspective I would like to just say
+The current implementation lacks few feature and refinements.
+
+### Tests ###
+I am studying the existing ones and will add them!
+
+### Automatic Layout ###
+
+From a user perspective I would like to just say:
 
 ```javascript
-chart
-  .width(960)
-  .height(450)
-  .orient("left")
-  .dimension(titleDimension)
-  .group(statusGroup);
+  chart
+    .width(960)
+    .height(450)
+    .orient("left")
+    .dimension(titleDimension)
+    .group(statusGroup);
+```
+  
+and have sensible width/height/margins being calculated by the internals of the implementation, with the above methods available for fine-tuning.
+
+### Colors selection ###
+Even if I made `bulletChart` include the [Color Mixin](https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin), I haven't really tackled colors customization.
+
+With code like the following
+
+```javascript
+  chart
+    .width(960)
+    .height(450)
+    .orient("left")
+    .dimension(titleDimension)
+    .group(statusGroup)
+    .colors(d3.scale.ordinal().range(['red','green','blue']));
 ```
 
-and have sensible width/height/margins being calculated by the internals of the implementation, with the above methods available for fine-tuning.
+you would be able to define the three colors for the `bad`, `satisfactory` and `good` ranges.
+
+
+###  Chart Margins  ###
+Even if included, the [Margin Mixin](https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#margin-mixin) hasn't been handled.
+
+These will be the margins for the whole chart, not the ones for the bullets as described above.
+
+<style>
+iframe {
+  width: 660px;
+  height: 500px;
+  border: 1px solid #DEDEDE;
+}
+
+aside {
+  font-size: small;
+  left: 780px;
+  position: absolute;
+  text-align: right;
+  width: 180px;
+  color: #636363;
+}
+ aside a {
+    text-decoration: underline;
+ }
+</style>
