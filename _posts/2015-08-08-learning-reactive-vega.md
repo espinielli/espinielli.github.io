@@ -74,14 +74,7 @@ So for doin my part I implemented what requested as en exercise at the end of th
 That is
 
 "convert [the (vertical) bar plot](https://bl.ocks.org/espinielli/358d490182efc1beace5)
-
-
-<p class="slide"><iframe data-src="https://bl.ocks.org/espinielli/358d490182efc1beace5" width="960" height="580" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
-to [an horizontal one](https://bl.ocks.org/espinielli/64b0be9bc33d1405bc92):
-
-<p class="slide"><iframe data-src="https://bl.ocks.org/espinielli/64b0be9bc33d1405bc92" width="960" height="580" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
+to [an horizontal one](https://bl.ocks.org/espinielli/64b0be9bc33d1405bc92)"
 
 The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
 Sinple and it renders the concept.
