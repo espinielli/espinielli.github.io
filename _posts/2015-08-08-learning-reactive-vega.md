@@ -77,4 +77,17 @@ That is
 to [an horizontal one](http://bl.ocks.org/espinielli/64b0be9bc33d1405bc92)"
 
 The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
-Sinple and it renders the concept.
+Simple and it renders the concept.
+
+And finally a little example with [yearly number of flight in Europe](http://bl.ocks.org/espinielli/87047968c67c02dbcb8d).
+
+The following questions remain for me:
+
+1. How to I pad the graph so that my boundary point are not so close to the axes?
+   This [issue](https://github.com/vega/vega/issues/104) calls for an offset to be added to the spec.
+
+2. How do I link events from widgets external to the graph to interactions in the graph?
+   (Here I think the [Reactive Vega](http://idl.cs.washington.edu/papers/reactive-vega)
+   supplemental material, i.e. `ex_jobs.json` [see min 3:19 of the video], will help,
+   as well as [CSS selector for Signals](https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors)
+   in the Vega documentation)
