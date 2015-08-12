@@ -70,16 +70,26 @@ as well as the interactive and non examples in the [Vega Editor](http://vega.git
 
 Here of course you have less textual description about the what's and why's.
 
-So for doin my part I implemented what requested as en exercise at the end of the tutorial.
+The tutorial shows you how to build a (vertical) bar chart. Here it is:
+
+<iframe src="/espinielli/raw/358d490182efc1beace5/354eeb48743dbe11f98b23b0ae0b4c460f925f07/" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+So as my homework I implemented what requested as en exercise at the end of the tutorial.
 That is
 
-"convert [the (vertical) bar plot](http://bl.ocks.org/espinielli/358d490182efc1beace5)
-to [an horizontal one](http://bl.ocks.org/espinielli/64b0be9bc33d1405bc92)"
+"convert the (vertical) bar plot
+to an horizontal one"
+
+Here it is:
+
+<iframe src="/espinielli/raw/64b0be9bc33d1405bc92/036c40ca81c1f8b8d2bdd70b87002b64df58d4f8/" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
 Simple and it renders the concept.
 
-And finally a little example with [yearly number of flight in Europe](http://bl.ocks.org/espinielli/87047968c67c02dbcb8d).
+And finally a little example with yearly number of flight in Europe:
+
+<iframe src="/espinielli/raw/87047968c67c02dbcb8d/6ac04b94cdcf1f01ae474e0bb331e1a09408c813/" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 The following questions remain for me:
 
