@@ -104,7 +104,7 @@ The following questions remain for me:
 
 2. How do I link events from widgets external to the graph to interactions in the graph?
    (Here I think the [Reactive Vega](http://idl.cs.washington.edu/papers/reactive-vega)
-   supplemental material, i.e. `ex_jobs.json`, see min 3:19 of , will help,
+   supplemental material, i.e. `ex_jobs.json`, watch at min 3:19 of reactive vega video above, will help,
    as well as [CSS selector for Signals](https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors)
    in the Vega documentation)
 
