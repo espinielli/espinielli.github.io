@@ -58,6 +58,9 @@ The _interactive_ was not present in the first implementation as of Apr 2014, it
 > ACM User Interface Software & Technology (UIST), 2014,
 http://idl.cs.washington.edu/papers/reactive-vega
 
+The companion video explains things further:
+
+<iframe class="player" src="//player.vimeo.com/video/100936827" width="630" height="354" frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1"></iframe>
 
 ## And now let's use it ##
 All that reading is ok but without doing I do not fully get it (and even then ... ;-)
@@ -72,7 +75,8 @@ Here of course you have less textual description about the what's and why's.
 
 The tutorial shows you how to build a (vertical) bar chart. Here it is:
 
-<iframe src="/espinielli/raw/358d490182efc1beace5/354eeb48743dbe11f98b23b0ae0b4c460f925f07/" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/espinielli/raw/358d490182efc1beace5/354eeb48743dbe11f98b23b0ae0b4c460f925f07/"
+	width="250px" height="450px" border="1px solid #DEDEDE" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
 
 So as my homework I implemented what requested as en exercise at the end of the tutorial.
 That is
@@ -82,14 +86,16 @@ to an horizontal one"
 
 Here it is:
 
-<iframe src="/espinielli/raw/64b0be9bc33d1405bc92/036c40ca81c1f8b8d2bdd70b87002b64df58d4f8/" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/espinielli/raw/64b0be9bc33d1405bc92/036c40ca81c1f8b8d2bdd70b87002b64df58d4f8/"
+	width="450px" height="250px" border="1px solid #DEDEDE" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
 
 The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
 Simple and it renders the concept.
 
 And finally a little example with yearly number of flight in Europe:
 
-<iframe src="/espinielli/raw/87047968c67c02dbcb8d/6ac04b94cdcf1f01ae474e0bb331e1a09408c813/" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/espinielli/raw/87047968c67c02dbcb8d/6ac04b94cdcf1f01ae474e0bb331e1a09408c813/"
+	width="480px" height="180px" border="1px solid #DEDEDE" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 The following questions remain for me:
 
@@ -98,6 +104,10 @@ The following questions remain for me:
 
 2. How do I link events from widgets external to the graph to interactions in the graph?
    (Here I think the [Reactive Vega](http://idl.cs.washington.edu/papers/reactive-vega)
-   supplemental material, i.e. `ex_jobs.json` [see min 3:19 of the video], will help,
+   supplemental material, i.e. `ex_jobs.json`, see min 3:19 of , will help,
    as well as [CSS selector for Signals](https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors)
    in the Vega documentation)
+
+If you want to daydream and see the potentials of Vega watch the recent conference presentation from Prof. Jeffrey Heer:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GdoDLuPe-Wg" frameborder="0" allowfullscreen></iframe>
