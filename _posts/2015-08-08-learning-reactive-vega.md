@@ -19,9 +19,10 @@ h1 ~ aside {
   width: 180px;
 }
 </style>
-# Learning Vega 2.0 #
 
-## A Grammar of Graphics ##
+
+## A Grammar of Graphics
+
 Vega 2.0 adds a _grammar of interaction_ to the _grammar of graphics_ implemented in Vega 1.0.
 
 When you say _grammar of graphics_ all roads bring you to

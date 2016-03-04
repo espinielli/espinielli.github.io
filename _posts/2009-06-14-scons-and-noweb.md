@@ -16,24 +16,40 @@ blogger_orig_url: http://ongiantsshoulders.blogspot.com/2009/06/scons-and-noweb.
 
 I was curious to see how I could integrate noweb and Scons.
 
-You can download my little Sconstruct for this, [Sconstruct.example](http://enrico.spinielli.googlepages.com/Sconstruct.example). It defines two builders. NoWeave is used to produce TeX or LaTeX documents, while NoTangle extracts the non-document artefacts, i.e. programs, config files, scripts ... It also includes productions for generating a sample program about Ackermann function:
+You can download my little Sconstruct for this,
+[Sconstruct.example](http://enrico.spinielli.googlepages.com/Sconstruct.example).
+It defines two builders. NoWeave is used to produce TeX or LaTeX documents,
+while NoTangle extracts the non-document artefacts, i.e. programs, config files,
+scripts ... It also includes productions for generating a sample program about
+Ackermann function: 
 
-```python
+
+{% highlight python %}
 	ackdoc  = env.NoWeave('ack.tex', 'ack.nw')
 	ackcode = env.NoTangle('ack.py', 'ack.nw')
 	acktest = env.NoTangle('ackTest.py', 'ack.nw')
-```
+{% endhighlight %}
 
-The noweb source is [ack.nw](http://enrico.spinielli.googlepages.com/ack.nw) and the companion BibTeX file is [ack.bib](http://enrico.spinielli.googlepages.com/ack.bib)
 
-It contains the doc chunks describing the function, the source code chunck for the relevant Python code and the code chunk for the unit test
+The noweb source is [ack.nw](http://enrico.spinielli.googlepages.com/ack.nw) and
+the companion BibTeX file is
+[ack.bib](http://enrico.spinielli.googlepages.com/ack.bib)
+
+It contains the doc chunks describing the function, the source code chunck for
+the relevant Python code and the code chunk for the unit test.
 
 You can try it out executing
 
-```bash
-	$ scons -f Sconstruct.example
-```
 
-You will get the following artefacts, [ack.py](http://enrico.spinielli.googlepages.com/ack.py), [ack.tex](http://enrico.spinielli.googlepages.com/ack.tex), [ackTest.py](http://enrico.spinielli.googlepages.com/ackTest.py) and [ack.pdf](http://enrico.spinielli.googlepages.com/ack.pdf)
+{% highlight bash %}
+	$ scons -f Sconstruct.example
+{% endhighlight %}
+
+
+You will get the following artefacts,
+[ack.py](http://enrico.spinielli.googlepages.com/ack.py),
+[ack.tex](http://enrico.spinielli.googlepages.com/ack.tex),
+[ackTest.py](http://enrico.spinielli.googlepages.com/ackTest.py) and
+[ack.pdf](http://enrico.spinielli.googlepages.com/ack.pdf) 
 
 Remember to run BibTeX first...

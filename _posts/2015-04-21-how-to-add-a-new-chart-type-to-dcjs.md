@@ -22,41 +22,42 @@ So how can I make it available in [dc.js](http://dc-js.github.io/dc.js/)?
 
 <br>
 <br>
-Below you can find the description of what I did and what is still in the todo list.
+Below you can see what I did and [here](https://bl.ocks.org/espinielli/e7625ce617e4d9c87cae) what is still in the todo list.
 
-The result is not too bad:
+<iframe src="https://cdn.rawgit.com/espinielli/e7625ce617e4d9c87cae/raw/af63bae2ab20491d80006e6616d1dbde4747b1d5/index.html" marginwidth="0" marginheight="0" scrolling="no" width="100%"></iframe>
+
+The result is not too bad.
 
 
-<iframe src="https://cdn.rawgit.com/espinielli/e7625ce617e4d9c87cae/raw/af63bae2ab20491d80006e6616d1dbde4747b1d5/index.html" marginwidth="0" marginheight="0" scrolling="no" width="200px"></iframe>
-<p><aside><a style="position:relative;top:6px;" href="http://bl.ocks.org/espinielli/raw/e7625ce617e4d9c87cae/" target="_blank">Open in a new window.</a></aside>
-<br>
-
-## Scaffolding ##
+## Scaffolding
 
 Starting from `dc.js` directory
  
 * add a file named `src\bullet-chart.js`
-* copy `bullet.js` (with the fix proposed [here](https://github.com/d3/d3-plugins/issues/130)) from the [d3-plugin](https://github.com/d3/d3-plugins/tree/master/bullet) to in `src\d3.bullet.js`
-* add the two files above in the `module.exports.jsFiles` array in `Gruntfile.js`
+* copy `bullet.js` (with the fix proposed [here](https://github.com/d3/d3-plugins/issues/130))
+  from the [d3-plugin](https://github.com/d3/d3-plugins/tree/master/bullet) to in `src\d3.bullet.js`
+* add the two files above in the `module.exports.jsFiles` array in `Gruntfile.js
+  
+  {% highlight javascript %}
+    module.exports.jsFiles = [
+      ...
+      'src/d3.bullet.js',
+      'src/bullet-chart.js',
+      'src/footer.js'  // NOTE: keep this last
+    ];
+  {% endhighlight %}
 
-```javascript
-	module.exports.jsFiles = [
-		...
-		'src/d3.bullet.js',
-		'src/bullet-chart.js',
-		'src/footer.js'  // NOTE: keep this last
-	];
-```
-
-* add the example file `examples\web\bullet.html`, a copy of `ord.html` for example, and update `examples\web\index.html` accordingly
+* add the example file `examples\web\bullet.html`, a copy of `ord.html`
+  for example, and update `examples\web\index.html` accordingly
 
 
-## Stub your chart ##
+
+## Stub your chart
 
 `bullet-chart.js` can initially be something like
 
 
-```javascript
+{% highlight javascript %}
 	/**
 	## Bullet Chart
 	Includes: [Margin Mixin](#margin-mixin), [Color Mixin](#color-mixin),
@@ -77,7 +78,7 @@ Starting from `dc.js` directory
 	 .colorDomain([0, 200])
 	 .label(function (d) { return labels[d.key]; })
 	 .title(function (d) { return d.value+" $"; })
-	```
+    ```
 	
 	
 	Parameters:
@@ -111,23 +112,34 @@ Starting from `dc.js` directory
 	
 	 return _chart.anchor(parent, chartGroup);
 	};
-```
+{% endhighlight %}
+
 
 The rationale for the mixin used is:
+
 * Base: you cannot really get away from it
 * Margin: useful to get proper spacing around
 * Color: allows for selecting the bullet colors
 
 The rendering for the new chart is to be coded in the `//--- specifics ---` part.
 
-The source code (yes! It should be better documented, hence this post) of Base Mixin specifies that `_doRender` and `_doRedraw` are the functions to be implemented in the concrete charts.
+The source code (yes! It should be better documented, hence this post) of Base Mixin
+specifies that `_doRender` and `_doRedraw` are the functions to be implemented in
+the concrete charts.
 
-## Rendering the chart ##
-Luckily for bullet charts there are examples to get inspired from both for the [horizontal](http://bl.ocks.org/mbostock/4061961) and the [vertical](http://bl.ocks.org/jasondavies/5452290) layout.
 
-The `_doRender` function is mimicking what done by [Mike Bostock](http://bost.ocks.org/mike/) in his horizontal layout with the parametrization of the title `transform`.
+## Rendering the chart
 
-```javascript
+Luckily for bullet charts there are examples to get inspired from both for the
+[horizontal](http://bl.ocks.org/mbostock/4061961) and the
+[vertical](http://bl.ocks.org/jasondavies/5452290) layout.
+
+The `_doRender` function is mimicking what done by
+[Mike Bostock](http://bost.ocks.org/mike/) in his horizontal layout with the
+parametrization of the title `transform`.
+
+
+{% highlight javascript %}
   var _bulletMargin = {top: 5, right: 40, bottom: 20, left:120},
       _bulletWidth = 960 - _bulletMargin.left - _bulletMargin.right,
       _bulletHeight = 50 - _bulletMargin.top  - _bulletMargin.bottom,
@@ -171,19 +183,28 @@ The `_doRender` function is mimicking what done by [Mike Bostock](http://bost.oc
 
     return _chart;
   };
-```
+{% endhighlight %}
 
-The proper positioning of the title is taken care by the `titleTranslate` function. Titles will either be on the left of the bullet bar in the horizontal layout or at the bottom in the vertical one.
 
-## Chart options ##
-The bullet chart can be customized in order to produce the desired graph via the getter/setter methods described in the following sections.
+The proper positioning of the title is taken care by the `titleTranslate` function. 
+Titles will either be on the left of the bullet bar in the horizontal layout or
+at the bottom in the vertical one.
 
-These are quite low level customizations, see the [To Do](#todo) section for a better approach.
 
-###  .bulletWidth ###
 
-```javascript
-  /**
+## Chart options
+
+The bullet chart can be customized in order to produce the desired graph via the
+getter/setter methods described in the following sections.
+
+These are quite low level customizations, see the [To Do](#todo) section
+for a better approach.
+
+###  .bulletWidth
+
+
+{% highlight javascript %}
+/**
   #### .bulletWidth([value])
   Set or get the bullet width.
 
@@ -195,11 +216,13 @@ These are quite low level customizations, see the [To Do](#todo) section for a b
       _bulletWidth = +_;
       return _chart;
   };
-```
+{% endhighlight %}
 
-### .bulletHeight ###
 
-```javascript
+
+### .bulletHeight
+
+{% highlight javascript %}
   /**
   #### .bulletHeight([value])
   Set or get the bullet height.
@@ -212,10 +235,13 @@ These are quite low level customizations, see the [To Do](#todo) section for a b
       _bulletHeight = +_;
       return _chart;
   };
-```
+{% endhighlight %}
 
-### .bulletMargin ###
-```javascript
+
+
+### .bulletMargin
+
+{% highlight javascript %}
   /**
   #### .bulletMargin([value])
   Set or get the bullet margin, i.e. `{top: 5, right: 40, bottom: 50, left:120}`.
@@ -228,16 +254,22 @@ These are quite low level customizations, see the [To Do](#todo) section for a b
       _bulletMargin = _;
       return _chart;
   };
-```
+{% endhighlight %}
 
-### .orient ###
+
+
+### .orient
+
 This method defines the starting point for the bullet.
 
-Note that it influences where the title/subtitle will be positioned: the current implementation of `bullet.js` allows for title to either be on the left or at the bottom in the horizontal and vertical layout respectively.
+Note that it influences where the title/subtitle will be positioned:
+the current implementation of `bullet.js` allows for title to either be
+on the left or at the bottom in the horizontal and vertical layout respectively.
 
-The internal function `titleTranslate` sets sensible values for the title position.
+The internal function `titleTranslate` sets sensible values for the title
+position.
 
-```javascript
+{% highlight javascript %}
   /**
   #### .orient([value])
   Set or get the bullet orientation (one of `"left"`, `"right"`, `"top"` or `"bottom"`).
@@ -251,12 +283,16 @@ The internal function `titleTranslate` sets sensible values for the title positi
       _titleTranslate = titleTranslate(_bulletOrient);
       return _chart;
   };
-```
+{% endhighlight %}
 
-### titleTranslate (internal) ###
-This internal function sets the right parameters for the positioning of the title/subtitle for the vertical and horizontal layout.
 
-```javascript
+
+### titleTranslate (internal)
+
+This internal function sets the right parameters for the positioning of
+the title/subtitle for the vertical and horizontal layout.
+
+{% highlight javascript %}
   function titleTranslate(orient) {
     if (!arguments.length) {
       return _titleTranslate;
@@ -271,9 +307,12 @@ This internal function sets the right parameters for the positioning of the titl
 
     return [-6, _bulletHeight / 2];
   }
-```
+{% endhighlight %}
 
-## Example ##
+
+
+## Example
+
 The `bullet.html` file is structured pretty much the same as the other examples:
 
 * the head part, 
@@ -282,7 +321,8 @@ The `bullet.html` file is structured pretty much the same as the other examples:
 * the `<div>`'s for the charts
 * the code for the chart instantiation and rendering
 
-```html
+
+{% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -306,16 +346,23 @@ The `bullet.html` file is structured pretty much the same as the other examples:
   // see "The Two Layouts" section
 </script>
 </html>
-```
+{% endhighlight %}
 
-### The Two Layouts ###
+
+
+### The Two Layouts
+
 The example mimics charts in the gists from Mike Bostock and Jason Davies.
 
-There is the usual binding to the `<div>`'s, the crossfilter bits and the chart definition and rendering.
+There is the usual binding to the `<div>`'s, the crossfilter bits and the
+chart definition and rendering.
 
-Note the trick about how `statusGroup` has been defined in order to comply with `dc.js` way to pass the data to the underlying `d3.js`: this is based on the knowledge that the default implementation of `.data()` is returning `group.all()`.
+Note the trick about how `statusGroup` has been defined in order to comply
+with `dc.js` way to pass the data to the underlying `d3.js`: this is based
+on the knowledge that the default implementation of `.data()` is returning
+`group.all()`.
 
-```javascript
+{% highlight javascript %}
 var chart1 = dc.bulletChart("#test-horizontal");
 var chart2 = dc.bulletChart("#test-vertical");
 
@@ -359,13 +406,17 @@ chart2
   .group(statusGroup);
 
 chart2.render();
-```
+{% endhighlight %}
 
 
-### A Matter of Style ###
-In the best tradition of the web, everything in the chart can be customized via CSS
 
-```css
+### A Matter of Style
+
+In the best tradition of the web, everything in the chart can be customized
+via CSS
+
+
+{% highlight css %}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto;
@@ -393,36 +444,47 @@ button {
 
 .bullet .axis line, .bullet .axis path { opacity: 0.5; }
 </style>
+{% endhighlight %}
 
-```
 
-## <a name="todo"></a> To Do ##
+
+## <a name="todo"></a> To Do
+
 The current implementation lacks few feature and refinements.
 
-### Tests ###
+
+### Tests
+
 I am studying the existing ones and will add them!
 
-### Automatic Layout ###
+
+### Automatic Layout
 
 From a user perspective I would like to just say:
 
-```javascript
+{% highlight javascript %}
   chart
     .width(960)
     .height(450)
     .orient("left")
     .dimension(titleDimension)
     .group(statusGroup);
-```
+{% endhighlight %}
   
-and have sensible width/height/margins being calculated by the internals of the implementation, with the above methods available for fine-tuning.
+and have sensible width/height/margins being calculated by the
+internals of the implementation, with the above methods available
+for fine-tuning.
 
-### Colors selection ###
-Even if I made `bulletChart` include the [Color Mixin](https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin), I haven't really tackled colors customization.
+
+### Colors selection
+
+Even if I made `bulletChart` include the
+[Color Mixin](https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin), 
+I haven't really tackled colors customization.
 
 With code like the following
 
-```javascript
+{% highlight javascript %}
   chart
     .width(960)
     .height(450)
@@ -430,15 +492,21 @@ With code like the following
     .dimension(titleDimension)
     .group(statusGroup)
     .colors(d3.scale.ordinal().range(['red','green','blue']));
-```
-
-you would be able to define the three colors for the `bad`, `satisfactory` and `good` ranges.
+{% endhighlight %}
 
 
-###  Chart Margins  ###
-Even if included, the [Margin Mixin](https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#margin-mixin) hasn't been handled.
+you would be able to define the three colors for the `bad`,
+`satisfactory` and `good` ranges.
 
-These will be the margins for the whole chart, not the ones for the bullets as described above.
+
+
+###  Chart Margins
+
+Even if included, the [Margin Mixin](https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#margin-mixin)
+hasn't been handled.
+
+These will be the margins for the whole chart, not the ones for
+the bullets as described above.
 
 <style>
 iframe {
