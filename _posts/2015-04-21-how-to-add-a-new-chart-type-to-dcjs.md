@@ -27,7 +27,7 @@ Below you can find the description of what I did and what is still in the todo l
 The result is not too bad:
 
 
-<iframe src="http://bl.ocks.org/espinielli/raw/e7625ce617e4d9c87cae/af63bae2ab20491d80006e6616d1dbde4747b1d5/" marginwidth="0" marginheight="0" scrolling="no" width="200px"></iframe>
+<iframe src="https://cdn.rawgit.com/espinielli/e7625ce617e4d9c87cae/raw/af63bae2ab20491d80006e6616d1dbde4747b1d5/index.html" marginwidth="0" marginheight="0" scrolling="no" width="200px"></iframe>
 <p><aside><a style="position:relative;top:6px;" href="http://bl.ocks.org/espinielli/raw/e7625ce617e4d9c87cae/" target="_blank">Open in a new window.</a></aside>
 <br>
 

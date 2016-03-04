@@ -66,7 +66,7 @@ If they do intersect, you can transform the corresponding vector, \\(\mathbf{t}\
 \phi    & = {\mathrm arctan2}(z, \sqrt{x^2+y^2})
 \\end{aligned} 
 
-<iframe src="http://bl.ocks.org/espinielli/raw/00f6062b0324eac6f882/" marginwidth="0" marginheight="0" scrolling="no" width="800px" height="500px"></iframe>
+<iframe src="https://cdn.rawgit.com/espinielli/00f6062b0324eac6f882/raw/587499ae3f57276b24d2599d3545733c4f419a3f/index.html" marginwidth="0" marginheight="0" scrolling="no" width="800px" height="500px"></iframe>
 
 
 ### References ###

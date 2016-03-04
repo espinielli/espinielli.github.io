@@ -75,8 +75,8 @@ Here of course you have less textual description about the what's and why's.
 
 The tutorial shows you how to build a (vertical) bar chart. Here it is:
 
-<iframe src="http://bl.ocks.org/espinielli/raw/358d490182efc1beace5/354eeb48743dbe11f98b23b0ae0b4c460f925f07/"
-	width="250px" height="450px" border="1px solid #DEDEDE" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
+<iframe src="https://cdn.rawgit.com/espinielli/358d490182efc1beace5/raw/87428be8d9493ae67c1909162a4a5bf2fd05d063/index.html"
+	width="250px" height="450px" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
 
 So as my homework I implemented what requested as en exercise at the end of the tutorial.
 That is
@@ -86,7 +86,7 @@ to an horizontal one"
 
 Here it is:
 
-<iframe src="http://bl.ocks.org/espinielli/raw/64b0be9bc33d1405bc92/036c40ca81c1f8b8d2bdd70b87002b64df58d4f8/"
+<iframe src="https://cdn.rawgit.com/espinielli/64b0be9bc33d1405bc92/raw/ab9d7be1b4fa9ab72d40555803579896bf7815fc/index.html"
 	width="450px" height="250px" border="1px solid #DEDEDE" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
 
 The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
@@ -94,7 +94,7 @@ Simple and it renders the concept.
 
 And finally a little example with yearly number of flight in Europe:
 
-<iframe src="http://bl.ocks.org/espinielli/raw/87047968c67c02dbcb8d/6ac04b94cdcf1f01ae474e0bb331e1a09408c813/"
+<iframe src="https://cdn.rawgit.com/espinielli/87047968c67c02dbcb8d/raw/a570dc7500c87f3fc6cba48a62d12725bfc2e4c5/index.html"
 	width="480px" height="180px" border="1px solid #DEDEDE" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 The following questions remain for me:
