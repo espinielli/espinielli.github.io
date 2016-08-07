@@ -28,7 +28,6 @@ comments: false
 * [Kahan][kahan]'s writings, i.e. [Why I can Debug some Numerical Programs You can't][debugnum]
 * Botticelli's [Primavera][primavera] (on [Wikipedia][prim_wp]) and [Birth of Venus][venus] (on [Wikipedia][venus_wp])
 * Van Dyck's [Arnolfini's Marriage][arnolfini]
-* [(Good) Books I read][goodbooks]
 
 
 ## Books ##
@@ -63,6 +62,5 @@ comments: false
 [venus]: http://notrombone.files.wordpress.com/2007/06/botticelli_birth_venus.jpg "Botticelli's Birth of Venus"
 [venus_wp]: http://en.wikipedia.org/wiki/The_Birth_of_Venus_%28Botticelli%29 "Birth of Venus"
 [arnolfini]: http://en.wikipedia.org/wiki/Arnolfini_Portrait "Van Dyck's Arnolfini's Marriage"
-[goodbooks]: https://sites.google.com/site/enricospinielli/booksworthreading "(good) Books I read"
 [vwf]: https://virtual.wf/ "Virtual World Framework"
 [vw]: https://sandbox.adlnet.gov/904/adl/sandbox/ "Virtual Worlds"
