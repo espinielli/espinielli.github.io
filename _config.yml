@@ -13,7 +13,7 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
-
+  - jemoji
 
 # Site owner
 owner:
