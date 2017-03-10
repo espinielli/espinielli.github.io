@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/espin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://enrico.spinielli.net
+  * I am espin (https://keybase.io/espin) on keybase.
+  * I have a public key ASD-y-Lnlcg34rrlbt7wyX49NX5wC7kBit6ndj_b3Nrsugo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120fecbe2e795c837e2bae56edef0c97e3d357e700bb9018adea7763fdbdcdaecba0a",
+            "host": "keybase.io",
+            "kid": "0120fecbe2e795c837e2bae56edef0c97e3d357e700bb9018adea7763fdbdcdaecba0a",
+            "uid": "82082d61bed2bdf65ce59ae957011719",
+            "username": "espin"
+        },
+        "service": {
+            "hostname": "enrico.spinielli.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.20"
+    },
+    "ctime": 1489172776,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1489172741,
+        "hash": "84645caad1204deb3c47be556cb0e03033ca213c9ccbe85fee1f5d82b146f23cc6af5c867c37a1c22d238ddb7ef9c3d6d1adb1fa85bbff1618062f07dee11af6",
+        "seqno": 951429
+    },
+    "prev": "6592f48298594fcd1c204957a54847a44741f4fc442634018c20e15c5bdff8dd",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/svi55XIN+K65W7e8Ml+PTV+cAu5AYrep3Y/29za7LoKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZmVjYmUyZTc5NWM4MzdlMmJhZTU2ZWRlZjBjOTdlM2QzNTdlNzAwYmI5MDE4YWRlYTc3NjNmZGJkY2RhZWNiYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZmVjYmUyZTc5NWM4MzdlMmJhZTU2ZWRlZjBjOTdlM2QzNTdlNzAwYmI5MDE4YWRlYTc3NjNmZGJkY2RhZWNiYTBhIiwidWlkIjoiODIwODJkNjFiZWQyYmRmNjVjZTU5YWU5NTcwMTE3MTkiLCJ1c2VybmFtZSI6ImVzcGluIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJlbnJpY28uc3BpbmllbGxpLm5ldCIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjAifSwiY3RpbWUiOjE0ODkxNzI3NzYsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4OTE3Mjc0MSwiaGFzaCI6Ijg0NjQ1Y2FhZDEyMDRkZWIzYzQ3YmU1NTZjYjBlMDMwMzNjYTIxM2M5Y2NiZTg1ZmVlMWY1ZDgyYjE0NmYyM2NjNmFmNWM4NjdjMzdhMWMyMmQyMzhkZGI3ZWY5YzNkNmQxYWRiMWZhODViYmZmMTYxODA2MmYwN2RlZTExYWY2Iiwic2Vxbm8iOjk1MTQyOX0sInByZXYiOiI2NTkyZjQ4Mjk4NTk0ZmNkMWMyMDQ5NTdhNTQ4NDdhNDQ3NDFmNGZjNDQyNjM0MDE4YzIwZTE1YzViZGZmOGRkIiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA2nZ9U3yzy5PISaPSaarzLlCZABCnwW5Zx3tWAlJ9HygWsk0Dflh2TfjMyWYs4Gf+M7s0w/tDc0C7wLL8Vm2iA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMX2M9Aa68BijpQ+D7Ay5/efapoCp8ZdrNE/PTFzKNRlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/espin
+
+==================================================================
