@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D3.js on Enrico&#39;s Blog</title>
+    <link>/tags/d3.js/</link>
+    <description>Recent content in D3.js on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sat, 08 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/d3.js/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning Vega 2.0 a.k.a. Reactive Vega</title>
+      <link>/2015/08/08/learning-reactive-vega/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/08/learning-reactive-vega/</guid>
+      <description>
+
+&lt;style&gt;
+h1 ~ aside {
+  font-size: small;
+  right: 0;
+  position: absolute;
+  width: 180px;
+}
+&lt;/style&gt;
+
+&lt;h2 id=&#34;a-grammar-of-graphics&#34;&gt;A Grammar of Graphics&lt;/h2&gt;
+
+&lt;p&gt;Vega 2.0 adds a &lt;em&gt;grammar of interaction&lt;/em&gt; to the &lt;em&gt;grammar of graphics&lt;/em&gt; implemented in Vega 1.0.&lt;/p&gt;
+
+&lt;p&gt;When you say &lt;em&gt;grammar of graphics&lt;/em&gt; all roads bring you to&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Leland Wilkinson
+&lt;a href=&#34;http://books.google.com/books/about/The_Grammar_of_Graphics.html?id=_kRX4LoFfGQC&#34; target=&#34;_blank&#34;&gt;The Grammar of Graphics&lt;/a&gt;
+Springer Science &amp;amp; Business Media, Jul 15, 2005&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But given &lt;a href=&#34;http://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/&#34; target=&#34;_blank&#34;&gt;the price of 100+ USD&lt;/a&gt;,
+I am not even thinking of getting my hands on it.&lt;/p&gt;
+
+&lt;p&gt;So the next thing you can look at is who has build upon this conceptual framework.
+And then we bump into&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hadley Wickham.
+A layered grammar of graphics.
+Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, 2010.
+&lt;a href=&#34;http://vita.had.co.nz/papers/layered-grammar.html&#34; target=&#34;_blank&#34;&gt;http://vita.had.co.nz/papers/layered-grammar.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;which implements a (layered) grammar of graphics as a package for the excellent
+&lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34;&gt;R language&lt;/a&gt;.
+The article in the &amp;ldquo;Conclusions&amp;rdquo; section raises the question of how to add interaction to the &lt;code&gt;ggplot2&lt;/code&gt; framework.&lt;/p&gt;
+
+&lt;h2 id=&#34;and-a-grammar-of-interaction&#34;&gt;&amp;hellip; and a Grammar of Interaction&lt;/h2&gt;
+
+&lt;p&gt;Moving to Vega, from its own site&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;em&gt;interactive&lt;/em&gt; was not present in the first implementation as of Apr 2014, it has been added and publicly described in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Arvind Satyanarayan, Kanit Wongsuphasawat, Jeffrey Heer
+Declarative Interaction Design for Data Visualization
+ACM User Interface Software &amp;amp; Technology (UIST), 2014,
+&lt;a href=&#34;http://idl.cs.washington.edu/papers/reactive-vega&#34; target=&#34;_blank&#34;&gt;http://idl.cs.washington.edu/papers/reactive-vega&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The companion video explains things further:&lt;/p&gt;
+
+&lt;iframe class=&#34;player&#34; src=&#34;//player.vimeo.com/video/100936827&#34; width=&#34;630&#34; height=&#34;354&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;1&#34; mozallowfullscreen=&#34;1&#34; allowfullscreen=&#34;1&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;and-now-let-s-use-it&#34;&gt;And now let&amp;rsquo;s use it&lt;/h2&gt;
+
+&lt;p&gt;All that reading is ok but without doing I do not fully get it (and even then &amp;hellip; ;-)
+I need &lt;a href=&#34;http://bost.ocks.org/mike/example/&#34; target=&#34;_blank&#34;&gt;examples&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the &lt;a href=&#34;https://github.com/vega/vega/wiki/Tutorial&#34; target=&#34;_blank&#34;&gt;Vega tutorial&lt;/a&gt; is a very good starting point
+(and like all tutorials &lt;a href=&#34;https://github.com/vega/vega/issues/308&#34; target=&#34;_blank&#34;&gt;it can be perfected&lt;/a&gt; by
+&lt;a href=&#34;https://github.com/vega/vega/issues/308#issuecomment-125266356&#34; target=&#34;_blank&#34;&gt;inspirational minds&lt;/a&gt;),
+as well as the interactive and non examples in the &lt;a href=&#34;http://vega.github.io/vega-editor/?spec=bar&#34; target=&#34;_blank&#34;&gt;Vega Editor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here of course you have less textual description about the what&amp;rsquo;s and why&amp;rsquo;s.&lt;/p&gt;
+
+&lt;p&gt;The tutorial shows you how to build a (vertical) bar chart. Here it is:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/358d490182efc1beace5/raw/87428be8d9493ae67c1909162a4a5bf2fd05d063/index.html&#34;
+    width=&#34;250px&#34; height=&#34;450px&#34; marginwidth=&#34;0px&#34; marginheight=&#34;0px&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;So as my homework I implemented what requested as en exercise at the end of the tutorial.
+That is&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;convert the (vertical) bar plot
+to an horizontal one&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Here it is:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/64b0be9bc33d1405bc92/raw/ab9d7be1b4fa9ab72d40555803579896bf7815fc/index.html&#34;
+    width=&#34;450px&#34; height=&#34;250px&#34; border=&#34;1px solid #DEDEDE&#34; marginwidth=&#34;0px&#34; marginheight=&#34;0px&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
+Simple and it renders the concept.&lt;/p&gt;
+
+&lt;p&gt;And finally a little example with yearly number of flight in Europe:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/87047968c67c02dbcb8d/raw/a570dc7500c87f3fc6cba48a62d12725bfc2e4c5/index.html&#34;
+    width=&#34;480px&#34; height=&#34;180px&#34; border=&#34;1px solid #DEDEDE&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The following questions remain for me:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;How to I pad the graph so that my boundary point are not so close to the axes?
+This &lt;a href=&#34;https://github.com/vega/vega/issues/104&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt; calls for an offset to be added to the spec.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How do I link events from widgets external to the graph to interactions in the graph?
+(Here I think the &lt;a href=&#34;http://idl.cs.washington.edu/papers/reactive-vega&#34; target=&#34;_blank&#34;&gt;Reactive Vega&lt;/a&gt;
+supplemental material, i.e. &lt;code&gt;ex_jobs.json&lt;/code&gt;, watch at min 3:19 of reactive vega video above, will help,
+as well as &lt;a href=&#34;https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors&#34; target=&#34;_blank&#34;&gt;CSS selector for Signals&lt;/a&gt;
+in the Vega documentation)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you want to daydream and see the potentials of Vega watch the recent conference presentation from Prof. Jeffrey Heer:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GdoDLuPe-Wg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to add a new chart type to dc.js</title>
+      <link>/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/</link>
+      <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
+      
+      <guid>/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/</guid>
+      <description>
+
+&lt;p&gt;This is a step by step description of how I extended dc.js with a new chart type. It is inspired by a &lt;a href=&#34;https://github.com/loganalysis/analytics/wiki/Adding-a-new-chart&#34; target=&#34;_blank&#34;&gt;wiki page&lt;/a&gt; by &lt;a href=&#34;http://www.thomas-robert.fr/en/&#34; target=&#34;_blank&#34;&gt;Thomas Robert&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-bullet-chart&#34;&gt;A Bullet chart&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://bost.ocks.org/mike/&#34; target=&#34;_blank&#34;&gt;Mike Bostock&lt;/a&gt; already implemented a &lt;a href=&#34;http://bl.ocks.org/mbostock/4061961&#34; target=&#34;_blank&#34;&gt;bullet chart&lt;/a&gt; in &lt;a href=&#34;http://d3js.org&#34; target=&#34;_blank&#34;&gt;D3.js&lt;/a&gt;. The &lt;a href=&#34;http://bl.ocks.org/jasondavies/5452290&#34; target=&#34;_blank&#34;&gt;vertical version&lt;/a&gt; from &lt;a href=&#34;http://www.jasondavies.com/&#34; target=&#34;_blank&#34;&gt;Jason Davies&lt;/a&gt; uses the official code which is available as a &lt;a href=&#34;https://github.com/d3/d3-plugins/tree/master/bullet&#34; target=&#34;_blank&#34;&gt;d3-plugin&lt;/a&gt;. (I have submitted a &lt;a href=&#34;https://github.com/d3/d3-plugins/issues/130&#34; target=&#34;_blank&#34;&gt;proposal for a bug fix&lt;/a&gt; and will use it instead.)&lt;/p&gt;
+
+&lt;p&gt;So how can I make it available in &lt;a href=&#34;http://dc-js.github.io/dc.js/&#34; target=&#34;_blank&#34;&gt;dc.js&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+Below you can see what I did and &lt;a href=&#34;https://bl.ocks.org/espinielli/e7625ce617e4d9c87cae&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; what is still in the todo list.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/e7625ce617e4d9c87cae/raw/af63bae2ab20491d80006e6616d1dbde4747b1d5/index.html&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The result is not too bad.&lt;/p&gt;
+
+&lt;h2 id=&#34;scaffolding&#34;&gt;Scaffolding&lt;/h2&gt;
+
+&lt;p&gt;Starting from &lt;code&gt;dc.js&lt;/code&gt; directory&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;add a file named &lt;code&gt;src\bullet-chart.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;copy &lt;code&gt;bullet.js&lt;/code&gt; (with the fix proposed &lt;a href=&#34;https://github.com/d3/d3-plugins/issues/130&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;)
+from the &lt;a href=&#34;https://github.com/d3/d3-plugins/tree/master/bullet&#34; target=&#34;_blank&#34;&gt;d3-plugin&lt;/a&gt; to in &lt;code&gt;src\d3.bullet.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;add the two files above in the &lt;code&gt;module.exports.jsFiles&lt;/code&gt; array in `Gruntfile.js
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;jsFiles&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [
+      ...
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/d3.bullet.js&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/bullet-chart.js&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/footer.js&amp;#39;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// NOTE: keep this last
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    ];
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;add the example file &lt;code&gt;examples\web\bullet.html&lt;/code&gt;, a copy of &lt;code&gt;ord.html&lt;/code&gt;
+for example, and update &lt;code&gt;examples\web\index.html&lt;/code&gt; accordingly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;stub-your-chart&#34;&gt;Stub your chart&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;bullet-chart.js&lt;/code&gt; can initially be something like&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	## Bullet Chart
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Includes: [Margin Mixin](#margin-mixin), [Color Mixin](#color-mixin),
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	          [Base Mixin](#base-mixin)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Bullet chart implementation.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	#### dc.bulletChart(parent[, chartGroup])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Create a bullet chart instance and attach it to the given parent element.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	#### Example of usage
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	```javascript
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	var chart = dc.bulletCloudChart()
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .dimension(department)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .group(salesPerDepartment)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .colors(d3.scale.quantize().range([&amp;#34;#E2F2FF&amp;#34;, &amp;#34;#C4E4FF&amp;#34;, &amp;#34;#9ED2FF&amp;#34;, 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 &amp;#34;#81C5FF&amp;#34;, &amp;#34;#6BBAFF&amp;#34;, &amp;#34;#51AEFF&amp;#34;,  &amp;#34;#36A2FF&amp;#34;, &amp;#34;#1E96FF&amp;#34;, &amp;#34;#0089FF&amp;#34;, &amp;#34;#0061B5&amp;#34;]))
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .colorDomain([0, 200])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .label(function (d) { return labels[d.key]; })
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .title(function (d) { return d.value+&amp;#34; $&amp;#34;; })
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    ```
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Parameters:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	* parent : string | node | selection - any valid
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	[d3 single selector](https://github.com/mbostock/d3/wiki/Selections#selecting-elements)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	specifying a dom block element such as a div; or a dom element or d3 selection.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	* chartGroup : string (optional) - name of the chart group this chart instance should
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	be placed in.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Interaction with a chart will only trigger events and redraws within the chart&amp;#39;s group.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Returns:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	A newly created bullet chart instance
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	```javascript
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	// create a bullet chart under #chart-container1 element using the default global chart group
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	var chart1 = dc.bulletChart(&amp;#39;#chart-container1&amp;#39;);
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	// create a bullet chart under #chart-container2 element using chart group A
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	var chart2 = dc.bulletChart(&amp;#39;#chart-container2&amp;#39;, &amp;#39;chartGroupA&amp;#39;);
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	```
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	**/&lt;/span&gt;
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletChart&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;parent&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;chartGroup&lt;/span&gt;) {
+	
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;marginMixin&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;colorMixin&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;baseMixin&lt;/span&gt;({}))));
+	
+		&lt;span style=&#34;color:#75715e&#34;&gt;//--- specifics ---
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	
+		&lt;span style=&#34;color:#75715e&#34;&gt;//-----------------
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	
+	 &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;anchor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;parent&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;chartGroup&lt;/span&gt;);
+	};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The rationale for the mixin used is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Base: you cannot really get away from it&lt;/li&gt;
+&lt;li&gt;Margin: useful to get proper spacing around&lt;/li&gt;
+&lt;li&gt;Color: allows for selecting the bullet colors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The rendering for the new chart is to be coded in the &lt;code&gt;//--- specifics ---&lt;/code&gt; part.&lt;/p&gt;
+
+&lt;p&gt;The source code (yes! It should be better documented, hence this post) of Base Mixin
+specifies that &lt;code&gt;_doRender&lt;/code&gt; and &lt;code&gt;_doRedraw&lt;/code&gt; are the functions to be implemented in
+the concrete charts.&lt;/p&gt;
+
+&lt;h2 id=&#34;rendering-the-chart&#34;&gt;Rendering the chart&lt;/h2&gt;
+
+&lt;p&gt;Luckily for bullet charts there are examples to get inspired from both for the
+&lt;a href=&#34;http://bl.ocks.org/mbostock/4061961&#34; target=&#34;_blank&#34;&gt;horizontal&lt;/a&gt; and the
+&lt;a href=&#34;http://bl.ocks.org/jasondavies/5452290&#34; target=&#34;_blank&#34;&gt;vertical&lt;/a&gt; layout.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;_doRender&lt;/code&gt; function is mimicking what done by
+&lt;a href=&#34;http://bost.ocks.org/mike/&#34; target=&#34;_blank&#34;&gt;Mike Bostock&lt;/a&gt; in his horizontal layout with the
+parametrization of the title &lt;code&gt;transform&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;},
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;titleTranslate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;);
+
+
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;_doRender&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bullet&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d3&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt;()
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt;)
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt;)
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;svg&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;root&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;selectAll&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;svg&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;())
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;enter&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;svg&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bullet&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;height&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;)
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;transform&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;translate(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bullet&lt;/span&gt;);
+
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;svg&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text-anchor&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;end&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;transform&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;translate(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;;
+        })
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dy&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1em&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt;;
+        })
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The proper positioning of the title is taken care by the &lt;code&gt;titleTranslate&lt;/code&gt; function.
+Titles will either be on the left of the bullet bar in the horizontal layout or
+at the bottom in the vertical one.&lt;/p&gt;
+
+&lt;h2 id=&#34;chart-options&#34;&gt;Chart options&lt;/h2&gt;
+
+&lt;p&gt;The bullet chart can be customized in order to produce the desired graph via the
+getter/setter methods described in the following sections.&lt;/p&gt;
+
+&lt;p&gt;These are quite low level customizations, see the &lt;a href=&#34;#todo&#34;&gt;To Do&lt;/a&gt; section
+for a better approach.&lt;/p&gt;
+
+&lt;h3 id=&#34;bulletwidth&#34;&gt;.bulletWidth&lt;/h3&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletWidth([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet width.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;bulletheight&#34;&gt;.bulletHeight&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletHeight([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet height.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;bulletmargin&#34;&gt;.bulletMargin&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletMargin([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet margin, i.e. `{top: 5, right: 40, bottom: 50, left:120}`.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletMargin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;orient&#34;&gt;.orient&lt;/h3&gt;
+
+&lt;p&gt;This method defines the starting point for the bullet.&lt;/p&gt;
+
+&lt;p&gt;Note that it influences where the title/subtitle will be positioned:
+the current implementation of &lt;code&gt;bullet.js&lt;/code&gt; allows for title to either be
+on the left or at the bottom in the horizontal and vertical layout respectively.&lt;/p&gt;
+
+&lt;p&gt;The internal function &lt;code&gt;titleTranslate&lt;/code&gt; sets sensible values for the title
+position.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .orient([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet orientation (one of `&amp;#34;left&amp;#34;`, `&amp;#34;right&amp;#34;`, `&amp;#34;top&amp;#34;` or `&amp;#34;bottom&amp;#34;`).
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;titleTranslate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;);
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;titletranslate-internal&#34;&gt;titleTranslate (internal)&lt;/h3&gt;
+
+&lt;p&gt;This internal function sets the right parameters for the positioning of
+the title/subtitle for the vertical and horizontal layout.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;titleTranslate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt;;
+    }
+    
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/ 2];&lt;/span&gt;
+    }
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bottom&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;]
+    }
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/ 2];&lt;/span&gt;
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;bullet.html&lt;/code&gt; file is structured pretty much the same as the other examples:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the head part,&lt;/li&gt;
+&lt;li&gt;the libraries,&lt;/li&gt;
+&lt;li&gt;the style part&lt;/li&gt;
+&lt;li&gt;the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&amp;rsquo;s for the charts&lt;/li&gt;
+&lt;li&gt;the code for the chart instantiation and rendering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;dc.js - Bullet Chart Example&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
+	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&amp;gt;
+	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../css/dc.css&amp;#34;&lt;/span&gt;/&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../js/d3.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../js/crossfilter.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../js/dc.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&amp;gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;/* see &amp;#34;A Matter of Style&amp;#34; section */&lt;/span&gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&amp;gt;
+
+
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test-horizontal&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test-vertical&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt;&amp;gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;// see &amp;#34;The Two Layouts&amp;#34; section
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;the-two-layouts&#34;&gt;The Two Layouts&lt;/h3&gt;
+
+&lt;p&gt;The example mimics charts in the gists from Mike Bostock and Jason Davies.&lt;/p&gt;
+
+&lt;p&gt;There is the usual binding to the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&amp;rsquo;s, the crossfilter bits and the
+chart definition and rendering.&lt;/p&gt;
+
+&lt;p&gt;Note the trick about how &lt;code&gt;statusGroup&lt;/code&gt; has been defined in order to comply
+with &lt;code&gt;dc.js&lt;/code&gt; way to pass the data to the underlying &lt;code&gt;d3.js&lt;/code&gt;: this is based
+on the knowledge that the default implementation of &lt;code&gt;.data()&lt;/code&gt; is returning
+&lt;code&gt;group.all()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chart1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletChart&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#test-horizontal&amp;#34;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chart2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletChart&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#test-vertical&amp;#34;&lt;/span&gt;);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Revenue&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;US$, in thousands&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;150&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;225&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;220&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;270&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;250&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Profit&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Order Size&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;US$, average&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;350&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;320&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;550&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New Customers&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;count&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1400&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2500&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1650&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;2100&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Satisfaction&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;out of 5&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3.5&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4.25&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3.2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4.7&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;4.4&lt;/span&gt;]}
+];
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ndx&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;crossfilter&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;),
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ndx&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;) {&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;;}),
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;all&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(){
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;;
+    }};
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// dims from Mike Bostock&amp;#39;s bl.ock, http://bl.ocks.org/mbostock/4061961
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;chart1&lt;/span&gt;
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletMargin&lt;/span&gt;({&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;})
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletWidth&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletHeight&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;);
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;chart1&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;();
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// dims from Jason Davies&amp;#39;s bl.ock, http://bl.ocks.org/jasondavies/5452290
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;chart2&lt;/span&gt;
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;185&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletMargin&lt;/span&gt;({&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;})
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletWidth&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;185&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletHeight&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;);
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;chart2&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;a-matter-of-style&#34;&gt;A Matter of Style&lt;/h3&gt;
+
+&lt;p&gt;In the best tradition of the web, everything in the chart can be customized
+via CSS&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;font-family&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Helvetica Neue&amp;#34;&lt;/span&gt;, Helvetica, Arial, &lt;span style=&#34;color:#66d9ef&#34;&gt;sans-serif&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;margin&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;padding-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;relative&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+}
+
+&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+}
+
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;font&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;sans-serif&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt; { stroke: &lt;span style=&#34;color:#ae81ff&#34;&gt;#000&lt;/span&gt;; stroke-width: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;tick&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;line&lt;/span&gt; { stroke: &lt;span style=&#34;color:#ae81ff&#34;&gt;#666&lt;/span&gt;; stroke-width: &lt;span style=&#34;color:#ae81ff&#34;&gt;.5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s0&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#eee&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s1&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#ddd&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s2&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#ccc&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;measure&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s0&lt;/span&gt; { fill: &lt;span style=&#34;color:#66d9ef&#34;&gt;lightsteelblue&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;measure&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s1&lt;/span&gt; { fill: &lt;span style=&#34;color:#66d9ef&#34;&gt;steelblue&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;font-size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;font-weight&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;bold&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#999&lt;/span&gt;; }
+
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;axis&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;line&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;axis&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;; }
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;a-name-todo-a-to-do&#34;&gt;&lt;a name=&#34;todo&#34;&gt;&lt;/a&gt; To Do&lt;/h2&gt;
+
+&lt;p&gt;The current implementation lacks few feature and refinements.&lt;/p&gt;
+
+&lt;h3 id=&#34;tests&#34;&gt;Tests&lt;/h3&gt;
+
+&lt;p&gt;I am studying the existing ones and will add them!&lt;/p&gt;
+
+&lt;h3 id=&#34;automatic-layout&#34;&gt;Automatic Layout&lt;/h3&gt;
+
+&lt;p&gt;From a user perspective I would like to just say:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;chart&lt;/span&gt;
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and have sensible width/height/margins being calculated by the
+internals of the implementation, with the above methods available
+for fine-tuning.&lt;/p&gt;
+
+&lt;h3 id=&#34;colors-selection&#34;&gt;Colors selection&lt;/h3&gt;
+
+&lt;p&gt;Even if I made &lt;code&gt;bulletChart&lt;/code&gt; include the
+&lt;a href=&#34;https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin&#34; target=&#34;_blank&#34;&gt;Color Mixin&lt;/a&gt;,
+I haven&amp;rsquo;t really tackled colors customization.&lt;/p&gt;
+
+&lt;p&gt;With code like the following&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;chart&lt;/span&gt;
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;colors&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d3&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;scale&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ordinal&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;]));&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;you would be able to define the three colors for the &lt;code&gt;bad&lt;/code&gt;,
+&lt;code&gt;satisfactory&lt;/code&gt; and &lt;code&gt;good&lt;/code&gt; ranges.&lt;/p&gt;
+
+&lt;h3 id=&#34;chart-margins&#34;&gt;Chart Margins&lt;/h3&gt;
+
+&lt;p&gt;Even if included, the &lt;a href=&#34;https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#margin-mixin&#34; target=&#34;_blank&#34;&gt;Margin Mixin&lt;/a&gt;
+hasn&amp;rsquo;t been handled.&lt;/p&gt;
+
+&lt;p&gt;These will be the margins for the whole chart, not the ones for
+the bullets as described above.&lt;/p&gt;
+
+&lt;style&gt;
+iframe {
+  width: 660px;
+  height: 500px;
+  border: 1px solid #DEDEDE;
+}
+
+aside {
+  font-size: small;
+  left: 780px;
+  position: absolute;
+  text-align: right;
+  width: 180px;
+  color: #636363;
+}
+ aside a {
+    text-decoration: underline;
+ }
+&lt;/style&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Understanding Great Circle Arcs Intersection Algorithm</title>
+      <link>/2014/10/19/understanding-great-circle-arcs_57/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/10/19/understanding-great-circle-arcs_57/</guid>
+      <description>
+
+&lt;p&gt;The following material is the result of my attempt to understand the
+&lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;nice example&lt;/a&gt; from Jason Davies.
+I was puzzled about the origin of the algorithm used to find the intersection of
+two great circle arcs.
+Google helped and I discovered &lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger Stafford&amp;rsquo;s post&lt;/a&gt; in Matlab
+newsgroup and the relevant Python&amp;rsquo;s implementation in the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-algorithm&#34;&gt;The algorithm&lt;/h2&gt;
+
+&lt;p&gt;You have two great circle arcs on a sphere, $a$ from point
+$\mathbf{a_0}$ to $\mathbf{a_1}$, and $b$ from $\mathbf{b_0}$ to
+$\mathbf{b_1}$, whose coordinates are expressed as longitude $\theta$
+(positive going East of Greenwich) and latitude $\phi$ (positive going
+North).
+Transform theses coordinates over to Cartesian coordinates using the equations:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+x  &amp; = cos(\theta) cos(\phi) \\
+y  &amp; = sin(\theta) cos(\phi) \\
+z  &amp; = sin(\phi)
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{equation}
+-\pi  \le  \theta  \le \pi \\
+-\frac{\pi}{2} \le \phi \le \frac{\pi}{2}.
+\end{equation}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;These Cartesian coordinates correspond to a hypothetical spherical &amp;ldquo;earth&amp;rdquo; of unit radius, but that does not interfere in the following computations.&lt;/p&gt;
+
+&lt;p&gt;Let $\mathbf{a_0}$, $\mathbf{a_1}$, $\mathbf{b_0}$, and $\mathbf{b_1}$
+be vectors of the Cartesian coordinate endpoints for the two arcs
+$a$($\mathbf{a_0} \leftrightarrow \mathbf{a_1}$) and
+$b$($\mathbf{b_0} \leftrightarrow \mathbf{b_1}$) obtained in this way.
+Carry out the following omputations:&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{p} = \mathbf{a_0} \times \mathbf{a_1}$ is the vector normal to the
+plane going through the arc $a$ and the center of the Earth.&lt;/p&gt;
+
+&lt;p&gt;$ \mathbf{q} = \mathbf{b_0} \times \mathbf{b_1}$ is the vector normal to the
+plane going through the arc $b$ and the center of the Earth.&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{t} = \mathrm{normalized}(\mathbf{p} \times \mathbf{q})$ is along the
+line of intersection of the planes above.&lt;/p&gt;
+
+&lt;p&gt;(The normalization was not mentioned
+in &lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger&amp;rsquo;s post&lt;/a&gt; but it is implemented in the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt; and by
+&lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;Jason&amp;rsquo;s example&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Then, let&amp;rsquo;s define the following quantities:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+ s_1 &amp; =  (\mathbf{a_0} \times \mathbf{p})  \cdot \mathbf{t} \\
+ s_2 &amp; = (\mathbf{a_1} \times \mathbf{p}) \cdot \mathbf{t} \\
+ s_3 &amp; = (\mathbf{b_0} \times \mathbf{q}) \cdot \mathbf{t} \\
+ s_4 &amp; = (\mathbf{b_1} \times \mathbf{q}) \cdot \mathbf{t}
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;(These quantities are crucial: they represent the projection of $\mathbf{t}$
+along the arcs $a$ and $b$.)&lt;/p&gt;
+
+&lt;p&gt;The arcs $a$ and $b$ will intersect $\iff$ $-s_1$, $s_2$, $-s_3$,
+and $s_4$ are all of the same sign. In that case they intersect along
+$+\mathbf{t}$ if they are all positive or along $-\mathbf{t}$ if all are
+negative.
+(Jason tests against $\epsilon = 10^{-6}$, I implemented the test against the
+sign.)&lt;/p&gt;
+
+&lt;p&gt;If they do intersect, you can transform the corresponding vector,
+$\mathbf{t}$ or $-\mathbf{t}$ back into longitude and latitude (without
+worrying about its length.) Letting $x$, $y$, $z$ be
+$\mathbf{t}$&amp;rsquo;s Cartesian coordinates this reverse transformation can be
+accomplished this way:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+\theta &amp; = {\mathrm arctan2} (y,x) \\
+\phi    &amp; = {\mathrm arctan2}(z, \sqrt{x^2+y^2})
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/00f6062b0324eac6f882/raw/587499ae3f57276b24d2599d3545733c4f419a3f/index.html&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; width=&#34;800px&#34; height=&#34;500px&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger Stafford&amp;rsquo;s post&lt;/a&gt; on Matlab newsgroup  (but it lacks the
+normalization step which is instead used in Jason Davies code, and in
+Spherical Geometry Toolkit)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;implementation in Python&lt;/a&gt; as part of the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/&#34; title=&#34;spherical geometry toolkit&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jason Davies &lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;implementation&lt;/a&gt; in D3.js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Originally written and published with &lt;a href=&#34;https://stackedit.io/&#34; target=&#34;_blank&#34;&gt;StackEdit&lt;/a&gt;, later moved to &lt;a href=&#34;http://jekyllrb.com/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

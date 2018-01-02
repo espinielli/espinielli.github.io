@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on Enrico&#39;s Blog</title>
+    <link>/tags/oracle/</link>
+    <description>Recent content in Oracle on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/oracle/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docker image for locally testing Oracle</title>
+      <link>/2016/10/31/docker-image-for-locally-testing-oracle/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/31/docker-image-for-locally-testing-oracle/</guid>
+      <description>
+
+&lt;h1 id=&#34;docker-for-oracle&#34;&gt;Docker for Oracle&lt;/h1&gt;
+
+&lt;p&gt;This post describes my journey to building and using a docker image for Oracle.&lt;/p&gt;
+
+&lt;p&gt;It all started as usual searching the web for hints and many results led to
+the &lt;a href=&#34;https://github.com/oracle/docker-images&#34; target=&#34;_blank&#34;&gt;Oracle docker Github repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This repository under &lt;code&gt;OracleDatabase&lt;/code&gt; provides (almost) all the informations needed.&lt;/p&gt;
+
+&lt;p&gt;My target machine: MacBook Pro (13-inch, Mid 2009), OS X Yosemite 10.10.5.&lt;/p&gt;
+
+&lt;h2 id=&#34;which-oracle-rdbms&#34;&gt;Which Oracle RDBMS?&lt;/h2&gt;
+
+&lt;p&gt;I decided to use &lt;code&gt;Oracle XE 11.2.0.2&lt;/code&gt; because my use case just needed an Oracle DB,
+so no need to go for bigger and fancier versions.&lt;/p&gt;
+
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+
+&lt;p&gt;So without further ado here is what I tried and what did not work and which solutions
+I found:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;👍&lt;/code&gt; clone the relevant github repo:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ git clone https://github.com/oracle/docker-images oracle-docker-images
+  $ cd oracle-docker-images/OracleDatabase/dockerfiles
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;😞&lt;/code&gt; download the relevant file from Oracle, in my case, &lt;code&gt;oracle-xe-11.2.0-1.0.x86_64.rpm.zip&lt;/code&gt;.
+Put it in the &lt;code&gt;11.2.0.2&lt;/code&gt; directory (&lt;em&gt;DO NOT UNZIP&lt;/em&gt;).
+(Of course Oracle makes this step a pain in the neck, i.e. no simple &lt;code&gt;curl&lt;/code&gt; or
+any other possibility to just download it&amp;hellip;yes with the implicit acknowledgement that you
+agree with their terms&amp;hellip;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;👍&lt;/code&gt; run you docker daemon. I am on an old MBP, so no native docker&amp;hellip;
+Remember to note down the docker machine IP, &lt;code&gt;docker&lt;/code&gt; startup spits something like:
+&lt;code&gt;docker is configured to use the default machine with IP 192.168.99.100&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I discovered this later on once I had built a docker image&amp;hellip;for non native docker you need
+to increase the swap memory of your VM:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ docker-machine stop default
+  $ VBoxManage modifyvm default --memory 8192
+  $ docker-machine start default
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;👎&lt;/code&gt; as per README, execute the build script (make sure your docker daemon is running):&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ ./buildDockerImage.sh -v 11.2.0.2 -x
+  Checking if required packages are present and valid...
+  usage: md5sum [file...]
+  MD5 for required packages to build this image did not match!
+  Make sure to download missing files in folder 11.2.0.2.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;👍&lt;/code&gt; So&amp;hellip;maybe that is why the &lt;code&gt;-i&lt;/code&gt; flag has been added&amp;hellip;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ ./buildDockerImage.sh -v 11.2.0.2 -x -i
+    Ignored MD5 checksum.
+    =====================
+    Building image &#39;oracle/database:11.2.0.2-xe&#39; ...
+    Sending build context to Docker daemon 315.9 MB
+    Step 1 : FROM oraclelinux:latest
+    ...
+    Step 2 : MAINTAINER Gerald Venzl &amp;lt;gerald.venzl@oracle.com&amp;gt;
+    ...
+    Step 3 : ...
+    ...
+    Step 4 : ENV PATH $ORACLE_HOME/bin:$PATH
+    ...
+    Step 5 : COPY $INSTALL_FILE_1 $CONFIG_RSP $RUN_FILE $PWD_FILE $INSTALL_DIR/
+    ...
+    Step 6 : RUN yum -y install ...
+    ...
+    Step 7 : VOLUME $ORACLE_BASE/oradata
+    ...
+    Step 8 : EXPOSE 1521 8080
+    ...
+    Step 9 : CMD $ORACLE_BASE/$RUN_FILE
+    ...
+    Oracle Database Docker Image for &#39;xe&#39; version 11.2.0.2 is ready to be extended:
+    --&amp;gt; oracle/database:11.2.0.2-xe
+    
+    Build completed in 301 seconds.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a place where the DB will be persisted between runs:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ mkdir -p ~/var/lib/docker/oracle/$USER
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run it (and note down the automatically generated password):
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ docker run --shm-size=1g \
+      -p 1521:1521 -p 8080:8080 \
+      -v $HOME/var/lib/docker/db/$USER:/u01/app/oracle/oradata \
+      oracle/database:11.2.0.2-xe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change the default password:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ docker ps
+  CONTAINER ID        IMAGE                         ...
+  22088d2ed7a3        oracle/database:11.2.0.2-xe   ...
+
+  $ docker exec 22088d2ed7a3 /u01/app/oracle/setPassword.sh cucu
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and connect to it (the IP &lt;code&gt;192.168.99.100&lt;/code&gt; is the one from above;
+&lt;code&gt;sql&lt;/code&gt; is new Oracle&amp;rsquo;s command line interface,
+see &lt;a href=&#34;http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html&#34; target=&#34;_blank&#34;&gt;sqlcl&lt;/a&gt;):
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ ~/tools/sqlcl/bin/sql system/cucu@//192.168.99.100:1521/XE
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vega on Enrico&#39;s Blog</title>
+    <link>/tags/vega/</link>
+    <description>Recent content in Vega on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sat, 08 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/vega/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning Vega 2.0 a.k.a. Reactive Vega</title>
+      <link>/2015/08/08/learning-reactive-vega/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/08/learning-reactive-vega/</guid>
+      <description>
+
+&lt;style&gt;
+h1 ~ aside {
+  font-size: small;
+  right: 0;
+  position: absolute;
+  width: 180px;
+}
+&lt;/style&gt;
+
+&lt;h2 id=&#34;a-grammar-of-graphics&#34;&gt;A Grammar of Graphics&lt;/h2&gt;
+
+&lt;p&gt;Vega 2.0 adds a &lt;em&gt;grammar of interaction&lt;/em&gt; to the &lt;em&gt;grammar of graphics&lt;/em&gt; implemented in Vega 1.0.&lt;/p&gt;
+
+&lt;p&gt;When you say &lt;em&gt;grammar of graphics&lt;/em&gt; all roads bring you to&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Leland Wilkinson
+&lt;a href=&#34;http://books.google.com/books/about/The_Grammar_of_Graphics.html?id=_kRX4LoFfGQC&#34; target=&#34;_blank&#34;&gt;The Grammar of Graphics&lt;/a&gt;
+Springer Science &amp;amp; Business Media, Jul 15, 2005&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But given &lt;a href=&#34;http://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/&#34; target=&#34;_blank&#34;&gt;the price of 100+ USD&lt;/a&gt;,
+I am not even thinking of getting my hands on it.&lt;/p&gt;
+
+&lt;p&gt;So the next thing you can look at is who has build upon this conceptual framework.
+And then we bump into&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hadley Wickham.
+A layered grammar of graphics.
+Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, 2010.
+&lt;a href=&#34;http://vita.had.co.nz/papers/layered-grammar.html&#34; target=&#34;_blank&#34;&gt;http://vita.had.co.nz/papers/layered-grammar.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;which implements a (layered) grammar of graphics as a package for the excellent
+&lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34;&gt;R language&lt;/a&gt;.
+The article in the &amp;ldquo;Conclusions&amp;rdquo; section raises the question of how to add interaction to the &lt;code&gt;ggplot2&lt;/code&gt; framework.&lt;/p&gt;
+
+&lt;h2 id=&#34;and-a-grammar-of-interaction&#34;&gt;&amp;hellip; and a Grammar of Interaction&lt;/h2&gt;
+
+&lt;p&gt;Moving to Vega, from its own site&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;em&gt;interactive&lt;/em&gt; was not present in the first implementation as of Apr 2014, it has been added and publicly described in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Arvind Satyanarayan, Kanit Wongsuphasawat, Jeffrey Heer
+Declarative Interaction Design for Data Visualization
+ACM User Interface Software &amp;amp; Technology (UIST), 2014,
+&lt;a href=&#34;http://idl.cs.washington.edu/papers/reactive-vega&#34; target=&#34;_blank&#34;&gt;http://idl.cs.washington.edu/papers/reactive-vega&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The companion video explains things further:&lt;/p&gt;
+
+&lt;iframe class=&#34;player&#34; src=&#34;//player.vimeo.com/video/100936827&#34; width=&#34;630&#34; height=&#34;354&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;1&#34; mozallowfullscreen=&#34;1&#34; allowfullscreen=&#34;1&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;and-now-let-s-use-it&#34;&gt;And now let&amp;rsquo;s use it&lt;/h2&gt;
+
+&lt;p&gt;All that reading is ok but without doing I do not fully get it (and even then &amp;hellip; ;-)
+I need &lt;a href=&#34;http://bost.ocks.org/mike/example/&#34; target=&#34;_blank&#34;&gt;examples&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the &lt;a href=&#34;https://github.com/vega/vega/wiki/Tutorial&#34; target=&#34;_blank&#34;&gt;Vega tutorial&lt;/a&gt; is a very good starting point
+(and like all tutorials &lt;a href=&#34;https://github.com/vega/vega/issues/308&#34; target=&#34;_blank&#34;&gt;it can be perfected&lt;/a&gt; by
+&lt;a href=&#34;https://github.com/vega/vega/issues/308#issuecomment-125266356&#34; target=&#34;_blank&#34;&gt;inspirational minds&lt;/a&gt;),
+as well as the interactive and non examples in the &lt;a href=&#34;http://vega.github.io/vega-editor/?spec=bar&#34; target=&#34;_blank&#34;&gt;Vega Editor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here of course you have less textual description about the what&amp;rsquo;s and why&amp;rsquo;s.&lt;/p&gt;
+
+&lt;p&gt;The tutorial shows you how to build a (vertical) bar chart. Here it is:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/358d490182efc1beace5/raw/87428be8d9493ae67c1909162a4a5bf2fd05d063/index.html&#34;
+    width=&#34;250px&#34; height=&#34;450px&#34; marginwidth=&#34;0px&#34; marginheight=&#34;0px&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;So as my homework I implemented what requested as en exercise at the end of the tutorial.
+That is&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;convert the (vertical) bar plot
+to an horizontal one&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Here it is:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/64b0be9bc33d1405bc92/raw/ab9d7be1b4fa9ab72d40555803579896bf7815fc/index.html&#34;
+    width=&#34;450px&#34; height=&#34;250px&#34; border=&#34;1px solid #DEDEDE&#34; marginwidth=&#34;0px&#34; marginheight=&#34;0px&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
+Simple and it renders the concept.&lt;/p&gt;
+
+&lt;p&gt;And finally a little example with yearly number of flight in Europe:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/87047968c67c02dbcb8d/raw/a570dc7500c87f3fc6cba48a62d12725bfc2e4c5/index.html&#34;
+    width=&#34;480px&#34; height=&#34;180px&#34; border=&#34;1px solid #DEDEDE&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The following questions remain for me:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;How to I pad the graph so that my boundary point are not so close to the axes?
+This &lt;a href=&#34;https://github.com/vega/vega/issues/104&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt; calls for an offset to be added to the spec.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How do I link events from widgets external to the graph to interactions in the graph?
+(Here I think the &lt;a href=&#34;http://idl.cs.washington.edu/papers/reactive-vega&#34; target=&#34;_blank&#34;&gt;Reactive Vega&lt;/a&gt;
+supplemental material, i.e. &lt;code&gt;ex_jobs.json&lt;/code&gt;, watch at min 3:19 of reactive vega video above, will help,
+as well as &lt;a href=&#34;https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors&#34; target=&#34;_blank&#34;&gt;CSS selector for Signals&lt;/a&gt;
+in the Vega documentation)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you want to daydream and see the potentials of Vega watch the recent conference presentation from Prof. Jeffrey Heer:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GdoDLuPe-Wg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

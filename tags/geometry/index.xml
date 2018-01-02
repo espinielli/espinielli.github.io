@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometry on Enrico&#39;s Blog</title>
+    <link>/tags/geometry/</link>
+    <description>Recent content in Geometry on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sun, 19 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/geometry/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Understanding Great Circle Arcs Intersection Algorithm</title>
+      <link>/2014/10/19/understanding-great-circle-arcs_57/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/10/19/understanding-great-circle-arcs_57/</guid>
+      <description>
+
+&lt;p&gt;The following material is the result of my attempt to understand the
+&lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;nice example&lt;/a&gt; from Jason Davies.
+I was puzzled about the origin of the algorithm used to find the intersection of
+two great circle arcs.
+Google helped and I discovered &lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger Stafford&amp;rsquo;s post&lt;/a&gt; in Matlab
+newsgroup and the relevant Python&amp;rsquo;s implementation in the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-algorithm&#34;&gt;The algorithm&lt;/h2&gt;
+
+&lt;p&gt;You have two great circle arcs on a sphere, $a$ from point
+$\mathbf{a_0}$ to $\mathbf{a_1}$, and $b$ from $\mathbf{b_0}$ to
+$\mathbf{b_1}$, whose coordinates are expressed as longitude $\theta$
+(positive going East of Greenwich) and latitude $\phi$ (positive going
+North).
+Transform theses coordinates over to Cartesian coordinates using the equations:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+x  &amp; = cos(\theta) cos(\phi) \\
+y  &amp; = sin(\theta) cos(\phi) \\
+z  &amp; = sin(\phi)
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{equation}
+-\pi  \le  \theta  \le \pi \\
+-\frac{\pi}{2} \le \phi \le \frac{\pi}{2}.
+\end{equation}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;These Cartesian coordinates correspond to a hypothetical spherical &amp;ldquo;earth&amp;rdquo; of unit radius, but that does not interfere in the following computations.&lt;/p&gt;
+
+&lt;p&gt;Let $\mathbf{a_0}$, $\mathbf{a_1}$, $\mathbf{b_0}$, and $\mathbf{b_1}$
+be vectors of the Cartesian coordinate endpoints for the two arcs
+$a$($\mathbf{a_0} \leftrightarrow \mathbf{a_1}$) and
+$b$($\mathbf{b_0} \leftrightarrow \mathbf{b_1}$) obtained in this way.
+Carry out the following omputations:&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{p} = \mathbf{a_0} \times \mathbf{a_1}$ is the vector normal to the
+plane going through the arc $a$ and the center of the Earth.&lt;/p&gt;
+
+&lt;p&gt;$ \mathbf{q} = \mathbf{b_0} \times \mathbf{b_1}$ is the vector normal to the
+plane going through the arc $b$ and the center of the Earth.&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{t} = \mathrm{normalized}(\mathbf{p} \times \mathbf{q})$ is along the
+line of intersection of the planes above.&lt;/p&gt;
+
+&lt;p&gt;(The normalization was not mentioned
+in &lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger&amp;rsquo;s post&lt;/a&gt; but it is implemented in the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt; and by
+&lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;Jason&amp;rsquo;s example&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Then, let&amp;rsquo;s define the following quantities:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+ s_1 &amp; =  (\mathbf{a_0} \times \mathbf{p})  \cdot \mathbf{t} \\
+ s_2 &amp; = (\mathbf{a_1} \times \mathbf{p}) \cdot \mathbf{t} \\
+ s_3 &amp; = (\mathbf{b_0} \times \mathbf{q}) \cdot \mathbf{t} \\
+ s_4 &amp; = (\mathbf{b_1} \times \mathbf{q}) \cdot \mathbf{t}
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;(These quantities are crucial: they represent the projection of $\mathbf{t}$
+along the arcs $a$ and $b$.)&lt;/p&gt;
+
+&lt;p&gt;The arcs $a$ and $b$ will intersect $\iff$ $-s_1$, $s_2$, $-s_3$,
+and $s_4$ are all of the same sign. In that case they intersect along
+$+\mathbf{t}$ if they are all positive or along $-\mathbf{t}$ if all are
+negative.
+(Jason tests against $\epsilon = 10^{-6}$, I implemented the test against the
+sign.)&lt;/p&gt;
+
+&lt;p&gt;If they do intersect, you can transform the corresponding vector,
+$\mathbf{t}$ or $-\mathbf{t}$ back into longitude and latitude (without
+worrying about its length.) Letting $x$, $y$, $z$ be
+$\mathbf{t}$&amp;rsquo;s Cartesian coordinates this reverse transformation can be
+accomplished this way:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+\theta &amp; = {\mathrm arctan2} (y,x) \\
+\phi    &amp; = {\mathrm arctan2}(z, \sqrt{x^2+y^2})
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/00f6062b0324eac6f882/raw/587499ae3f57276b24d2599d3545733c4f419a3f/index.html&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; width=&#34;800px&#34; height=&#34;500px&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger Stafford&amp;rsquo;s post&lt;/a&gt; on Matlab newsgroup  (but it lacks the
+normalization step which is instead used in Jason Davies code, and in
+Spherical Geometry Toolkit)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;implementation in Python&lt;/a&gt; as part of the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/&#34; title=&#34;spherical geometry toolkit&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jason Davies &lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;implementation&lt;/a&gt; in D3.js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Originally written and published with &lt;a href=&#34;https://stackedit.io/&#34; target=&#34;_blank&#34;&gt;StackEdit&lt;/a&gt;, later moved to &lt;a href=&#34;http://jekyllrb.com/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

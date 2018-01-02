@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Enrico&#39;s Blog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Mon, 26 Oct 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Algorithm</title>
+      <link>/tags/algorithm/</link>
+      <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>/tags/android/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Astronomy</title>
+      <link>/tags/astronomy/</link>
+      <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/astronomy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blitz</title>
+      <link>/tags/blitz/</link>
+      <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blitz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>/tags/blog/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bullet Chart</title>
+      <link>/tags/bullet-chart/</link>
+      <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
+      
+      <guid>/tags/bullet-chart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calendar</title>
+      <link>/tags/calendar/</link>
+      <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/calendar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calendrica</title>
+      <link>/tags/calendrica/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/calendrica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>/tags/configuration/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Croquet</title>
+      <link>/tags/croquet/</link>
+      <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/croquet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>/tags/css/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cv</title>
+      <link>/tags/cv/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D3</title>
+      <link>/tags/d3/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/d3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D3.js</title>
+      <link>/tags/d3.js/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/d3.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>/tags/data-science/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

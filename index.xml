@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enrico&#39;s Blog on Enrico&#39;s Blog</title>
+    <link>/</link>
+    <description>Recent content in Enrico&#39;s Blog on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Data science and R</title>
+      <link>/project/r-and-co/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/r-and-co/</guid>
+      <description>&lt;p&gt;Data Analysis is big part of my daily job and I am promoting the use
+of &lt;a href=&#34;https://www.r-project.org/&amp;gt;&#34; title=&#34;The R Project for Statistical Computing&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt; for reproducibility, exploratory data analysis and for visualization
+too (using for example &lt;a href=&#34;http://hadley.nz/&amp;gt;&#34; title=&#34;Hadley Wickham&#39;s Home Page&#34; target=&#34;_blank&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://ggplot2.org/&amp;gt;&#34; title=&#34;ggplot2&#34; target=&#34;_blank&#34;&gt;ggplot2&lt;/a&gt;!)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning: neither Deep nor Machine, just Human</title>
+      <link>/project/learning/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/learning/</guid>
+      <description>&lt;p&gt;On one side I am intrigued by Data
+Analysis and Visualization (see some of my &lt;a href=&#34;http://bl.ocks.org/espinielli&amp;gt;&#34; title=&#34;Enrico Spinielli&#39;s blocks&#34; target=&#34;_blank&#34;&gt;D3 [et al.] blocks&lt;/a&gt; or my &lt;a href=&#34;/project/r-and-co/&#34;&gt;R project&lt;/a&gt;) and on
+the other side by Machine Learning.&lt;/p&gt;
+
+&lt;p&gt;For ML I am very slowly going thru some &lt;a href=&#34;https://en.wikipedia.org/wiki/Massive_open_online_course&amp;gt;&#34; title=&#34;wikipedia: MOOC&#34; target=&#34;_blank&#34;&gt;MOOC&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.andrewng.org/&amp;gt;&#34; title=&#34;Andrew Ng&#39;s Home Page&#34; target=&#34;_blank&#34;&gt;Andrew Ng&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.coursera.org/learn/machine-learning&amp;gt;&#34; title=&#34;Coursera: Machine Learning&#34; target=&#34;_blank&#34;&gt;Machine Learning&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://statlearning.class.stanford.edu/&amp;gt;&#34; title=&#34;Statistical Learning MOOC&#34; target=&#34;_blank&#34;&gt;Statistical Learning&lt;/a&gt; by Stanford University Profs.
+&lt;a href=&#34;http://web.stanford.edu/~hastie/&amp;gt;&#34; title=&#34;Prof Trevor Hastie&#34; target=&#34;_blank&#34;&gt;Trevor Hastie&lt;/a&gt; and &lt;a href=&#34;https://statweb.stanford.edu/~tibs/&amp;gt;&#34; title=&#34;Prof Rob Tibshirani&#34; target=&#34;_blank&#34;&gt;Rob Tibshirani&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ai.stanford.edu/~koller/&amp;gt;&#34; title=&#34;Daphne Koller&#39;s Home Page&#34; target=&#34;_blank&#34;&gt;Daphne Koller&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.coursera.org/specializations/probabilistic-graphical-models&amp;gt;&#34; title=&#34;Probabilistic Graphical Models&#34; target=&#34;_blank&#34;&gt;Probabilistic Graphical Models&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wish me luck.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Maps and map projections</title>
+      <link>/project/maps/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/maps/</guid>
+      <description>&lt;p&gt;Maps in &lt;a href=&#34;//d3js.org&amp;gt;&#34; title=&#34;D3.js&#34; target=&#34;_blank&#34;&gt;D3.js&lt;/a&gt; via my &lt;a href=&#34;http://bl.ocks.org/espinielli&amp;gt;&#34; title=&#34;Enrico Spinielli&#39;s blocks&#34; target=&#34;_blank&#34;&gt;bl.ocks&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bl.ocks.org/espinielli/9ea56e041f6847dbe944&amp;gt;&#34; title=&#34;Boetti&#39;s map in D3.js&#34; target=&#34;_blank&#34;&gt;Boetti&lt;/a&gt;
+&lt;img src=&#34;/img/boetti-d3.png&#34; alt=&#34;Boetti&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bl.ocks.org/espinielli/78185d7b29948d105634beb7bcc0d34b&amp;gt;&#34; title=&#34;Flags of the USA&#34; target=&#34;_blank&#34;&gt;Flags of the USA&lt;/a&gt;
+&lt;img src=&#34;/img/usa-flags-d3.png&#34; alt=&#34;Flags of the USA&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Earth in a Cube &lt;a href=&#34;https://bl.ocks.org/espinielli/1018c88657010f8ee93ea4224652e3cf&amp;gt;&#34; title=&#34;Earth in a cube, 1&#34; target=&#34;_blank&#34;&gt;I&lt;/a&gt;, &lt;a href=&#34;https://bl.ocks.org/espinielli/0c130de06ee3c01c0a63ba9ce06bc7bd&amp;gt;&#34; title=&#34;Earth in a cube, 2&#34; target=&#34;_blank&#34;&gt;II&lt;/a&gt; and &lt;a href=&#34;https://bl.ocks.org/espinielli/cf662b91b58da57aecc8125649d84604&amp;gt;&#34; title=&#34;Earth in a cube, 3&#34; target=&#34;_blank&#34;&gt;III&lt;/a&gt;
+&lt;img src=&#34;/img/earth-in-a-cube-3.png&#34; alt=&#34;Earth in a cube&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bl.ocks.org/espinielli/5689783&amp;gt;&#34; title=&#34;Cahill-Keyes map projection in D3.js&#34; target=&#34;_blank&#34;&gt;Cahill-Keyes map projection&lt;/a&gt;
+&lt;img src=&#34;/img/ck-d3.png&#34; alt=&#34;Cahill-Keys&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PyCalCal</title>
+      <link>/project/pycalcal/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pycalcal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker image for locally testing Oracle</title>
+      <link>/2016/10/31/docker-image-for-locally-testing-oracle/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/31/docker-image-for-locally-testing-oracle/</guid>
+      <description>
+
+&lt;h1 id=&#34;docker-for-oracle&#34;&gt;Docker for Oracle&lt;/h1&gt;
+
+&lt;p&gt;This post describes my journey to building and using a docker image for Oracle.&lt;/p&gt;
+
+&lt;p&gt;It all started as usual searching the web for hints and many results led to
+the &lt;a href=&#34;https://github.com/oracle/docker-images&#34; target=&#34;_blank&#34;&gt;Oracle docker Github repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This repository under &lt;code&gt;OracleDatabase&lt;/code&gt; provides (almost) all the informations needed.&lt;/p&gt;
+
+&lt;p&gt;My target machine: MacBook Pro (13-inch, Mid 2009), OS X Yosemite 10.10.5.&lt;/p&gt;
+
+&lt;h2 id=&#34;which-oracle-rdbms&#34;&gt;Which Oracle RDBMS?&lt;/h2&gt;
+
+&lt;p&gt;I decided to use &lt;code&gt;Oracle XE 11.2.0.2&lt;/code&gt; because my use case just needed an Oracle DB,
+so no need to go for bigger and fancier versions.&lt;/p&gt;
+
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+
+&lt;p&gt;So without further ado here is what I tried and what did not work and which solutions
+I found:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;👍&lt;/code&gt; clone the relevant github repo:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ git clone https://github.com/oracle/docker-images oracle-docker-images
+  $ cd oracle-docker-images/OracleDatabase/dockerfiles
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;😞&lt;/code&gt; download the relevant file from Oracle, in my case, &lt;code&gt;oracle-xe-11.2.0-1.0.x86_64.rpm.zip&lt;/code&gt;.
+Put it in the &lt;code&gt;11.2.0.2&lt;/code&gt; directory (&lt;em&gt;DO NOT UNZIP&lt;/em&gt;).
+(Of course Oracle makes this step a pain in the neck, i.e. no simple &lt;code&gt;curl&lt;/code&gt; or
+any other possibility to just download it&amp;hellip;yes with the implicit acknowledgement that you
+agree with their terms&amp;hellip;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;👍&lt;/code&gt; run you docker daemon. I am on an old MBP, so no native docker&amp;hellip;
+Remember to note down the docker machine IP, &lt;code&gt;docker&lt;/code&gt; startup spits something like:
+&lt;code&gt;docker is configured to use the default machine with IP 192.168.99.100&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I discovered this later on once I had built a docker image&amp;hellip;for non native docker you need
+to increase the swap memory of your VM:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ docker-machine stop default
+  $ VBoxManage modifyvm default --memory 8192
+  $ docker-machine start default
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;👎&lt;/code&gt; as per README, execute the build script (make sure your docker daemon is running):&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ ./buildDockerImage.sh -v 11.2.0.2 -x
+  Checking if required packages are present and valid...
+  usage: md5sum [file...]
+  MD5 for required packages to build this image did not match!
+  Make sure to download missing files in folder 11.2.0.2.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;👍&lt;/code&gt; So&amp;hellip;maybe that is why the &lt;code&gt;-i&lt;/code&gt; flag has been added&amp;hellip;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ ./buildDockerImage.sh -v 11.2.0.2 -x -i
+    Ignored MD5 checksum.
+    =====================
+    Building image &#39;oracle/database:11.2.0.2-xe&#39; ...
+    Sending build context to Docker daemon 315.9 MB
+    Step 1 : FROM oraclelinux:latest
+    ...
+    Step 2 : MAINTAINER Gerald Venzl &amp;lt;gerald.venzl@oracle.com&amp;gt;
+    ...
+    Step 3 : ...
+    ...
+    Step 4 : ENV PATH $ORACLE_HOME/bin:$PATH
+    ...
+    Step 5 : COPY $INSTALL_FILE_1 $CONFIG_RSP $RUN_FILE $PWD_FILE $INSTALL_DIR/
+    ...
+    Step 6 : RUN yum -y install ...
+    ...
+    Step 7 : VOLUME $ORACLE_BASE/oradata
+    ...
+    Step 8 : EXPOSE 1521 8080
+    ...
+    Step 9 : CMD $ORACLE_BASE/$RUN_FILE
+    ...
+    Oracle Database Docker Image for &#39;xe&#39; version 11.2.0.2 is ready to be extended:
+    --&amp;gt; oracle/database:11.2.0.2-xe
+    
+    Build completed in 301 seconds.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a place where the DB will be persisted between runs:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ mkdir -p ~/var/lib/docker/oracle/$USER
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run it (and note down the automatically generated password):
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ docker run --shm-size=1g \
+      -p 1521:1521 -p 8080:8080 \
+      -v $HOME/var/lib/docker/db/$USER:/u01/app/oracle/oradata \
+      oracle/database:11.2.0.2-xe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change the default password:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ docker ps
+  CONTAINER ID        IMAGE                         ...
+  22088d2ed7a3        oracle/database:11.2.0.2-xe   ...
+
+  $ docker exec 22088d2ed7a3 /u01/app/oracle/setPassword.sh cucu
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and connect to it (the IP &lt;code&gt;192.168.99.100&lt;/code&gt; is the one from above;
+&lt;code&gt;sql&lt;/code&gt; is new Oracle&amp;rsquo;s command line interface,
+see &lt;a href=&#34;http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html&#34; target=&#34;_blank&#34;&gt;sqlcl&lt;/a&gt;):
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ ~/tools/sqlcl/bin/sql system/cucu@//192.168.99.100:1521/XE
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setting C.H.I.P. up</title>
+      <link>/2016/08/07/setting-c-h-i-p-up/</link>
+      <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/08/07/setting-c-h-i-p-up/</guid>
+      <description>
+
+&lt;p&gt;Few weeks ago I finally received my &lt;a href=&#34;https://getchip.com/pages/chip&amp;gt;&#34; title=&#34;C.H.I.P. the $9 computer&#34; target=&#34;_blank&#34;&gt;C.H.I.P.&lt;/a&gt;
+and &lt;a href=&#34;https://getchip.com/pages/pocketchip&amp;gt;&#34; title=&#34;PocketC.H.I.P. the super handy fun computer&#34; target=&#34;_blank&#34;&gt;PocketC.H.I.P.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;C.H.I.P. is the famous $9 computer crowdfunded in
+&lt;a href=&#34;https://www.kickstarter.com/projects/1598272670/chip-the-worlds-first-9-computer&amp;gt;&#34; title=&#34;C.H.I.P. Kickstarter&#34; target=&#34;_blank&#34;&gt;May 2015 via Kickstarter&lt;/a&gt; and PowerC.H.I.P. combines a 4.3-inch
+screen and a button-style QWERTY keypad with it.&lt;/p&gt;
+
+&lt;p&gt;Here they are in all their beauty:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;C.H.I.P.&lt;/th&gt;
+&lt;th&gt;Pocket C.H.I.P.&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;/img/chip.jpg&#34; alt=&#34;chip&#34; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;/img/pocketchip.jpg&#34; alt=&#34;pocketchip&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;setting-c-h-i-p-up&#34;&gt;Setting C.H.I.P. up&lt;/h2&gt;
+
+&lt;p&gt;I am interested to play with both toys remotely, so I did follow
+&lt;a href=&#34;https://bbs.nextthing.co/t/setting-up-chip-as-a-headless-server-with-minimal-tools/1505&amp;gt;&#34; title=&#34;Setting up CHIP as a headless server with minimal tools&#34; target=&#34;_blank&#34;&gt;Setting up CHIP as a headless server with minimal tools&lt;/a&gt; in order
+to install and configure ssh.&lt;/p&gt;
+
+&lt;p&gt;Here is what I did for C.H.I.P.:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;connect via USB to my laptop (a Mac) via &lt;code&gt;screen&lt;/code&gt; and logon usr: &lt;code&gt;chip&lt;/code&gt;, pwd: &lt;code&gt;chip&lt;/code&gt; as
+per default settings (to be changed later ;-).
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   $ screen /dev/tty.usbmodem1411
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;follow the &lt;a href=&#34;http://docs.getchip.com/chip.html#wifi-connection&amp;gt;&#34; title=&#34;C.H.I.P. WiFi Connection&#34; target=&#34;_blank&#34;&gt;WiFi Connection&lt;/a&gt; instructions in the docs, i.e. execute the
+command
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   $ sudo nmcli device wifi connect &#39;homeSSID&#39; password &#39;mypass&#39; ifname wlan0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;update packages and install &lt;code&gt;ssh&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   $ sudo apt-get update
+   $ sudo apt-get install ssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;optional, upgrade packages and cleanup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ sudo apt-get upgrade
+$ sudo apt-get autoremove
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;fix locale (I use American setup, so in the GUI I did select the item &lt;code&gt;en_US.UTF-8 UTF-8&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ sudo locale-gen en_US en_US.UTF-8
+$ sudo dpkg-reconfigure locales
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I also renamed the hosts &lt;code&gt;biochip&lt;/code&gt; (the bare one) and &lt;code&gt;chippie&lt;/code&gt; (the Pocket
+one). Although I found various posts on how to do it I tried w/ &lt;code&gt;nmtui&lt;/code&gt; and
+selected the &lt;em&gt;Set system hostname&lt;/em&gt; item then rebooted: all worked smoothly.&lt;/p&gt;
+
+&lt;h2 id=&#34;todo-s&#34;&gt;ToDo&amp;rsquo;s&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;disable &lt;code&gt;root&lt;/code&gt; account (&lt;code&gt;ssh&lt;/code&gt; and non) login.&lt;/li&gt;
+&lt;li&gt;change &lt;code&gt;chip&lt;/code&gt; account password&lt;/li&gt;
+&lt;li&gt;change &lt;code&gt;root&lt;/code&gt; account password&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DVD to Android Tablet</title>
+      <link>/2016/04/02/dvd2tablet/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/04/02/dvd2tablet/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-transfer-your-dvds-to-your-android-tablet&#34;&gt;How to transfer your DVDs to your Android Tablet&lt;/h1&gt;
+
+&lt;p&gt;Suppose your kids want to watch their DVDs in the car on their Android tablet&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here is what you can do (on a Mac OSX 10.9.5):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;install &lt;a href=&#34;https://handbrake.fr&#34; target=&#34;_blank&#34;&gt;Handbrake&lt;/a&gt; and its CLI
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ brew cask install handbrake
+  $ brew cask install handbrakecli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;install &lt;code&gt;libdvdcss&lt;/code&gt; (thanks to &lt;a href=&#34;http://lifehacker.com/how-to-rip-a-dvd-to-your-computer-5809765&#34; target=&#34;_blank&#34;&gt;lifehacker&amp;rsquo;s article&lt;/a&gt;) in order to bypass copy protection
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ brew install libdvdcss
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;go to the place where you will place the ripped DVD:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ cd ~/Movies
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;convert your DVDs:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ HandBrakeCLI -i /Volumes/&#39;my DVD&#39; -o /Volumes/Untitled/Movies/my_dvd.mp4 \
+                 --native-language=&amp;quot;ita&amp;quot; --native-dub \
+                 --preset=&amp;quot;Android Tablet&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first two options define the input and output (I save the converted movie on the microSD card &lt;code&gt;/Volumes/Untitled&lt;/code&gt; in the &lt;code&gt;Movies&lt;/code&gt; directory)&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;--native-language=&amp;quot;ita&amp;quot; --native-dub&lt;/code&gt; options set Italian as the selected language (if you omit the &lt;code&gt;--native-dub&lt;/code&gt; you will get the first audio track language and subtitles in Italian.)&lt;/p&gt;
+
+&lt;p&gt;The last option &lt;code&gt;--preset=&amp;quot;Android Tablet&amp;quot;&lt;/code&gt; selected the predefined settings that work best for viewing the converted movie on an Android tablet.&lt;/p&gt;
+
+&lt;p&gt;(be prepared to wait for some time&amp;hellip;it took 1h 8min 5s for an 87min movie on my old MacBook Pro mid-2009)&lt;/p&gt;
+
+&lt;p&gt;There are other preset configurations&amp;hellip;Should you need to copy to a different device, use &lt;code&gt;HandBrakeCLI --preset-list&lt;/code&gt; to select the one that best fits your needs. Otherwise you can delve into the many settings&amp;hellip;!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: after the conversion I get my DVD driver completely blocked/unable to read disks and ejecting them all.
+Sometimes &amp;ldquo;Repair Disk Permissions&amp;rdquo; via Disk Utility as described &lt;a href=&#34;http://www.cnet.com/forums/discussions/macbook-cd-dvd-drive-won-t-read-discs-can-it-be-fixed-330354/#post-970a02c1-3e34-495a-bfd9-44267a4af51c&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; make it work again&amp;hellip; some other times not!&lt;/p&gt;
+
+&lt;p&gt;I do the repair via command line as follows (eventually prefix it with &lt;code&gt;sudo&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ diskutil repairPermissions /
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Eventually I succeeded using &amp;ldquo;System Information&amp;rdquo;, selecting &amp;lsquo;Disk Burning&amp;rsquo; and then hitting File -&amp;gt; Refresh Information.
+Don&amp;rsquo;t ask me why or how, I just did it and the driver worked again!
+(You can do it via the command line by running &lt;code&gt;system_profiler -detailLevel full SPDiscBurningDataType&lt;/code&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning Vega 2.0 a.k.a. Reactive Vega</title>
+      <link>/2015/08/08/learning-reactive-vega/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/08/learning-reactive-vega/</guid>
+      <description>
+
+&lt;style&gt;
+h1 ~ aside {
+  font-size: small;
+  right: 0;
+  position: absolute;
+  width: 180px;
+}
+&lt;/style&gt;
+
+&lt;h2 id=&#34;a-grammar-of-graphics&#34;&gt;A Grammar of Graphics&lt;/h2&gt;
+
+&lt;p&gt;Vega 2.0 adds a &lt;em&gt;grammar of interaction&lt;/em&gt; to the &lt;em&gt;grammar of graphics&lt;/em&gt; implemented in Vega 1.0.&lt;/p&gt;
+
+&lt;p&gt;When you say &lt;em&gt;grammar of graphics&lt;/em&gt; all roads bring you to&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Leland Wilkinson
+&lt;a href=&#34;http://books.google.com/books/about/The_Grammar_of_Graphics.html?id=_kRX4LoFfGQC&#34; target=&#34;_blank&#34;&gt;The Grammar of Graphics&lt;/a&gt;
+Springer Science &amp;amp; Business Media, Jul 15, 2005&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But given &lt;a href=&#34;http://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/&#34; target=&#34;_blank&#34;&gt;the price of 100+ USD&lt;/a&gt;,
+I am not even thinking of getting my hands on it.&lt;/p&gt;
+
+&lt;p&gt;So the next thing you can look at is who has build upon this conceptual framework.
+And then we bump into&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hadley Wickham.
+A layered grammar of graphics.
+Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, 2010.
+&lt;a href=&#34;http://vita.had.co.nz/papers/layered-grammar.html&#34; target=&#34;_blank&#34;&gt;http://vita.had.co.nz/papers/layered-grammar.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;which implements a (layered) grammar of graphics as a package for the excellent
+&lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34;&gt;R language&lt;/a&gt;.
+The article in the &amp;ldquo;Conclusions&amp;rdquo; section raises the question of how to add interaction to the &lt;code&gt;ggplot2&lt;/code&gt; framework.&lt;/p&gt;
+
+&lt;h2 id=&#34;and-a-grammar-of-interaction&#34;&gt;&amp;hellip; and a Grammar of Interaction&lt;/h2&gt;
+
+&lt;p&gt;Moving to Vega, from its own site&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;em&gt;interactive&lt;/em&gt; was not present in the first implementation as of Apr 2014, it has been added and publicly described in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Arvind Satyanarayan, Kanit Wongsuphasawat, Jeffrey Heer
+Declarative Interaction Design for Data Visualization
+ACM User Interface Software &amp;amp; Technology (UIST), 2014,
+&lt;a href=&#34;http://idl.cs.washington.edu/papers/reactive-vega&#34; target=&#34;_blank&#34;&gt;http://idl.cs.washington.edu/papers/reactive-vega&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The companion video explains things further:&lt;/p&gt;
+
+&lt;iframe class=&#34;player&#34; src=&#34;//player.vimeo.com/video/100936827&#34; width=&#34;630&#34; height=&#34;354&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;1&#34; mozallowfullscreen=&#34;1&#34; allowfullscreen=&#34;1&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;and-now-let-s-use-it&#34;&gt;And now let&amp;rsquo;s use it&lt;/h2&gt;
+
+&lt;p&gt;All that reading is ok but without doing I do not fully get it (and even then &amp;hellip; ;-)
+I need &lt;a href=&#34;http://bost.ocks.org/mike/example/&#34; target=&#34;_blank&#34;&gt;examples&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the &lt;a href=&#34;https://github.com/vega/vega/wiki/Tutorial&#34; target=&#34;_blank&#34;&gt;Vega tutorial&lt;/a&gt; is a very good starting point
+(and like all tutorials &lt;a href=&#34;https://github.com/vega/vega/issues/308&#34; target=&#34;_blank&#34;&gt;it can be perfected&lt;/a&gt; by
+&lt;a href=&#34;https://github.com/vega/vega/issues/308#issuecomment-125266356&#34; target=&#34;_blank&#34;&gt;inspirational minds&lt;/a&gt;),
+as well as the interactive and non examples in the &lt;a href=&#34;http://vega.github.io/vega-editor/?spec=bar&#34; target=&#34;_blank&#34;&gt;Vega Editor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here of course you have less textual description about the what&amp;rsquo;s and why&amp;rsquo;s.&lt;/p&gt;
+
+&lt;p&gt;The tutorial shows you how to build a (vertical) bar chart. Here it is:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/358d490182efc1beace5/raw/87428be8d9493ae67c1909162a4a5bf2fd05d063/index.html&#34;
+    width=&#34;250px&#34; height=&#34;450px&#34; marginwidth=&#34;0px&#34; marginheight=&#34;0px&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;So as my homework I implemented what requested as en exercise at the end of the tutorial.
+That is&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;convert the (vertical) bar plot
+to an horizontal one&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Here it is:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/64b0be9bc33d1405bc92/raw/ab9d7be1b4fa9ab72d40555803579896bf7815fc/index.html&#34;
+    width=&#34;450px&#34; height=&#34;250px&#34; border=&#34;1px solid #DEDEDE&#34; marginwidth=&#34;0px&#34; marginheight=&#34;0px&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
+Simple and it renders the concept.&lt;/p&gt;
+
+&lt;p&gt;And finally a little example with yearly number of flight in Europe:&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/87047968c67c02dbcb8d/raw/a570dc7500c87f3fc6cba48a62d12725bfc2e4c5/index.html&#34;
+    width=&#34;480px&#34; height=&#34;180px&#34; border=&#34;1px solid #DEDEDE&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The following questions remain for me:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;How to I pad the graph so that my boundary point are not so close to the axes?
+This &lt;a href=&#34;https://github.com/vega/vega/issues/104&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt; calls for an offset to be added to the spec.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How do I link events from widgets external to the graph to interactions in the graph?
+(Here I think the &lt;a href=&#34;http://idl.cs.washington.edu/papers/reactive-vega&#34; target=&#34;_blank&#34;&gt;Reactive Vega&lt;/a&gt;
+supplemental material, i.e. &lt;code&gt;ex_jobs.json&lt;/code&gt;, watch at min 3:19 of reactive vega video above, will help,
+as well as &lt;a href=&#34;https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors&#34; target=&#34;_blank&#34;&gt;CSS selector for Signals&lt;/a&gt;
+in the Vega documentation)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you want to daydream and see the potentials of Vega watch the recent conference presentation from Prof. Jeffrey Heer:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GdoDLuPe-Wg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to add a new chart type to dc.js</title>
+      <link>/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/</link>
+      <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
+      
+      <guid>/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/</guid>
+      <description>
+
+&lt;p&gt;This is a step by step description of how I extended dc.js with a new chart type. It is inspired by a &lt;a href=&#34;https://github.com/loganalysis/analytics/wiki/Adding-a-new-chart&#34; target=&#34;_blank&#34;&gt;wiki page&lt;/a&gt; by &lt;a href=&#34;http://www.thomas-robert.fr/en/&#34; target=&#34;_blank&#34;&gt;Thomas Robert&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-bullet-chart&#34;&gt;A Bullet chart&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://bost.ocks.org/mike/&#34; target=&#34;_blank&#34;&gt;Mike Bostock&lt;/a&gt; already implemented a &lt;a href=&#34;http://bl.ocks.org/mbostock/4061961&#34; target=&#34;_blank&#34;&gt;bullet chart&lt;/a&gt; in &lt;a href=&#34;http://d3js.org&#34; target=&#34;_blank&#34;&gt;D3.js&lt;/a&gt;. The &lt;a href=&#34;http://bl.ocks.org/jasondavies/5452290&#34; target=&#34;_blank&#34;&gt;vertical version&lt;/a&gt; from &lt;a href=&#34;http://www.jasondavies.com/&#34; target=&#34;_blank&#34;&gt;Jason Davies&lt;/a&gt; uses the official code which is available as a &lt;a href=&#34;https://github.com/d3/d3-plugins/tree/master/bullet&#34; target=&#34;_blank&#34;&gt;d3-plugin&lt;/a&gt;. (I have submitted a &lt;a href=&#34;https://github.com/d3/d3-plugins/issues/130&#34; target=&#34;_blank&#34;&gt;proposal for a bug fix&lt;/a&gt; and will use it instead.)&lt;/p&gt;
+
+&lt;p&gt;So how can I make it available in &lt;a href=&#34;http://dc-js.github.io/dc.js/&#34; target=&#34;_blank&#34;&gt;dc.js&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+Below you can see what I did and &lt;a href=&#34;https://bl.ocks.org/espinielli/e7625ce617e4d9c87cae&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; what is still in the todo list.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/e7625ce617e4d9c87cae/raw/af63bae2ab20491d80006e6616d1dbde4747b1d5/index.html&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The result is not too bad.&lt;/p&gt;
+
+&lt;h2 id=&#34;scaffolding&#34;&gt;Scaffolding&lt;/h2&gt;
+
+&lt;p&gt;Starting from &lt;code&gt;dc.js&lt;/code&gt; directory&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;add a file named &lt;code&gt;src\bullet-chart.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;copy &lt;code&gt;bullet.js&lt;/code&gt; (with the fix proposed &lt;a href=&#34;https://github.com/d3/d3-plugins/issues/130&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;)
+from the &lt;a href=&#34;https://github.com/d3/d3-plugins/tree/master/bullet&#34; target=&#34;_blank&#34;&gt;d3-plugin&lt;/a&gt; to in &lt;code&gt;src\d3.bullet.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;add the two files above in the &lt;code&gt;module.exports.jsFiles&lt;/code&gt; array in `Gruntfile.js
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;jsFiles&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [
+      ...
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/d3.bullet.js&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/bullet-chart.js&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/footer.js&amp;#39;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// NOTE: keep this last
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    ];
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;add the example file &lt;code&gt;examples\web\bullet.html&lt;/code&gt;, a copy of &lt;code&gt;ord.html&lt;/code&gt;
+for example, and update &lt;code&gt;examples\web\index.html&lt;/code&gt; accordingly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;stub-your-chart&#34;&gt;Stub your chart&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;bullet-chart.js&lt;/code&gt; can initially be something like&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	## Bullet Chart
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Includes: [Margin Mixin](#margin-mixin), [Color Mixin](#color-mixin),
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	          [Base Mixin](#base-mixin)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Bullet chart implementation.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	#### dc.bulletChart(parent[, chartGroup])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Create a bullet chart instance and attach it to the given parent element.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	#### Example of usage
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	```javascript
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	var chart = dc.bulletCloudChart()
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .dimension(department)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .group(salesPerDepartment)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .colors(d3.scale.quantize().range([&amp;#34;#E2F2FF&amp;#34;, &amp;#34;#C4E4FF&amp;#34;, &amp;#34;#9ED2FF&amp;#34;, 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 &amp;#34;#81C5FF&amp;#34;, &amp;#34;#6BBAFF&amp;#34;, &amp;#34;#51AEFF&amp;#34;,  &amp;#34;#36A2FF&amp;#34;, &amp;#34;#1E96FF&amp;#34;, &amp;#34;#0089FF&amp;#34;, &amp;#34;#0061B5&amp;#34;]))
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .colorDomain([0, 200])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .label(function (d) { return labels[d.key]; })
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	 .title(function (d) { return d.value+&amp;#34; $&amp;#34;; })
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    ```
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Parameters:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	* parent : string | node | selection - any valid
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	[d3 single selector](https://github.com/mbostock/d3/wiki/Selections#selecting-elements)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	specifying a dom block element such as a div; or a dom element or d3 selection.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	* chartGroup : string (optional) - name of the chart group this chart instance should
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	be placed in.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Interaction with a chart will only trigger events and redraws within the chart&amp;#39;s group.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Returns:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	A newly created bullet chart instance
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	```javascript
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	// create a bullet chart under #chart-container1 element using the default global chart group
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	var chart1 = dc.bulletChart(&amp;#39;#chart-container1&amp;#39;);
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	// create a bullet chart under #chart-container2 element using chart group A
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	var chart2 = dc.bulletChart(&amp;#39;#chart-container2&amp;#39;, &amp;#39;chartGroupA&amp;#39;);
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	```
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	**/&lt;/span&gt;
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletChart&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;parent&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;chartGroup&lt;/span&gt;) {
+	
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;marginMixin&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;colorMixin&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;baseMixin&lt;/span&gt;({}))));
+	
+		&lt;span style=&#34;color:#75715e&#34;&gt;//--- specifics ---
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	
+		&lt;span style=&#34;color:#75715e&#34;&gt;//-----------------
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	
+	 &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;anchor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;parent&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;chartGroup&lt;/span&gt;);
+	};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The rationale for the mixin used is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Base: you cannot really get away from it&lt;/li&gt;
+&lt;li&gt;Margin: useful to get proper spacing around&lt;/li&gt;
+&lt;li&gt;Color: allows for selecting the bullet colors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The rendering for the new chart is to be coded in the &lt;code&gt;//--- specifics ---&lt;/code&gt; part.&lt;/p&gt;
+
+&lt;p&gt;The source code (yes! It should be better documented, hence this post) of Base Mixin
+specifies that &lt;code&gt;_doRender&lt;/code&gt; and &lt;code&gt;_doRedraw&lt;/code&gt; are the functions to be implemented in
+the concrete charts.&lt;/p&gt;
+
+&lt;h2 id=&#34;rendering-the-chart&#34;&gt;Rendering the chart&lt;/h2&gt;
+
+&lt;p&gt;Luckily for bullet charts there are examples to get inspired from both for the
+&lt;a href=&#34;http://bl.ocks.org/mbostock/4061961&#34; target=&#34;_blank&#34;&gt;horizontal&lt;/a&gt; and the
+&lt;a href=&#34;http://bl.ocks.org/jasondavies/5452290&#34; target=&#34;_blank&#34;&gt;vertical&lt;/a&gt; layout.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;_doRender&lt;/code&gt; function is mimicking what done by
+&lt;a href=&#34;http://bost.ocks.org/mike/&#34; target=&#34;_blank&#34;&gt;Mike Bostock&lt;/a&gt; in his horizontal layout with the
+parametrization of the title &lt;code&gt;transform&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;},
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;titleTranslate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;);
+
+
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;_doRender&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bullet&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d3&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt;()
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt;)
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt;)
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;svg&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;root&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;selectAll&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;svg&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;())
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;enter&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;svg&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bullet&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;height&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;)
+      .&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;transform&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;translate(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bullet&lt;/span&gt;);
+
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;svg&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text-anchor&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;end&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;transform&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;translate(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;;
+        })
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;attr&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dy&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1em&amp;#34;&lt;/span&gt;)
+        .&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt;;
+        })
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The proper positioning of the title is taken care by the &lt;code&gt;titleTranslate&lt;/code&gt; function.
+Titles will either be on the left of the bullet bar in the horizontal layout or
+at the bottom in the vertical one.&lt;/p&gt;
+
+&lt;h2 id=&#34;chart-options&#34;&gt;Chart options&lt;/h2&gt;
+
+&lt;p&gt;The bullet chart can be customized in order to produce the desired graph via the
+getter/setter methods described in the following sections.&lt;/p&gt;
+
+&lt;p&gt;These are quite low level customizations, see the &lt;a href=&#34;#todo&#34;&gt;To Do&lt;/a&gt; section
+for a better approach.&lt;/p&gt;
+
+&lt;h3 id=&#34;bulletwidth&#34;&gt;.bulletWidth&lt;/h3&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletWidth([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet width.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;bulletheight&#34;&gt;.bulletHeight&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletHeight([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet height.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;bulletmargin&#34;&gt;.bulletMargin&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletMargin([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet margin, i.e. `{top: 5, right: 40, bottom: 50, left:120}`.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletMargin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletMargin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;orient&#34;&gt;.orient&lt;/h3&gt;
+
+&lt;p&gt;This method defines the starting point for the bullet.&lt;/p&gt;
+
+&lt;p&gt;Note that it influences where the title/subtitle will be positioned:
+the current implementation of &lt;code&gt;bullet.js&lt;/code&gt; allows for title to either be
+on the left or at the bottom in the horizontal and vertical layout respectively.&lt;/p&gt;
+
+&lt;p&gt;The internal function &lt;code&gt;titleTranslate&lt;/code&gt; sets sensible values for the title
+position.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .orient([value])
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet orientation (one of `&amp;#34;left&amp;#34;`, `&amp;#34;right&amp;#34;`, `&amp;#34;top&amp;#34;` or `&amp;#34;bottom&amp;#34;`).
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  **/&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;;
+      }
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;titleTranslate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt;);
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;titletranslate-internal&#34;&gt;titleTranslate (internal)&lt;/h3&gt;
+
+&lt;p&gt;This internal function sets the right parameters for the positioning of
+the title/subtitle for the vertical and horizontal layout.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;titleTranslate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_titleTranslate&lt;/span&gt;;
+    }
+    
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/ 2];&lt;/span&gt;
+    }
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bottom&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletOrient&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [&lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;]
+    }
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletHeight&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/ 2];&lt;/span&gt;
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;bullet.html&lt;/code&gt; file is structured pretty much the same as the other examples:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the head part,&lt;/li&gt;
+&lt;li&gt;the libraries,&lt;/li&gt;
+&lt;li&gt;the style part&lt;/li&gt;
+&lt;li&gt;the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&amp;rsquo;s for the charts&lt;/li&gt;
+&lt;li&gt;the code for the chart instantiation and rendering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;dc.js - Bullet Chart Example&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
+	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&amp;gt;
+	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../css/dc.css&amp;#34;&lt;/span&gt;/&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../js/d3.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../js/crossfilter.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../js/dc.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&amp;gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;/* see &amp;#34;A Matter of Style&amp;#34; section */&lt;/span&gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&amp;gt;
+
+
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test-horizontal&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test-vertical&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt;&amp;gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;// see &amp;#34;The Two Layouts&amp;#34; section
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;the-two-layouts&#34;&gt;The Two Layouts&lt;/h3&gt;
+
+&lt;p&gt;The example mimics charts in the gists from Mike Bostock and Jason Davies.&lt;/p&gt;
+
+&lt;p&gt;There is the usual binding to the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&amp;rsquo;s, the crossfilter bits and the
+chart definition and rendering.&lt;/p&gt;
+
+&lt;p&gt;Note the trick about how &lt;code&gt;statusGroup&lt;/code&gt; has been defined in order to comply
+with &lt;code&gt;dc.js&lt;/code&gt; way to pass the data to the underlying &lt;code&gt;d3.js&lt;/code&gt;: this is based
+on the knowledge that the default implementation of &lt;code&gt;.data()&lt;/code&gt; is returning
+&lt;code&gt;group.all()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chart1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletChart&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#test-horizontal&amp;#34;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chart2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dc&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletChart&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#test-vertical&amp;#34;&lt;/span&gt;);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Revenue&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;US$, in thousands&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;150&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;225&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;220&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;270&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;250&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Profit&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Order Size&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;US$, average&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;350&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;320&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;550&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New Customers&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;count&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1400&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2500&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1650&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;2100&lt;/span&gt;]},
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Satisfaction&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;out of 5&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ranges&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3.5&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4.25&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;measures&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3.2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4.7&lt;/span&gt;],&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;4.4&lt;/span&gt;]}
+];
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ndx&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;crossfilter&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;),
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ndx&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;) {&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;;}),
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;all&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(){
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;;
+    }};
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// dims from Mike Bostock&amp;#39;s bl.ock, http://bl.ocks.org/mbostock/4061961
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;chart1&lt;/span&gt;
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletMargin&lt;/span&gt;({&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;})
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletWidth&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletHeight&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;);
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;chart1&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;();
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// dims from Jason Davies&amp;#39;s bl.ock, http://bl.ocks.org/jasondavies/5452290
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;chart2&lt;/span&gt;
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;185&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletMargin&lt;/span&gt;({&lt;span style=&#34;color:#a6e22e&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bottom&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;})
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletWidth&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;185&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;bulletHeight&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+  .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;);
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;chart2&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;a-matter-of-style&#34;&gt;A Matter of Style&lt;/h3&gt;
+
+&lt;p&gt;In the best tradition of the web, everything in the chart can be customized
+via CSS&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;font-family&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Helvetica Neue&amp;#34;&lt;/span&gt;, Helvetica, Arial, &lt;span style=&#34;color:#66d9ef&#34;&gt;sans-serif&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;margin&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;padding-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;relative&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+}
+
+&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+}
+
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;font&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;sans-serif&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt; { stroke: &lt;span style=&#34;color:#ae81ff&#34;&gt;#000&lt;/span&gt;; stroke-width: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;tick&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;line&lt;/span&gt; { stroke: &lt;span style=&#34;color:#ae81ff&#34;&gt;#666&lt;/span&gt;; stroke-width: &lt;span style=&#34;color:#ae81ff&#34;&gt;.5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s0&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#eee&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s1&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#ddd&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s2&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#ccc&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;measure&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s0&lt;/span&gt; { fill: &lt;span style=&#34;color:#66d9ef&#34;&gt;lightsteelblue&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;measure&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;s1&lt;/span&gt; { fill: &lt;span style=&#34;color:#66d9ef&#34;&gt;steelblue&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;font-size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;font-weight&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;bold&lt;/span&gt;; }
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt; { fill: &lt;span style=&#34;color:#ae81ff&#34;&gt;#999&lt;/span&gt;; }
+
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;axis&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;line&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;bullet&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;axis&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;; }
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;a-name-todo-a-to-do&#34;&gt;&lt;a name=&#34;todo&#34;&gt;&lt;/a&gt; To Do&lt;/h2&gt;
+
+&lt;p&gt;The current implementation lacks few feature and refinements.&lt;/p&gt;
+
+&lt;h3 id=&#34;tests&#34;&gt;Tests&lt;/h3&gt;
+
+&lt;p&gt;I am studying the existing ones and will add them!&lt;/p&gt;
+
+&lt;h3 id=&#34;automatic-layout&#34;&gt;Automatic Layout&lt;/h3&gt;
+
+&lt;p&gt;From a user perspective I would like to just say:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;chart&lt;/span&gt;
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and have sensible width/height/margins being calculated by the
+internals of the implementation, with the above methods available
+for fine-tuning.&lt;/p&gt;
+
+&lt;h3 id=&#34;colors-selection&#34;&gt;Colors selection&lt;/h3&gt;
+
+&lt;p&gt;Even if I made &lt;code&gt;bulletChart&lt;/code&gt; include the
+&lt;a href=&#34;https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin&#34; target=&#34;_blank&#34;&gt;Color Mixin&lt;/a&gt;,
+I haven&amp;rsquo;t really tackled colors customization.&lt;/p&gt;
+
+&lt;p&gt;With code like the following&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;chart&lt;/span&gt;
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;960&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;450&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;orient&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;dimension&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;titleDimension&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;group&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;statusGroup&lt;/span&gt;)
+    .&lt;span style=&#34;color:#a6e22e&#34;&gt;colors&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;d3&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;scale&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ordinal&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;range&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;]));&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;you would be able to define the three colors for the &lt;code&gt;bad&lt;/code&gt;,
+&lt;code&gt;satisfactory&lt;/code&gt; and &lt;code&gt;good&lt;/code&gt; ranges.&lt;/p&gt;
+
+&lt;h3 id=&#34;chart-margins&#34;&gt;Chart Margins&lt;/h3&gt;
+
+&lt;p&gt;Even if included, the &lt;a href=&#34;https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#margin-mixin&#34; target=&#34;_blank&#34;&gt;Margin Mixin&lt;/a&gt;
+hasn&amp;rsquo;t been handled.&lt;/p&gt;
+
+&lt;p&gt;These will be the margins for the whole chart, not the ones for
+the bullets as described above.&lt;/p&gt;
+
+&lt;style&gt;
+iframe {
+  width: 660px;
+  height: 500px;
+  border: 1px solid #DEDEDE;
+}
+
+aside {
+  font-size: small;
+  left: 780px;
+  position: absolute;
+  text-align: right;
+  width: 180px;
+  color: #636363;
+}
+ aside a {
+    text-decoration: underline;
+ }
+&lt;/style&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTML Scraping or Surviving Orrible Corporate Tools</title>
+      <link>/2015/02/07/html-scraping/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/02/07/html-scraping/</guid>
+      <description>
+
+&lt;p&gt;At work I have to fill my weekly timesheet. We use &lt;a href=&#34;http://en.wikipedia.org/wiki/Planisware&#34; title=&#34;Planisware&#34; target=&#34;_blank&#34;&gt;Planisware&lt;/a&gt;&amp;rsquo;s Timecard to record time spent on the various projects we are assigned to work on.&lt;/p&gt;
+
+&lt;p&gt;So you need to known what the total working time is for the day. For that our badging in and out is recorded and passed to &lt;a href=&#34;http://www.gfi.fr/gestion-des-temps/gestion-des-temps.php&#34; title=&#34;Chronogestor&#34; target=&#34;_blank&#34;&gt;Chronogestor&lt;/a&gt; which does sums them up and provides both a sexagesimal and decimal format.&lt;/p&gt;
+
+&lt;p&gt;When there is an anomaly the sums are blocked till the request you submitted to fix it is implemented&amp;hellip;
+So I thought I could do some &lt;a href=&#34;http://en.wikipedia.org/wiki/Web_scraping&#34; title=&#34;Web Scraping&#34; target=&#34;_blank&#34;&gt;web scraping&lt;/a&gt; and extract my clockings from the relevant CG&amp;rsquo;s page, make the total for the day (in decimal form: in Timecard we record time in decimal form, i.e. 3.5 is 3 hours and 30 minutes.) and fill Timecard.&lt;/p&gt;
+
+&lt;h2 id=&#34;html-scraping-ws-to-the-rescue&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Web_scraping&#34; title=&#34;Web Scraping&#34; target=&#34;_blank&#34;&gt;HTML Scraping&lt;/a&gt; to the rescue&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take the page for the weekly clockings (in case of anomalies the rows like &amp;ldquo;Temps pointe&amp;rdquo; / &amp;ldquo;Temps valide&amp;rdquo; are empty):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://auto.img.v4.skyrock.net/7206/74747206/pics/3180490115_1_2_jmuRu7c0.png&#34; alt=&#34;&amp;quot;clockings&amp;quot;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I initially tried with &lt;a href=&#34;http://docs.python-guide.org/en/latest/scenarios/scrape/&#34; target=&#34;_blank&#34;&gt;some&lt;/a&gt; &lt;a href=&#34;https://impythonist.wordpress.com/2015/01/06/ultimate-guide-for-scraping-javascript-rendered-web-pages/&#34; target=&#34;_blank&#34;&gt;Python examples&lt;/a&gt; using &lt;a href=&#34;http://lxml.de/&#34; title=&#34;lxml&#34; target=&#34;_blank&#34;&gt;lxml&lt;/a&gt; but got stuck.
+CG complaines if you are using Google Chrome (and the tools above use Webkit, the web browser engine, behind the scene).&lt;/p&gt;
+
+&lt;p&gt;Also I soon realized CG does a lot of rendering via Javascript while I initially assumed it would have been a simple HTML page with a static table for the clockings. (This would have been to simple to implement! What a mess!)&lt;/p&gt;
+
+&lt;p&gt;I decided to go for &lt;a href=&#34;http://slimerjs.org/&#34; target=&#34;_blank&#34;&gt;SlimerJS&lt;/a&gt; the scriptable browser that runs on top of &lt;a href=&#34;http://en.wikipedia.org/wiki/Gecko_(software)&#34; target=&#34;_blank&#34;&gt;Gecko&lt;/a&gt;, the web engine of &lt;a href=&#34;mozilla.org/firefox&#34; target=&#34;_blank&#34;&gt;Mozilla Firefox&lt;/a&gt;. (&lt;a href=&#34;http://phantomjs.org/&#34; target=&#34;_blank&#34;&gt;PhantomJS&lt;/a&gt; is the equivalent for &lt;a href=&#34;http://en.wikipedia.org/wiki/Blink_(layout_engine)&#34; target=&#34;_blank&#34;&gt;Blink/WebKit&lt;/a&gt; used in &lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Google Chrome&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Nothing strange about using Javascript of course but &lt;em&gt;CG sucks at it&lt;/em&gt;: it is a last millenium tool which has been hastily brought to this century without any knowledge of the web technologies (and any taste for usability and beauty.)
+Just check the generated DOM elements and you will see that the &lt;a href=&#34;http://www.w3.org/TR/html5/dom.html#the-id-attribute&#34; target=&#34;_blank&#34;&gt;uniqueness (within a page) of &lt;code&gt;id&lt;/code&gt;&lt;/a&gt; is not at all respected.&lt;/p&gt;
+
+&lt;p&gt;From the page for the weekly clockings shown above, using &lt;a href=&#34;https://developer.mozilla.org/en/docs/Tools&#34; target=&#34;_blank&#34;&gt;Firefox Developer Tools&lt;/a&gt; you can see that the table for the clockings (&amp;ldquo;Entrées/Sorties&amp;rdquo; row) can be selected via the following CSS path (line 58):&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/espinielli/aa410dbe7ff9b05b9c8f.js?file=cg.js&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;run-it&#34;&gt;Run it!&lt;/h3&gt;
+
+&lt;p&gt;The scraping is run as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;C:\goodies\cg&amp;gt;cg usr:pwd 03/02/2015
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;usr&lt;/code&gt; is the userid and &lt;code&gt;pwd&lt;/code&gt; is the password for both the internet proxy and ChronoGestor.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cg&lt;/code&gt; is a simple (stupid?) &lt;code&gt;.bat&lt;/code&gt; script&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/espinielli/aa410dbe7ff9b05b9c8f.js?file=cg.bat&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;loggin-in&#34;&gt;Loggin in&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;relevant&lt;/em&gt; lines from the &lt;code&gt;cg.js&lt;/code&gt; script 6-16,47,54,61-63 (see the code above.)&lt;/p&gt;
+
+&lt;p&gt;Here we reuse the proxy user and account values which, as per company policy, are the same as our login name and password.
+And to do that I had to hack an implementation detail whereby &lt;code&gt;slimer.js&lt;/code&gt; sets an environment variable &lt;code&gt;__SLIMER_ARGS&lt;/code&gt; with the options passed on the command line. (Lines 6-16)&lt;/p&gt;
+
+&lt;h3 id=&#34;extract-the-clockings&#34;&gt;Extract the clockings&lt;/h3&gt;
+
+&lt;p&gt;In order to extract the right cells for the clocking, I inject JQuery and use &lt;code&gt;webpage.evaluate()&lt;/code&gt; function from the API in order to execute &lt;code&gt;extractClockings&lt;/code&gt; (&lt;code&gt;sel&lt;/code&gt; will be passed as argument to &lt;code&gt;extractClockings&lt;/code&gt;, it is the CSS path shown above).
+Lines 74-76.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;code&gt;extractClockings&lt;/code&gt; reads a list of &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements for each day. Lines 18-42.&lt;/p&gt;
+
+&lt;h3 id=&#34;count-the-minutes&#34;&gt;Count the minutes&lt;/h3&gt;
+
+&lt;p&gt;The rest is a matter of summing up the minutes and printing the values. Lines 78-114.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Internet Long Tail Helped Me Fixing My Smartphone</title>
+      <link>/2015/01/30/how-internet-long-tail-helped-me-fixing-my-smartphone/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/01/30/how-internet-long-tail-helped-me-fixing-my-smartphone/</guid>
+      <description>
+
+&lt;p&gt;I am just more and more amazed by the opportunities offered by the current Internet connectivity: they call it the &lt;a href=&#34;http://en.wikipedia.org/wiki/Long_tail&#34; target=&#34;_blank&#34;&gt;long tail&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It strikes me that just few years ago what I have done would have been extreemely difficult or very expensive &amp;hellip; or both.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+So here is the story of how I was able to fix my Samsung Galaxy S2, the steps I followed and the resources that helped me.&lt;/p&gt;
+
+&lt;h2 id=&#34;erratic-malfunctioning&#34;&gt;Erratic Malfunctioning&lt;/h2&gt;
+
+&lt;p&gt;During summer 2014 my S2 started behaving erratically: it was suddenly switching off and back on, charging was giving sings of malfunctioning.&lt;/p&gt;
+
+&lt;p&gt;I initially thought this was due to the battery.&lt;/p&gt;
+
+&lt;p&gt;Andy, a friend and collegue of mine, gave me one of his spare batteries but the symptoms didn&amp;rsquo;t disappear.
+The situation was annoying but, to be frank, not frequent enough to push me to immediate action.&lt;/p&gt;
+
+&lt;p&gt;Then in November I decided to investigate whether anybody else had experienced similar problems.&lt;/p&gt;
+
+&lt;h2 id=&#34;you-are-not-alone&#34;&gt;You are not alone&lt;/h2&gt;
+
+&lt;p&gt;A few searches showed that USB charging port could be the culprit and many youtube videos showed &lt;a href=&#34;https://www.youtube.com/watch?v=sBtEz6sWzZY&#34; target=&#34;_blank&#34;&gt;how to repair&lt;/a&gt; it&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/sBtEz6sWzZY?&#34;
+  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;go-for-the-fun-fix-it&#34;&gt;Go for the fun: fix it&lt;/h2&gt;
+
+&lt;p&gt;Then the next decision point was: do I try to fix it with the risk of destroying the phone or do I just hand it over to a repair shop?&lt;/p&gt;
+
+&lt;p&gt;No way to find a repair shop who is close enough and competent enough.&lt;/p&gt;
+
+&lt;p&gt;So I decided to give it a go and try to fix it: it is all about taking some screws away and unplug some connectors; no surface mounting soldering or the likes!&lt;/p&gt;
+
+&lt;h2 id=&#34;where-to-buy-the-parts&#34;&gt;Where to buy the parts&lt;/h2&gt;
+
+&lt;p&gt;So once I decided to repair, where to find the parts? Brussels is not the paradise for electronics hobbists.&lt;/p&gt;
+
+&lt;p&gt;EBay to &lt;a href=&#34;http://www.ebay.com/bhp/samsung-galaxy-s2-charging-port&#34; target=&#34;_blank&#34;&gt;the rescue&lt;/a&gt;: one piece can cost as little as 0.30 EUR if bought in lots of thousands (but I need just one!), then I found a single piece at 3.29 CAD (shipping included), still a cheap enough option.
+The order date is Nov 27, 2014, shipped the day after.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-long-wait&#34;&gt;A long wait&lt;/h2&gt;
+
+&lt;p&gt;Here we are! On 29th Dec 2015 I come home from holidays and it arrived!
+And the evening after while the kids play with Legos, Daddy repairs (and has fun with) the phone&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/repair-samsung-s2-play-with-lego.png&#34; alt=&#34;repairing&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+All is good: USB is charging again, no shortcuts, no erratic shutdowns&amp;hellip;Victory!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/usb-fixed.jpeg&#34; alt=&#34;fixed&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;mayday-mayday&#34;&gt;Mayday, Mayday!&lt;/h2&gt;
+
+&lt;p&gt;All seemed good, but the radio signal is very, very weak!&lt;/p&gt;
+
+&lt;p&gt;So weak that at times I have no gsm/data connection!&lt;/p&gt;
+
+&lt;p&gt;Hhuumm, maybe that is due to the fact that the replacement piece I bought was revision 2.3 &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/new-usb-charger-connector-samsung-galaxy-s2-i9100.png&#34; alt=&#34;the new piece&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; while the original one was 2.2 &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/old-usb-charger-connector-samsung-galaxy-s2-i9100.png&#34; alt=&#34;the new piece&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Back to basics, google search to the rescue: I found an &lt;a href=&#34;http://www.oneilusm.com/?p=518&#34; target=&#34;_blank&#34;&gt;article by Rich O’Neil&lt;/a&gt; citing a &lt;a href=&#34;http://forum.xda-developers.com/showpost.php?p=37914192&amp;amp;postcount=32&#34; target=&#34;_blank&#34;&gt;post on xda-developers from a certain Serathian&lt;/a&gt; who simply cut the PCB in two.&lt;/p&gt;
+
+&lt;p&gt;Here is what he did:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/cut-the-pcb.png&#34; alt=&#34;cut the pcb in two&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The left part is responsible for the radio while the right part is the USB.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Ok, few days later I take a scissor and use the radio part from the old piece (rev 2.2) and the USB part from the new (rev 2.3): &lt;strong&gt;VICTORY&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Phone is now fixed! (It is 6th Jan 2015.)
+&lt;br/&gt;
+Thanks all for sharing (and some &lt;a href=&#34;http://google.com&#34; target=&#34;_blank&#34;&gt;huge company&lt;/a&gt; to let me find it)!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Understanding Great Circle Arcs Intersection Algorithm</title>
+      <link>/2014/10/19/understanding-great-circle-arcs_57/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/10/19/understanding-great-circle-arcs_57/</guid>
+      <description>
+
+&lt;p&gt;The following material is the result of my attempt to understand the
+&lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;nice example&lt;/a&gt; from Jason Davies.
+I was puzzled about the origin of the algorithm used to find the intersection of
+two great circle arcs.
+Google helped and I discovered &lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger Stafford&amp;rsquo;s post&lt;/a&gt; in Matlab
+newsgroup and the relevant Python&amp;rsquo;s implementation in the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-algorithm&#34;&gt;The algorithm&lt;/h2&gt;
+
+&lt;p&gt;You have two great circle arcs on a sphere, $a$ from point
+$\mathbf{a_0}$ to $\mathbf{a_1}$, and $b$ from $\mathbf{b_0}$ to
+$\mathbf{b_1}$, whose coordinates are expressed as longitude $\theta$
+(positive going East of Greenwich) and latitude $\phi$ (positive going
+North).
+Transform theses coordinates over to Cartesian coordinates using the equations:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+x  &amp; = cos(\theta) cos(\phi) \\
+y  &amp; = sin(\theta) cos(\phi) \\
+z  &amp; = sin(\phi)
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{equation}
+-\pi  \le  \theta  \le \pi \\
+-\frac{\pi}{2} \le \phi \le \frac{\pi}{2}.
+\end{equation}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;These Cartesian coordinates correspond to a hypothetical spherical &amp;ldquo;earth&amp;rdquo; of unit radius, but that does not interfere in the following computations.&lt;/p&gt;
+
+&lt;p&gt;Let $\mathbf{a_0}$, $\mathbf{a_1}$, $\mathbf{b_0}$, and $\mathbf{b_1}$
+be vectors of the Cartesian coordinate endpoints for the two arcs
+$a$($\mathbf{a_0} \leftrightarrow \mathbf{a_1}$) and
+$b$($\mathbf{b_0} \leftrightarrow \mathbf{b_1}$) obtained in this way.
+Carry out the following omputations:&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{p} = \mathbf{a_0} \times \mathbf{a_1}$ is the vector normal to the
+plane going through the arc $a$ and the center of the Earth.&lt;/p&gt;
+
+&lt;p&gt;$ \mathbf{q} = \mathbf{b_0} \times \mathbf{b_1}$ is the vector normal to the
+plane going through the arc $b$ and the center of the Earth.&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{t} = \mathrm{normalized}(\mathbf{p} \times \mathbf{q})$ is along the
+line of intersection of the planes above.&lt;/p&gt;
+
+&lt;p&gt;(The normalization was not mentioned
+in &lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger&amp;rsquo;s post&lt;/a&gt; but it is implemented in the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt; and by
+&lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;Jason&amp;rsquo;s example&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Then, let&amp;rsquo;s define the following quantities:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+ s_1 &amp; =  (\mathbf{a_0} \times \mathbf{p})  \cdot \mathbf{t} \\
+ s_2 &amp; = (\mathbf{a_1} \times \mathbf{p}) \cdot \mathbf{t} \\
+ s_3 &amp; = (\mathbf{b_0} \times \mathbf{q}) \cdot \mathbf{t} \\
+ s_4 &amp; = (\mathbf{b_1} \times \mathbf{q}) \cdot \mathbf{t}
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;p&gt;(These quantities are crucial: they represent the projection of $\mathbf{t}$
+along the arcs $a$ and $b$.)&lt;/p&gt;
+
+&lt;p&gt;The arcs $a$ and $b$ will intersect $\iff$ $-s_1$, $s_2$, $-s_3$,
+and $s_4$ are all of the same sign. In that case they intersect along
+$+\mathbf{t}$ if they are all positive or along $-\mathbf{t}$ if all are
+negative.
+(Jason tests against $\epsilon = 10^{-6}$, I implemented the test against the
+sign.)&lt;/p&gt;
+
+&lt;p&gt;If they do intersect, you can transform the corresponding vector,
+$\mathbf{t}$ or $-\mathbf{t}$ back into longitude and latitude (without
+worrying about its length.) Letting $x$, $y$, $z$ be
+$\mathbf{t}$&amp;rsquo;s Cartesian coordinates this reverse transformation can be
+accomplished this way:&lt;/p&gt;
+
+&lt;div&gt;
+$$
+\begin{aligned}
+\theta &amp; = {\mathrm arctan2} (y,x) \\
+\phi    &amp; = {\mathrm arctan2}(z, \sqrt{x^2+y^2})
+\end{aligned}
+$$
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://cdn.rawgit.com/espinielli/00f6062b0324eac6f882/raw/587499ae3f57276b24d2599d3545733c4f419a3f/index.html&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; width=&#34;800px&#34; height=&#34;500px&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mathworks.com/matlabcentral/newsreader/view_thread/276271&#34; title=&#34;Roger Stafford&#39;s on Matlab newsgroup&#34; target=&#34;_blank&#34;&gt;Roger Stafford&amp;rsquo;s post&lt;/a&gt; on Matlab newsgroup  (but it lacks the
+normalization step which is instead used in Jason Davies code, and in
+Spherical Geometry Toolkit)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/_modules/stsci/sphere/great_circle_arc.html&#34; title=&#34;intersection&#34; target=&#34;_blank&#34;&gt;implementation in Python&lt;/a&gt; as part of the
+&lt;a href=&#34;http://ssb.stsci.edu/doc/stsci_python_x/stsci.sphere.doc/html/&#34; title=&#34;spherical geometry toolkit&#34; target=&#34;_blank&#34;&gt;Spherical Geometry Toolkit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jason Davies &lt;a href=&#34;http://www.jasondavies.com/maps/intersect/&#34; title=&#34;great circle arcs intersection&#34; target=&#34;_blank&#34;&gt;implementation&lt;/a&gt; in D3.js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Originally written and published with &lt;a href=&#34;https://stackedit.io/&#34; target=&#34;_blank&#34;&gt;StackEdit&lt;/a&gt;, later moved to &lt;a href=&#34;http://jekyllrb.com/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Failing to be recruited...</title>
+      <link>/2014/08/29/impressions-about-selection-process-of/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/08/29/impressions-about-selection-process-of/</guid>
+      <description>
+
+&lt;p&gt;This post title to be frank should have been &amp;ldquo;&lt;em&gt;Impressions about the selection process of a big Internet company (and my failure to go to the next steps after initial engagement)&lt;/em&gt;,&amp;rdquo; but that is obviously too long.&lt;/p&gt;
+
+&lt;p&gt;So I only kept the &lt;em&gt;failure&lt;/em&gt; part with the aim to bring home some lessons from it ! 😏&lt;/p&gt;
+
+&lt;h3 id=&#34;chronology-more-or-less&#34;&gt;Chronology, more or less&lt;/h3&gt;
+
+&lt;p&gt;It all started with an email at the end of July 2014 from the company&amp;rsquo;s recruiter, let&amp;rsquo;s call her Alice.&lt;/p&gt;
+
+&lt;p&gt;My first reaction was: SPAM!!!! 😱&lt;/p&gt;
+
+&lt;p&gt;Well, no. It was a genuine ping with too many realistic references about me (not that difficult given my CV is public on LinkedIn) and about her&amp;hellip;but I could only reply when back home from my first slot of holidays: the family still at the beach, I am home alone, with tons of projects accumulated throughout the year (yes, year) since last summer&amp;hellip;and this email!&lt;/p&gt;
+
+&lt;p&gt;Now, I am not at all looking for changing job: I know for sure my current employment conditions and benefits are extremely difficult to match. Even by big Internet companies.&lt;/p&gt;
+
+&lt;p&gt;But I am definitely piqued by the technical side of it! (Good job Alice!)&lt;/p&gt;
+
+&lt;p&gt;So we exchange few email with various links to job/site descriptions/videos from Alice and few replies from me with links (web presence/open source/tinkering around) and attachments to describe myself.&lt;/p&gt;
+
+&lt;p&gt;I am delighted when Alice tells me the position she is selecting for is about managing a team but it involves coding (&amp;ldquo;Good&amp;rdquo; I think, &amp;ldquo;I love that&amp;rdquo;&amp;hellip;and say I do it too, even if just in my limited free time &amp;ndash; 4hr per weekend; hey I have 4 kids! &amp;ndash;). Once she mentioned people in the position spend 30 plus % of time coding, then later she mentioned few times 20%&amp;hellip;anyway much much better than 0% I am currently stuck with at work.&lt;/p&gt;
+
+&lt;p&gt;Then we come to fix a video conf with the following &lt;em&gt;declaration of intents&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Our chat will be more of an open discussion than a formal interview - we will discuss your current situation, the roles at XYZZY and if at that point there is a mutual interest, we can proceed to a technical chat.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To prepare for it I am handed a self evaluation form with scales from &lt;strong&gt;0&lt;/strong&gt; (unfamiliar with the subject area) to &lt;strong&gt;10&lt;/strong&gt; (Wrote the book in the subject area or similar expertise.) and subject areas from TCP/IP to People and Project Management going through C/Java/Go/SQL.&lt;/p&gt;
+
+&lt;p&gt;Good, I can fill a form and, as suggested, keep modest: for sure &lt;a href=&#34;http://en.wikipedia.org/wiki/I_know_that_I_know_nothing&#34; target=&#34;_blank&#34;&gt;I know I know nothing&lt;/a&gt; but there are good &lt;a href=&#34;http://giyf.com/&#34; target=&#34;_blank&#34;&gt;search engines&lt;/a&gt; around and lots of &lt;a href=&#34;http://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;people to ask and collaborate with&lt;/a&gt; ;-)&lt;/p&gt;
+
+&lt;p&gt;A week later we set for the video conf and start the business chat, things like whether I had to recruit or fire people, team size, sort of &lt;em&gt;chit-chatting&lt;/em&gt; ;-)&lt;/p&gt;
+
+&lt;p&gt;And then the technical questions starts: and frankly it has been a &lt;em&gt;disaster&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;Even on questions (Unix file system and inode [4.14 of &lt;a href=&#34;http://www.kohala.com/start/apue.html&#34; target=&#34;_blank&#34;&gt;Advance Programming in the UNIX Environment&lt;/a&gt; {yes, I still have the 1992 edition!}]) I used to ask to people I was recruiting some 12 years ago!&lt;/p&gt;
+
+&lt;h3 id=&#34;lessons-learnt-for-when-i-am-recruiting&#34;&gt;Lessons learnt for when I am recruiting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make sure the context of the interview is clear: subject, what is expected, timing, steps, process.
+I usually do this but we all tend to forget. This is a reminder for myself.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lessons-learnt-for-when-i-want-to-be-recruited&#34;&gt;Lessons learnt (for when I want to be recruited ;-)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I should have clearly asked to separate the chat on current/future position from the technical chat as in the &lt;em&gt;declaration of intents&lt;/em&gt; above.
+Maybe I assumed it would have been in 2 separate sessions but I was taken off balance by it happening in the same video conf.
+&lt;img src=&#34;http://imgs.xkcd.com/comics/when_you_assume.png&#34; alt=&#34;Never ASS U ME&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;I should have asked more about the technical interview, i.e. examples of questions&lt;/li&gt;
+&lt;li&gt;I should have asked more time to prepare if I felt I was too rusty on the subjects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;observations-about-the-specific-recruiting-techniques&#34;&gt;Observations about the specific recruiting techniques&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I was positively impressed by the fact I follow similar steps as in big Internet companies: we have a phone interview to assess the minimum level of technical competencies before we proceed with deeper &lt;em&gt;hands-on&lt;/em&gt; assessments.&lt;/li&gt;
+&lt;li&gt;The post and place descriptions and the videos were good.
+We should prepare more material (web based and videos) to describe the consultants positions we look for.
+But here we are limited by our IT infrastructure, the framework contract we have for recruiting&amp;hellip;&lt;/li&gt;
+&lt;li&gt;I liked the video conf (&lt;a href=&#34;http://www.skype.com/en/&#34; target=&#34;_blank&#34;&gt;Skype&lt;/a&gt; and &lt;a href=&#34;https://www.google.com/+/learnmore/hangouts/&#34; target=&#34;_blank&#34;&gt;the likes&lt;/a&gt;): I have used it only when interviewing a Canadian (and even then he had the support from his university to use their video conference) but we should do it more&amp;hellip;if only our IT infrastructure/policies would permit it (we have &lt;a href=&#34;http://www.webex.com/&#34; target=&#34;_blank&#34;&gt;WebEx&lt;/a&gt; but I have never seen it used for recruiting&amp;hellip;can we?)&lt;/li&gt;
+&lt;li&gt;I really disliked the narrowness of some of the questions I have been asked, things like the signature of certain Unix sys calls. This, I hope, was probably suited for the very specific needs of the job at hand, but in general IMHO they do not show anything about the capabilities of the person you are selecting. &lt;em&gt;When I select people I prefer to watch/discuss about their journey to the destination/solution: the destination itself doesn&amp;rsquo;t tell me anything about how they do reason/think&lt;/em&gt;. (That is why I am usually happy with &amp;ndash; and I also ask about &amp;ndash; a book they would pick up to find some inspiration or the kind of web search they would use to start tackling a problem&amp;hellip;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;feedback-from-friends&#34;&gt;Feedback from friends&lt;/h3&gt;
+
+&lt;p&gt;Few friends working at the same big Internet company (both in USA and Europe) told me that they were not surprised of the outcome because, even if they think I could have made it, the whole selection process is skewed towards the negative: it only takes one &lt;em&gt;no&lt;/em&gt; from the interview panel to get a negative feedback.&lt;/p&gt;
+
+&lt;p&gt;Well, I am sure I got more than one &lt;em&gt;no&lt;/em&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>on revising</title>
+      <link>/2013/05/13/on-revising/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/05/13/on-revising/</guid>
+      <description>Lately I found myself involved into writing.
+
+And I have been often cought into the vicious cycle of revising my (or other&#39;s) text without
+really understanding how to do it properly and when to stop.
+
+
+I want to summarize some of the advise I found on the web.
+
+I put it here for me to find it again and share.
+
+Let&#39;s first paraphrase the famous &lt;a href=&#34;http://en.wikipedia.org/wiki/Grook&#34;&gt;grook&lt;/a&gt;
+from &lt;a href=&#34;http://en.wikipedia.org/wiki/Piet_Hein_(scientist)&#34;&gt;Piet Hein&lt;/a&gt;:
+
+&lt;blockquote&gt;THE ROAD TO WRITING?&lt;br /&gt;Well, it&#39;s plain&lt;br /&gt;and simple to express.&lt;br /&gt;revise and revise and revise again,&lt;br /&gt;but less and less and less.&lt;/blockquote&gt;
+
+I found an interesting &lt;a href=&#34;http://www.exampler.com/old-blog/2004/#two-sentences&#34;&gt;post&lt;/a&gt;
+by &lt;a href=&#34;http://en.wikipedia.org/wiki/Brian_Marick&#34;&gt;Brian Marick&lt;/a&gt;.
+&lt;br/&gt;(And for now I reformat it here for my own use. But I will revise it later ;-)&lt;br/&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;If a sentence is unclear&lt;/b&gt;, do not fix it by adding more words. &lt;b&gt;Fix it by splitting it into two sentences&lt;/b&gt;. Then maybe add a third.&lt;/li&gt;&lt;li&gt;&lt;b&gt;If a paragraph is unclear&lt;/b&gt;, do not fix it by adding more sentences. First look earlier in the piece. Can you find a place to add a few sentences that will make the later idea clearer? Perhaps you can rule out an interpretation that will later cause confusion. &lt;b&gt;Write text to head off the problem&lt;/b&gt;, then return to adjust the guilty paragraph.&lt;/li&gt;&lt;li&gt;&lt;b&gt;If an idea or procedure is complicated&lt;/b&gt;, don&#39;t add more words explaining it. &lt;b&gt;Add an example&lt;/b&gt;. If the example is too complicated, don&#39;t add more words explaining it. Precede it with a simpler example, then change the explanation of the complicated example to focus on what it adds to the simpler one.&lt;/li&gt;&lt;li&gt;&lt;b&gt;If you use change tracking, turn display of changes off&lt;/b&gt;. You won&#39;t be able to make the new text read well if it&#39;s all mixed up with the old text.&lt;/li&gt;&lt;li&gt;&lt;b&gt;After you change a sentence, leave it aside for a while&lt;/b&gt;, then come back and reread at least the whole paragraph that contains it. Then tweak the sentence to make it fit better into its environment.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&amp;nbsp;How do you find what needs revision?&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Can you turn that bullet list into one or more paragraphs?&lt;/b&gt; Bullet lists are, on average, easier for writers but harder for readers. They&#39;re easier for writers because you don&#39;t have to worry about transitions between one idea and the next. They&#39;re harder for readers because there are no transitions guiding them from one idea to the next. Will their eyes glaze over because you&#39;re not providing them with a sense of flow?&lt;/li&gt;&lt;li&gt;&lt;b&gt;Read your text aloud&lt;/b&gt;. You don&#39;t have to write like you speak, but reading aloud changes your perspective. Awkwardness will jump out at you.  Reading aloud is one way to get some distance, to separate the piece from your memory of writing it.&lt;br /&gt;&lt;b&gt;Putting it aside for a day or, better, a week&lt;/b&gt; does the same thing.&lt;br /&gt;I find that &lt;b&gt;reading a printed copy helps&lt;/b&gt; me see things I don&#39;t see on a screen.&lt;br /&gt;&lt;br /&gt;Can you find other tricks?&lt;br /&gt;Richard P. Gabriel tells the story of one writer who would tape his work to a wall, go to the other side of the room, and read it through binoculars.&lt;br /&gt;&lt;br /&gt;Print the piece with a wide margin on one side. Next to each paragraph, &lt;b&gt;scribble a few words about the paragraph&#39;s topic. Now read the scribbles&lt;/b&gt;. Do they form a progression of thought, a developing story of explanation? Or are they more like a bunch of thoughts hitched together in any old order? If so, shuffle them into a better order. (Some people cut the paragraphs out and move them around; I usually draw arrows from where the paragraph is to where it should go. I suspect the other people do better.) &lt;br /&gt;&lt;br /&gt;Sometimes you read a piece where a particular secondary idea or clever chunk of text seems to have undue importance. It&#39;s almost as if the piece were distorted to find a way to make that gem fit. That&#39;s usually because it was. The gem came first, the piece grew away from it, but the author forced it to stay. &lt;b&gt;Ask what your favorite bit of the piece is, then throw it out&lt;/b&gt; - or at least consider how the piece would read if you dropped it. I find this useful to do when I get bogged down during writing.&lt;/li&gt;&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatically extracting bomb drops from the Blitz Bomb Census maps</title>
+      <link>/2012/05/19/automatically-extracting-bomb-drops/</link>
+      <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/19/automatically-extracting-bomb-drops/</guid>
+      <description>I just finished &lt;a href=&#34;http://en.wikipedia.org/wiki/Blackout/All_Clear&#34;&gt;Blackout by Connie Willis&lt;/a&gt;&amp;nbsp;and I was wondering where she did get all the exact times when the air raids of The Blitz were happening.&lt;br /&gt;I am curious because I was thinking that a timeline map would give a visual effect of the huge destruction and hard times the Londoners had to go through...so I googled for it and found the following:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;a nice &lt;a href=&#34;http://blitzbombcensusmaps.wordpress.com/&#34;&gt;research blog&lt;/a&gt;&amp;nbsp;which uses the &lt;a href=&#34;http://www.nationalarchives.gov.uk/records/research-guides/maps-bomb-census-survey.htm&#34;&gt;Blitz Bomb Census&lt;/a&gt; from &lt;a href=&#34;http://www.nationalarchives.gov.uk/&#34;&gt;The National Archives&lt;/a&gt;&lt;/li&gt;&lt;li&gt;a &lt;a href=&#34;http://www.guardian.co.uk/news/datablog/2010/sep/06/london-blitz-bomb-map-september-7-1940&#34;&gt;blog entry&lt;/a&gt; from the Guardian about the first day - and data - of the Blitz over London.&lt;br /&gt;&amp;nbsp;Here the source of info is the &lt;a href=&#34;http://www.cityoflondon.gov.uk/Corporation/LGNL_Services/Leisure_and_culture/Records_and_archives/&#34;&gt;London Metropolitan Archives&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;Both examples show nice data visualization opportunities, but they both show how difficult it is to obtain data. Digital access to historical data could triggers a blossoming of applications!&lt;br /&gt;&lt;br /&gt;Anyway I experimented with the little &lt;a href=&#34;http://blitzbombcensusmaps.files.wordpress.com/2012/04/example-of-the-aggregate-maps.jpg&#34;&gt;map&lt;/a&gt;&amp;nbsp;from the first blog and wrote a little program using &lt;a href=&#34;http://simplecv.org/&#34;&gt;SimpleCV&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;This is were I started from:&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-TCP_DXTqInE/T7d2mtikd7I/AAAAAAAAAuA/lEMv3-q6Ez0/s1600/the_blitz.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;175&#34; src=&#34;http://1.bp.blogspot.com/-TCP_DXTqInE/T7d2mtikd7I/AAAAAAAAAuA/lEMv3-q6Ez0/s320/the_blitz.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;and this is what I got (without too much work, I must admit):&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-Ah6GjORTdBU/T7d261ibIcI/AAAAAAAAAuI/giWlVstQcp0/s1600/the_blitz_highlighted_bombs.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;175&#34; src=&#34;http://4.bp.blogspot.com/-Ah6GjORTdBU/T7d261ibIcI/AAAAAAAAAuI/giWlVstQcp0/s320/the_blitz_highlighted_bombs.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;The code is quite simple and the parameters could be changed to get higher accuracy.&lt;br /&gt;&lt;br /&gt;&lt;pre class=&#34;brush:python&#34;&gt;blz = Image(&#34;./sampleimages/the_blitz.png&#34;)&lt;br /&gt;img = blz.copy()&lt;br /&gt;dist = img.colorDistance(SimpleCV.Color.WHITE)&lt;br /&gt;dist.dilate(2)&lt;br /&gt;&lt;br /&gt;segmented = dist.stretch(240, 255)&lt;br /&gt;blobs = segmented.findBlobs()&lt;br /&gt;if blobs:&lt;br /&gt; circles = blobs.filter([b.isCircle(0.6) for b in blobs])&lt;br /&gt; for c in circles:&lt;br /&gt;  img.drawCircle((c.x, c.y),&lt;br /&gt;                 c.radius(),&lt;br /&gt;                 SimpleCV.Color.YELLOW,&lt;br /&gt;                 2)&lt;br /&gt; img.show()&lt;br /&gt;&lt;br /&gt;&lt;/pre&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCore.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCoreDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;   &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;   &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;   &lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;    SyntaxHighlighter.config.bloggerMode = true;     SyntaxHighlighter.all(); &lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

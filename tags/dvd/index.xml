@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dvd on Enrico&#39;s Blog</title>
+    <link>/tags/dvd/</link>
+    <description>Recent content in Dvd on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sat, 02 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/dvd/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DVD to Android Tablet</title>
+      <link>/2016/04/02/dvd2tablet/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/04/02/dvd2tablet/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-transfer-your-dvds-to-your-android-tablet&#34;&gt;How to transfer your DVDs to your Android Tablet&lt;/h1&gt;
+
+&lt;p&gt;Suppose your kids want to watch their DVDs in the car on their Android tablet&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here is what you can do (on a Mac OSX 10.9.5):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;install &lt;a href=&#34;https://handbrake.fr&#34; target=&#34;_blank&#34;&gt;Handbrake&lt;/a&gt; and its CLI
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ brew cask install handbrake
+  $ brew cask install handbrakecli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;install &lt;code&gt;libdvdcss&lt;/code&gt; (thanks to &lt;a href=&#34;http://lifehacker.com/how-to-rip-a-dvd-to-your-computer-5809765&#34; target=&#34;_blank&#34;&gt;lifehacker&amp;rsquo;s article&lt;/a&gt;) in order to bypass copy protection
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ brew install libdvdcss
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;go to the place where you will place the ripped DVD:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ cd ~/Movies
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;convert your DVDs:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  $ HandBrakeCLI -i /Volumes/&#39;my DVD&#39; -o /Volumes/Untitled/Movies/my_dvd.mp4 \
+                 --native-language=&amp;quot;ita&amp;quot; --native-dub \
+                 --preset=&amp;quot;Android Tablet&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first two options define the input and output (I save the converted movie on the microSD card &lt;code&gt;/Volumes/Untitled&lt;/code&gt; in the &lt;code&gt;Movies&lt;/code&gt; directory)&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;--native-language=&amp;quot;ita&amp;quot; --native-dub&lt;/code&gt; options set Italian as the selected language (if you omit the &lt;code&gt;--native-dub&lt;/code&gt; you will get the first audio track language and subtitles in Italian.)&lt;/p&gt;
+
+&lt;p&gt;The last option &lt;code&gt;--preset=&amp;quot;Android Tablet&amp;quot;&lt;/code&gt; selected the predefined settings that work best for viewing the converted movie on an Android tablet.&lt;/p&gt;
+
+&lt;p&gt;(be prepared to wait for some time&amp;hellip;it took 1h 8min 5s for an 87min movie on my old MacBook Pro mid-2009)&lt;/p&gt;
+
+&lt;p&gt;There are other preset configurations&amp;hellip;Should you need to copy to a different device, use &lt;code&gt;HandBrakeCLI --preset-list&lt;/code&gt; to select the one that best fits your needs. Otherwise you can delve into the many settings&amp;hellip;!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: after the conversion I get my DVD driver completely blocked/unable to read disks and ejecting them all.
+Sometimes &amp;ldquo;Repair Disk Permissions&amp;rdquo; via Disk Utility as described &lt;a href=&#34;http://www.cnet.com/forums/discussions/macbook-cd-dvd-drive-won-t-read-discs-can-it-be-fixed-330354/#post-970a02c1-3e34-495a-bfd9-44267a4af51c&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; make it work again&amp;hellip; some other times not!&lt;/p&gt;
+
+&lt;p&gt;I do the repair via command line as follows (eventually prefix it with &lt;code&gt;sudo&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ diskutil repairPermissions /
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Eventually I succeeded using &amp;ldquo;System Information&amp;rdquo;, selecting &amp;lsquo;Disk Burning&amp;rsquo; and then hitting File -&amp;gt; Refresh Information.
+Don&amp;rsquo;t ask me why or how, I just did it and the driver worked again!
+(You can do it via the command line by running &lt;code&gt;system_profiler -detailLevel full SPDiscBurningDataType&lt;/code&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

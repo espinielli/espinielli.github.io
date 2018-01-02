@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rsa on Enrico&#39;s Blog</title>
+    <link>/tags/rsa/</link>
+    <description>Recent content in Rsa on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Mon, 06 Feb 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/rsa/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git and RSA identities</title>
+      <link>/2012/02/06/git-and-rsa-identities/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/02/06/git-and-rsa-identities/</guid>
+      <description>Here is the solution I found to be able to use &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;git&lt;/span&gt; with a different RSA identity than the &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;rsa_id&lt;/span&gt; default one.&lt;br /&gt;&lt;br /&gt;My repo on github is &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;logback-android&lt;/span&gt; and my user account is &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;espinielli&lt;/span&gt;.&lt;br /&gt;I did generate an SSH key as per github help and named it &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;github_rsa&lt;/span&gt;:&lt;br /&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &#34;your_email@youremail.com&#34; -f github_rsa&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;I then added the following section in &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;~/.ssh/config&lt;/span&gt;&lt;br /&gt;&lt;code&gt;# github for espinielli&lt;br /&gt;Host github&lt;br /&gt;HostName github.com&lt;br /&gt;User espinielli&lt;br /&gt;IdentityFile /Users/espin/.ssh/github_rsa&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;From within the repo directory (I cloned it before via http):&lt;br /&gt;&lt;code&gt;$ git remote add gh ssh://git@github.com/espinielli/logback-android.git&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;And finally I am able to use it like this:&lt;br /&gt;&lt;code&gt;$ git push gh master&lt;/code&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

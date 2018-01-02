@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cv on Enrico&#39;s Blog</title>
+    <link>/tags/cv/</link>
+    <description>Recent content in Cv on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Fri, 29 Aug 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/cv/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Failing to be recruited...</title>
+      <link>/2014/08/29/impressions-about-selection-process-of/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/08/29/impressions-about-selection-process-of/</guid>
+      <description>
+
+&lt;p&gt;This post title to be frank should have been &amp;ldquo;&lt;em&gt;Impressions about the selection process of a big Internet company (and my failure to go to the next steps after initial engagement)&lt;/em&gt;,&amp;rdquo; but that is obviously too long.&lt;/p&gt;
+
+&lt;p&gt;So I only kept the &lt;em&gt;failure&lt;/em&gt; part with the aim to bring home some lessons from it ! 😏&lt;/p&gt;
+
+&lt;h3 id=&#34;chronology-more-or-less&#34;&gt;Chronology, more or less&lt;/h3&gt;
+
+&lt;p&gt;It all started with an email at the end of July 2014 from the company&amp;rsquo;s recruiter, let&amp;rsquo;s call her Alice.&lt;/p&gt;
+
+&lt;p&gt;My first reaction was: SPAM!!!! 😱&lt;/p&gt;
+
+&lt;p&gt;Well, no. It was a genuine ping with too many realistic references about me (not that difficult given my CV is public on LinkedIn) and about her&amp;hellip;but I could only reply when back home from my first slot of holidays: the family still at the beach, I am home alone, with tons of projects accumulated throughout the year (yes, year) since last summer&amp;hellip;and this email!&lt;/p&gt;
+
+&lt;p&gt;Now, I am not at all looking for changing job: I know for sure my current employment conditions and benefits are extremely difficult to match. Even by big Internet companies.&lt;/p&gt;
+
+&lt;p&gt;But I am definitely piqued by the technical side of it! (Good job Alice!)&lt;/p&gt;
+
+&lt;p&gt;So we exchange few email with various links to job/site descriptions/videos from Alice and few replies from me with links (web presence/open source/tinkering around) and attachments to describe myself.&lt;/p&gt;
+
+&lt;p&gt;I am delighted when Alice tells me the position she is selecting for is about managing a team but it involves coding (&amp;ldquo;Good&amp;rdquo; I think, &amp;ldquo;I love that&amp;rdquo;&amp;hellip;and say I do it too, even if just in my limited free time &amp;ndash; 4hr per weekend; hey I have 4 kids! &amp;ndash;). Once she mentioned people in the position spend 30 plus % of time coding, then later she mentioned few times 20%&amp;hellip;anyway much much better than 0% I am currently stuck with at work.&lt;/p&gt;
+
+&lt;p&gt;Then we come to fix a video conf with the following &lt;em&gt;declaration of intents&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Our chat will be more of an open discussion than a formal interview - we will discuss your current situation, the roles at XYZZY and if at that point there is a mutual interest, we can proceed to a technical chat.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To prepare for it I am handed a self evaluation form with scales from &lt;strong&gt;0&lt;/strong&gt; (unfamiliar with the subject area) to &lt;strong&gt;10&lt;/strong&gt; (Wrote the book in the subject area or similar expertise.) and subject areas from TCP/IP to People and Project Management going through C/Java/Go/SQL.&lt;/p&gt;
+
+&lt;p&gt;Good, I can fill a form and, as suggested, keep modest: for sure &lt;a href=&#34;http://en.wikipedia.org/wiki/I_know_that_I_know_nothing&#34; target=&#34;_blank&#34;&gt;I know I know nothing&lt;/a&gt; but there are good &lt;a href=&#34;http://giyf.com/&#34; target=&#34;_blank&#34;&gt;search engines&lt;/a&gt; around and lots of &lt;a href=&#34;http://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;people to ask and collaborate with&lt;/a&gt; ;-)&lt;/p&gt;
+
+&lt;p&gt;A week later we set for the video conf and start the business chat, things like whether I had to recruit or fire people, team size, sort of &lt;em&gt;chit-chatting&lt;/em&gt; ;-)&lt;/p&gt;
+
+&lt;p&gt;And then the technical questions starts: and frankly it has been a &lt;em&gt;disaster&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;Even on questions (Unix file system and inode [4.14 of &lt;a href=&#34;http://www.kohala.com/start/apue.html&#34; target=&#34;_blank&#34;&gt;Advance Programming in the UNIX Environment&lt;/a&gt; {yes, I still have the 1992 edition!}]) I used to ask to people I was recruiting some 12 years ago!&lt;/p&gt;
+
+&lt;h3 id=&#34;lessons-learnt-for-when-i-am-recruiting&#34;&gt;Lessons learnt for when I am recruiting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make sure the context of the interview is clear: subject, what is expected, timing, steps, process.
+I usually do this but we all tend to forget. This is a reminder for myself.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lessons-learnt-for-when-i-want-to-be-recruited&#34;&gt;Lessons learnt (for when I want to be recruited ;-)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I should have clearly asked to separate the chat on current/future position from the technical chat as in the &lt;em&gt;declaration of intents&lt;/em&gt; above.
+Maybe I assumed it would have been in 2 separate sessions but I was taken off balance by it happening in the same video conf.
+&lt;img src=&#34;http://imgs.xkcd.com/comics/when_you_assume.png&#34; alt=&#34;Never ASS U ME&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;I should have asked more about the technical interview, i.e. examples of questions&lt;/li&gt;
+&lt;li&gt;I should have asked more time to prepare if I felt I was too rusty on the subjects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;observations-about-the-specific-recruiting-techniques&#34;&gt;Observations about the specific recruiting techniques&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I was positively impressed by the fact I follow similar steps as in big Internet companies: we have a phone interview to assess the minimum level of technical competencies before we proceed with deeper &lt;em&gt;hands-on&lt;/em&gt; assessments.&lt;/li&gt;
+&lt;li&gt;The post and place descriptions and the videos were good.
+We should prepare more material (web based and videos) to describe the consultants positions we look for.
+But here we are limited by our IT infrastructure, the framework contract we have for recruiting&amp;hellip;&lt;/li&gt;
+&lt;li&gt;I liked the video conf (&lt;a href=&#34;http://www.skype.com/en/&#34; target=&#34;_blank&#34;&gt;Skype&lt;/a&gt; and &lt;a href=&#34;https://www.google.com/+/learnmore/hangouts/&#34; target=&#34;_blank&#34;&gt;the likes&lt;/a&gt;): I have used it only when interviewing a Canadian (and even then he had the support from his university to use their video conference) but we should do it more&amp;hellip;if only our IT infrastructure/policies would permit it (we have &lt;a href=&#34;http://www.webex.com/&#34; target=&#34;_blank&#34;&gt;WebEx&lt;/a&gt; but I have never seen it used for recruiting&amp;hellip;can we?)&lt;/li&gt;
+&lt;li&gt;I really disliked the narrowness of some of the questions I have been asked, things like the signature of certain Unix sys calls. This, I hope, was probably suited for the very specific needs of the job at hand, but in general IMHO they do not show anything about the capabilities of the person you are selecting. &lt;em&gt;When I select people I prefer to watch/discuss about their journey to the destination/solution: the destination itself doesn&amp;rsquo;t tell me anything about how they do reason/think&lt;/em&gt;. (That is why I am usually happy with &amp;ndash; and I also ask about &amp;ndash; a book they would pick up to find some inspiration or the kind of web search they would use to start tackling a problem&amp;hellip;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;feedback-from-friends&#34;&gt;Feedback from friends&lt;/h3&gt;
+
+&lt;p&gt;Few friends working at the same big Internet company (both in USA and Europe) told me that they were not surprised of the outcome because, even if they think I could have made it, the whole selection process is skewed towards the negative: it only takes one &lt;em&gt;no&lt;/em&gt; from the interview panel to get a negative feedback.&lt;/p&gt;
+
+&lt;p&gt;Well, I am sure I got more than one &lt;em&gt;no&lt;/em&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

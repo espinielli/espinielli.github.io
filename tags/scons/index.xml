@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scons on Enrico&#39;s Blog</title>
+    <link>/tags/scons/</link>
+    <description>Recent content in Scons on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sun, 14 Jun 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/scons/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scons and noweb</title>
+      <link>/2009/06/14/scons-and-noweb/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/06/14/scons-and-noweb/</guid>
+      <description>&lt;p&gt;I was curious to see how I could integrate noweb and Scons.&lt;/p&gt;
+
+&lt;p&gt;You can download my little Sconstruct for this,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/Sconstruct.example&#34; target=&#34;_blank&#34;&gt;Sconstruct.example&lt;/a&gt;.
+It defines two builders. NoWeave is used to produce TeX or LaTeX documents,
+while NoTangle extracts the non-document artefacts, i.e. programs, config files,
+scripts &amp;hellip; It also includes productions for generating a sample program about
+Ackermann function:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;	ackdoc  &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoWeave(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.tex&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
+	ackcode &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
+	acktest &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ackTest.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The noweb source is &lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.nw&#34; target=&#34;_blank&#34;&gt;ack.nw&lt;/a&gt; and
+the companion BibTeX file is
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.bib&#34; target=&#34;_blank&#34;&gt;ack.bib&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It contains the doc chunks describing the function, the source code chunck for
+the relevant Python code and the code chunk for the unit test.&lt;/p&gt;
+
+&lt;p&gt;You can try it out executing&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;	$ scons -f Sconstruct.example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You will get the following artefacts,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.py&#34; target=&#34;_blank&#34;&gt;ack.py&lt;/a&gt;,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.tex&#34; target=&#34;_blank&#34;&gt;ack.tex&lt;/a&gt;,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ackTest.py&#34; target=&#34;_blank&#34;&gt;ackTest.py&lt;/a&gt; and
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.pdf&#34; target=&#34;_blank&#34;&gt;ack.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Remember to run BibTeX first&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LaTeX, Python and Literate Programming</title>
+      <link>/2009/02/24/latex-python-and-literate-programming/</link>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/02/24/latex-python-and-literate-programming/</guid>
+      <description>&lt;p&gt;In my spare time (a couple of hours per weekend&amp;hellip;!) I am implementing calcal, a Python version of calendrica-3.0.cl, the Common Lisp implementation of the calendars from &lt;a href=&#34;http://www.math.tau.ac.il/%7Enachumd/&#34; target=&#34;_blank&#34;&gt;N. Dershowitz&lt;/a&gt;, &lt;a href=&#34;http://emr.cs.iit.edu/%7Ereingold/&#34; target=&#34;_blank&#34;&gt;E. M. Reingold&lt;/a&gt; &lt;em&gt;&lt;a href=&#34;http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=9780521702386&#34; target=&#34;_blank&#34;&gt;Calendrical Calculations&lt;/a&gt;, 3rd Edition&lt;/em&gt;. (In case you are interested you can find a preview in &lt;a href=&#34;http://enrico.spinielli.googlepages.com/&#34; target=&#34;_blank&#34;&gt;my github repo&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;At some point I decided to go &lt;a href=&#34;http://en.wikipedia.org/wiki/Literate_programming&#34; target=&#34;_blank&#34;&gt;Literate Programming&lt;/a&gt; using &lt;a href=&#34;http://www.cs.tufts.edu/%7Enr/noweb/&#34; target=&#34;_blank&#34;&gt;noweb&lt;/a&gt;. This is an experiment in the experiment but so far it has been a good choice because I can define all I need in the same place and generate documentation, source code (Python, shell scripts &amp;hellip;) from the same source.&lt;/p&gt;
+
+&lt;p&gt;I also found something interesting (on a now disappeared blog &lt;a href=&#34;http://usefreetools.blogspot.com):&#34; target=&#34;_blank&#34;&gt;http://usefreetools.blogspot.com):&lt;/a&gt; &lt;a href=&#34;http://nix-tips.blogspot.com/2008/09/python-inside-latex-and-sage-too.html&#34; target=&#34;_blank&#34;&gt;executing Python from within LaTex&lt;/a&gt;! I could use it to avoid to hardcode results in my doc and just calculate them on the fly&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The same blog was showing &lt;a href=&#34;http://usefreetools.blogspot.com/2008/07/auto-building-latex-documents-with.html&#34; target=&#34;_blank&#34;&gt;how to build LaTeX docs using SCons&lt;/a&gt;: I will defenitly use it; my Makefile isn&amp;rsquo;t that great nor easy to mantain.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

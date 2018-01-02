@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on Enrico&#39;s Blog</title>
+    <link>/tags/html/</link>
+    <description>Recent content in Html on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sat, 07 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/html/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTML Scraping or Surviving Orrible Corporate Tools</title>
+      <link>/2015/02/07/html-scraping/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/02/07/html-scraping/</guid>
+      <description>
+
+&lt;p&gt;At work I have to fill my weekly timesheet. We use &lt;a href=&#34;http://en.wikipedia.org/wiki/Planisware&#34; title=&#34;Planisware&#34; target=&#34;_blank&#34;&gt;Planisware&lt;/a&gt;&amp;rsquo;s Timecard to record time spent on the various projects we are assigned to work on.&lt;/p&gt;
+
+&lt;p&gt;So you need to known what the total working time is for the day. For that our badging in and out is recorded and passed to &lt;a href=&#34;http://www.gfi.fr/gestion-des-temps/gestion-des-temps.php&#34; title=&#34;Chronogestor&#34; target=&#34;_blank&#34;&gt;Chronogestor&lt;/a&gt; which does sums them up and provides both a sexagesimal and decimal format.&lt;/p&gt;
+
+&lt;p&gt;When there is an anomaly the sums are blocked till the request you submitted to fix it is implemented&amp;hellip;
+So I thought I could do some &lt;a href=&#34;http://en.wikipedia.org/wiki/Web_scraping&#34; title=&#34;Web Scraping&#34; target=&#34;_blank&#34;&gt;web scraping&lt;/a&gt; and extract my clockings from the relevant CG&amp;rsquo;s page, make the total for the day (in decimal form: in Timecard we record time in decimal form, i.e. 3.5 is 3 hours and 30 minutes.) and fill Timecard.&lt;/p&gt;
+
+&lt;h2 id=&#34;html-scraping-ws-to-the-rescue&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Web_scraping&#34; title=&#34;Web Scraping&#34; target=&#34;_blank&#34;&gt;HTML Scraping&lt;/a&gt; to the rescue&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take the page for the weekly clockings (in case of anomalies the rows like &amp;ldquo;Temps pointe&amp;rdquo; / &amp;ldquo;Temps valide&amp;rdquo; are empty):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://auto.img.v4.skyrock.net/7206/74747206/pics/3180490115_1_2_jmuRu7c0.png&#34; alt=&#34;&amp;quot;clockings&amp;quot;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I initially tried with &lt;a href=&#34;http://docs.python-guide.org/en/latest/scenarios/scrape/&#34; target=&#34;_blank&#34;&gt;some&lt;/a&gt; &lt;a href=&#34;https://impythonist.wordpress.com/2015/01/06/ultimate-guide-for-scraping-javascript-rendered-web-pages/&#34; target=&#34;_blank&#34;&gt;Python examples&lt;/a&gt; using &lt;a href=&#34;http://lxml.de/&#34; title=&#34;lxml&#34; target=&#34;_blank&#34;&gt;lxml&lt;/a&gt; but got stuck.
+CG complaines if you are using Google Chrome (and the tools above use Webkit, the web browser engine, behind the scene).&lt;/p&gt;
+
+&lt;p&gt;Also I soon realized CG does a lot of rendering via Javascript while I initially assumed it would have been a simple HTML page with a static table for the clockings. (This would have been to simple to implement! What a mess!)&lt;/p&gt;
+
+&lt;p&gt;I decided to go for &lt;a href=&#34;http://slimerjs.org/&#34; target=&#34;_blank&#34;&gt;SlimerJS&lt;/a&gt; the scriptable browser that runs on top of &lt;a href=&#34;http://en.wikipedia.org/wiki/Gecko_(software)&#34; target=&#34;_blank&#34;&gt;Gecko&lt;/a&gt;, the web engine of &lt;a href=&#34;mozilla.org/firefox&#34; target=&#34;_blank&#34;&gt;Mozilla Firefox&lt;/a&gt;. (&lt;a href=&#34;http://phantomjs.org/&#34; target=&#34;_blank&#34;&gt;PhantomJS&lt;/a&gt; is the equivalent for &lt;a href=&#34;http://en.wikipedia.org/wiki/Blink_(layout_engine)&#34; target=&#34;_blank&#34;&gt;Blink/WebKit&lt;/a&gt; used in &lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Google Chrome&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Nothing strange about using Javascript of course but &lt;em&gt;CG sucks at it&lt;/em&gt;: it is a last millenium tool which has been hastily brought to this century without any knowledge of the web technologies (and any taste for usability and beauty.)
+Just check the generated DOM elements and you will see that the &lt;a href=&#34;http://www.w3.org/TR/html5/dom.html#the-id-attribute&#34; target=&#34;_blank&#34;&gt;uniqueness (within a page) of &lt;code&gt;id&lt;/code&gt;&lt;/a&gt; is not at all respected.&lt;/p&gt;
+
+&lt;p&gt;From the page for the weekly clockings shown above, using &lt;a href=&#34;https://developer.mozilla.org/en/docs/Tools&#34; target=&#34;_blank&#34;&gt;Firefox Developer Tools&lt;/a&gt; you can see that the table for the clockings (&amp;ldquo;Entrées/Sorties&amp;rdquo; row) can be selected via the following CSS path (line 58):&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/espinielli/aa410dbe7ff9b05b9c8f.js?file=cg.js&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;run-it&#34;&gt;Run it!&lt;/h3&gt;
+
+&lt;p&gt;The scraping is run as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;C:\goodies\cg&amp;gt;cg usr:pwd 03/02/2015
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;usr&lt;/code&gt; is the userid and &lt;code&gt;pwd&lt;/code&gt; is the password for both the internet proxy and ChronoGestor.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cg&lt;/code&gt; is a simple (stupid?) &lt;code&gt;.bat&lt;/code&gt; script&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/espinielli/aa410dbe7ff9b05b9c8f.js?file=cg.bat&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;loggin-in&#34;&gt;Loggin in&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;relevant&lt;/em&gt; lines from the &lt;code&gt;cg.js&lt;/code&gt; script 6-16,47,54,61-63 (see the code above.)&lt;/p&gt;
+
+&lt;p&gt;Here we reuse the proxy user and account values which, as per company policy, are the same as our login name and password.
+And to do that I had to hack an implementation detail whereby &lt;code&gt;slimer.js&lt;/code&gt; sets an environment variable &lt;code&gt;__SLIMER_ARGS&lt;/code&gt; with the options passed on the command line. (Lines 6-16)&lt;/p&gt;
+
+&lt;h3 id=&#34;extract-the-clockings&#34;&gt;Extract the clockings&lt;/h3&gt;
+
+&lt;p&gt;In order to extract the right cells for the clocking, I inject JQuery and use &lt;code&gt;webpage.evaluate()&lt;/code&gt; function from the API in order to execute &lt;code&gt;extractClockings&lt;/code&gt; (&lt;code&gt;sel&lt;/code&gt; will be passed as argument to &lt;code&gt;extractClockings&lt;/code&gt;, it is the CSS path shown above).
+Lines 74-76.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;code&gt;extractClockings&lt;/code&gt; reads a list of &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements for each day. Lines 18-42.&lt;/p&gt;
+
+&lt;h3 id=&#34;count-the-minutes&#34;&gt;Count the minutes&lt;/h3&gt;
+
+&lt;p&gt;The rest is a matter of summing up the minutes and printing the values. Lines 78-114.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

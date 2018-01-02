@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kay on Enrico&#39;s Blog</title>
+    <link>/tags/kay/</link>
+    <description>Recent content in Kay on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sat, 26 Mar 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/kay/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>(What was) Croquet is maybe still alive</title>
+      <link>/2011/03/26/what-was-croquet-is-maybe-still-alive/</link>
+      <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/03/26/what-was-croquet-is-maybe-still-alive/</guid>
+      <description>&lt;p&gt;It seems there is still some hope to see &lt;a href=&#34;http://www.opencroquet.org/&#34; target=&#34;_blank&#34;&gt;Croquet&lt;/a&gt; (or, &lt;a href=&#34;http://www.opencobalt.org/&#34; target=&#34;_blank&#34;&gt;OpenCobalt&lt;/a&gt; which took off from where Croquet stopped) alive and based on latest &lt;a href=&#34;http://www.squeak.org/&#34; target=&#34;_blank&#34;&gt;Squeak&lt;/a&gt; and more importantly using Cog VM.&lt;/p&gt;
+
+&lt;p&gt;Matthew Fulmer reports it &lt;a href=&#34;http://lists.squeakfoundation.org/pipermail/squeak-dev/2011-March/158209.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The potentials are magical as explained by &lt;a href=&#34;http://inventing-the-future.wetmachine.com/content/controlling-time-teatime&#34; target=&#34;_blank&#34;&gt;Howard Stearns&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Giants</title>
+      <link>/2009/02/23/my-giants/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/02/23/my-giants/</guid>
+      <description>&lt;p&gt;I am probably too selective, anyway my models for computer science/software engineering (one of them would disagree on both definitions) are just two: &lt;a href=&#34;http://www-cs-faculty.stanford.edu/~uno/&#34; target=&#34;_blank&#34;&gt;Donald E. Knuth&lt;/a&gt; and &lt;a href=&#34;http://www.vpri.org/html/people/founders.htm&#34; target=&#34;_blank&#34;&gt;Alan Kay&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first one continues to surprise me with the depth, clarity and joy of his works: from TeX (well, I use LaTex but it does not exist without TeX) to The Art of Computer Programming to Literate Programming.&lt;/p&gt;
+
+&lt;p&gt;About the latter, I was one of the blessed to be present to &lt;a href=&#34;http://awards.acm.org/citation.cfm?id=3972189&amp;amp;amp;srt=year&amp;amp;amp;year=2003&amp;amp;amp;aw=140&amp;amp;amp;ao=AMTURING&#34; target=&#34;_blank&#34;&gt;his Turing Award Lecture&lt;/a&gt;: he shocked me to the point I had two sleepless nights so angry I was about having wasted so much time in useless (computer) matters! After that I have been studying and using a lot of what he wrote and presented from Squeak to Croquet to the Burroughs B5000 and stack computers to his recent line of &lt;a href=&#34;http://www.vpri.org/html/work/ifnct.htm&#34; target=&#34;_blank&#34;&gt;exploration&lt;/a&gt; and the proposal to NSF about &lt;a href=&#34;http://www.vpri.org/pdf/rn2006002_nsfprop.pdf&#34; target=&#34;_blank&#34;&gt;reinventing programming (PDF)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

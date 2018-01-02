@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on Enrico&#39;s Blog</title>
+    <link>/tags/latex/</link>
+    <description>Recent content in Latex on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Thu, 19 Apr 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/latex/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>wiki of the future?</title>
+      <link>/2012/04/19/wiki-of-future/</link>
+      <pubDate>Thu, 19 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/04/19/wiki-of-future/</guid>
+      <description>Last weekend I have been watching, reading and playing around with Ward Cunningham&#39;s &lt;a href=&#34;http://wardcunningham.github.com/&#34;&gt;Smallest Federated Wiki&lt;/a&gt;. As usual he is a great designer and aims to simple, effective, understandable and useful tools!  I particularly like the plugins idea (not new of course) and how easy it seems to be to add new ones, like support for &lt;a href=&#34;http://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt;: &lt;iframe allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34; height=&#34;300&#34; mozallowfullscreen=&#34;mozallowfullscreen&#34; src=&#34;http://player.vimeo.com/video/33133120?title=0&amp;amp;byline=0&amp;amp;portrait=0&#34; webkitallowfullscreen=&#34;webkitallowfullscreen&#34; width=&#34;400&#34;&gt;&lt;/iframe&gt; &lt;br/&gt;Get inspired you too!</description>
+    </item>
+    
+    <item>
+      <title>LaTeX on Blogger again</title>
+      <link>/2012/01/20/latex-on-blogger-again/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/01/20/latex-on-blogger-again/</guid>
+      <description>&lt;script type=&#34;text/x-mathjax-config&#34;&gt;MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});&lt;/script&gt; &lt;script src=&#34;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34; type=&#34;text/javascript&#34;&gt; &lt;/script&gt; &lt;a href=&#34;http://ongiantsshoulders.blogspot.com/2009/11/text-on-latex-snippet-in-blogger-from.html&#34;&gt;My previous post&lt;/a&gt;&amp;nbsp;about&amp;nbsp;LaTeX&amp;nbsp;&amp;nbsp;on Blogger&amp;nbsp;reported that the solution described there did not work anymore...&lt;br /&gt;Now I found &lt;a href=&#34;http://irrep.blogspot.com/2011/07/mathjax-in-blogger-ii.html&#34;&gt;a new solution&lt;/a&gt; based on &lt;a href=&#34;http://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;So let&#39;s try it straight away with inline math, like the great equation \(e^{-2\pi}\), and with displayed math like the following:&lt;br /&gt;\[ \left [ - \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi&lt;br /&gt;= i \hbar \frac{\partial}{\partial t} \Psi \]</description>
+    </item>
+    
+    <item>
+      <title>LaTeX on Blogger</title>
+      <link>/2009/11/11/text-on-latex-snippet-in-blogger-from/</link>
+      <pubDate>Wed, 11 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/11/text-on-latex-snippet-in-blogger-from/</guid>
+      <description>&lt;p&gt;An inline snippet of LaTeX \(e^{\pi i}+1=0\) in blogger (from &lt;a href=&#34;http://watchmath.com/vlog/?p=438&#34; target=&#34;_blank&#34;&gt;http://watchmath.com/vlog/?p=438&lt;/a&gt; but it now, Oct 2010, shows crap!).&lt;/p&gt;
+
+&lt;p&gt;You can as well have it in display style \[e^{\pi i}+1=0\].&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scons and noweb</title>
+      <link>/2009/06/14/scons-and-noweb/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/06/14/scons-and-noweb/</guid>
+      <description>&lt;p&gt;I was curious to see how I could integrate noweb and Scons.&lt;/p&gt;
+
+&lt;p&gt;You can download my little Sconstruct for this,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/Sconstruct.example&#34; target=&#34;_blank&#34;&gt;Sconstruct.example&lt;/a&gt;.
+It defines two builders. NoWeave is used to produce TeX or LaTeX documents,
+while NoTangle extracts the non-document artefacts, i.e. programs, config files,
+scripts &amp;hellip; It also includes productions for generating a sample program about
+Ackermann function:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;	ackdoc  &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoWeave(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.tex&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
+	ackcode &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
+	acktest &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ackTest.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The noweb source is &lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.nw&#34; target=&#34;_blank&#34;&gt;ack.nw&lt;/a&gt; and
+the companion BibTeX file is
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.bib&#34; target=&#34;_blank&#34;&gt;ack.bib&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It contains the doc chunks describing the function, the source code chunck for
+the relevant Python code and the code chunk for the unit test.&lt;/p&gt;
+
+&lt;p&gt;You can try it out executing&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;	$ scons -f Sconstruct.example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You will get the following artefacts,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.py&#34; target=&#34;_blank&#34;&gt;ack.py&lt;/a&gt;,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.tex&#34; target=&#34;_blank&#34;&gt;ack.tex&lt;/a&gt;,
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ackTest.py&#34; target=&#34;_blank&#34;&gt;ackTest.py&lt;/a&gt; and
+&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.pdf&#34; target=&#34;_blank&#34;&gt;ack.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Remember to run BibTeX first&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LaTeX, Python and Literate Programming</title>
+      <link>/2009/02/24/latex-python-and-literate-programming/</link>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/02/24/latex-python-and-literate-programming/</guid>
+      <description>&lt;p&gt;In my spare time (a couple of hours per weekend&amp;hellip;!) I am implementing calcal, a Python version of calendrica-3.0.cl, the Common Lisp implementation of the calendars from &lt;a href=&#34;http://www.math.tau.ac.il/%7Enachumd/&#34; target=&#34;_blank&#34;&gt;N. Dershowitz&lt;/a&gt;, &lt;a href=&#34;http://emr.cs.iit.edu/%7Ereingold/&#34; target=&#34;_blank&#34;&gt;E. M. Reingold&lt;/a&gt; &lt;em&gt;&lt;a href=&#34;http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=9780521702386&#34; target=&#34;_blank&#34;&gt;Calendrical Calculations&lt;/a&gt;, 3rd Edition&lt;/em&gt;. (In case you are interested you can find a preview in &lt;a href=&#34;http://enrico.spinielli.googlepages.com/&#34; target=&#34;_blank&#34;&gt;my github repo&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;At some point I decided to go &lt;a href=&#34;http://en.wikipedia.org/wiki/Literate_programming&#34; target=&#34;_blank&#34;&gt;Literate Programming&lt;/a&gt; using &lt;a href=&#34;http://www.cs.tufts.edu/%7Enr/noweb/&#34; target=&#34;_blank&#34;&gt;noweb&lt;/a&gt;. This is an experiment in the experiment but so far it has been a good choice because I can define all I need in the same place and generate documentation, source code (Python, shell scripts &amp;hellip;) from the same source.&lt;/p&gt;
+
+&lt;p&gt;I also found something interesting (on a now disappeared blog &lt;a href=&#34;http://usefreetools.blogspot.com):&#34; target=&#34;_blank&#34;&gt;http://usefreetools.blogspot.com):&lt;/a&gt; &lt;a href=&#34;http://nix-tips.blogspot.com/2008/09/python-inside-latex-and-sage-too.html&#34; target=&#34;_blank&#34;&gt;executing Python from within LaTex&lt;/a&gt;! I could use it to avoid to hardcode results in my doc and just calculate them on the fly&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The same blog was showing &lt;a href=&#34;http://usefreetools.blogspot.com/2008/07/auto-building-latex-documents-with.html&#34; target=&#34;_blank&#34;&gt;how to build LaTeX docs using SCons&lt;/a&gt;: I will defenitly use it; my Makefile isn&amp;rsquo;t that great nor easy to mantain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Giants</title>
+      <link>/2009/02/23/my-giants/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/02/23/my-giants/</guid>
+      <description>&lt;p&gt;I am probably too selective, anyway my models for computer science/software engineering (one of them would disagree on both definitions) are just two: &lt;a href=&#34;http://www-cs-faculty.stanford.edu/~uno/&#34; target=&#34;_blank&#34;&gt;Donald E. Knuth&lt;/a&gt; and &lt;a href=&#34;http://www.vpri.org/html/people/founders.htm&#34; target=&#34;_blank&#34;&gt;Alan Kay&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first one continues to surprise me with the depth, clarity and joy of his works: from TeX (well, I use LaTex but it does not exist without TeX) to The Art of Computer Programming to Literate Programming.&lt;/p&gt;
+
+&lt;p&gt;About the latter, I was one of the blessed to be present to &lt;a href=&#34;http://awards.acm.org/citation.cfm?id=3972189&amp;amp;amp;srt=year&amp;amp;amp;year=2003&amp;amp;amp;aw=140&amp;amp;amp;ao=AMTURING&#34; target=&#34;_blank&#34;&gt;his Turing Award Lecture&lt;/a&gt;: he shocked me to the point I had two sleepless nights so angry I was about having wasted so much time in useless (computer) matters! After that I have been studying and using a lot of what he wrote and presented from Squeak to Croquet to the Burroughs B5000 and stack computers to his recent line of &lt;a href=&#34;http://www.vpri.org/html/work/ifnct.htm&#34; target=&#34;_blank&#34;&gt;exploration&lt;/a&gt; and the proposal to NSF about &lt;a href=&#34;http://www.vpri.org/pdf/rn2006002_nsfprop.pdf&#34; target=&#34;_blank&#34;&gt;reinventing programming (PDF)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

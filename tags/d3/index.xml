@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D3 on Enrico&#39;s Blog</title>
+    <link>/tags/d3/</link>
+    <description>Recent content in D3 on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Sun, 09 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/d3/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Maps and map projections</title>
+      <link>/project/maps/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/maps/</guid>
+      <description>&lt;p&gt;Maps in &lt;a href=&#34;//d3js.org&amp;gt;&#34; title=&#34;D3.js&#34; target=&#34;_blank&#34;&gt;D3.js&lt;/a&gt; via my &lt;a href=&#34;http://bl.ocks.org/espinielli&amp;gt;&#34; title=&#34;Enrico Spinielli&#39;s blocks&#34; target=&#34;_blank&#34;&gt;bl.ocks&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bl.ocks.org/espinielli/9ea56e041f6847dbe944&amp;gt;&#34; title=&#34;Boetti&#39;s map in D3.js&#34; target=&#34;_blank&#34;&gt;Boetti&lt;/a&gt;
+&lt;img src=&#34;/img/boetti-d3.png&#34; alt=&#34;Boetti&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bl.ocks.org/espinielli/78185d7b29948d105634beb7bcc0d34b&amp;gt;&#34; title=&#34;Flags of the USA&#34; target=&#34;_blank&#34;&gt;Flags of the USA&lt;/a&gt;
+&lt;img src=&#34;/img/usa-flags-d3.png&#34; alt=&#34;Flags of the USA&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Earth in a Cube &lt;a href=&#34;https://bl.ocks.org/espinielli/1018c88657010f8ee93ea4224652e3cf&amp;gt;&#34; title=&#34;Earth in a cube, 1&#34; target=&#34;_blank&#34;&gt;I&lt;/a&gt;, &lt;a href=&#34;https://bl.ocks.org/espinielli/0c130de06ee3c01c0a63ba9ce06bc7bd&amp;gt;&#34; title=&#34;Earth in a cube, 2&#34; target=&#34;_blank&#34;&gt;II&lt;/a&gt; and &lt;a href=&#34;https://bl.ocks.org/espinielli/cf662b91b58da57aecc8125649d84604&amp;gt;&#34; title=&#34;Earth in a cube, 3&#34; target=&#34;_blank&#34;&gt;III&lt;/a&gt;
+&lt;img src=&#34;/img/earth-in-a-cube-3.png&#34; alt=&#34;Earth in a cube&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bl.ocks.org/espinielli/5689783&amp;gt;&#34; title=&#34;Cahill-Keyes map projection in D3.js&#34; target=&#34;_blank&#34;&gt;Cahill-Keyes map projection&lt;/a&gt;
+&lt;img src=&#34;/img/ck-d3.png&#34; alt=&#34;Cahill-Keys&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
