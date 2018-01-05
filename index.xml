@@ -11,6 +11,73 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>ErgoDox keyboard</title>
+      <link>/2018/01/03/ergodox-keyboard/</link>
+      <pubDate>Wed, 03 Jan 2018 15:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/03/ergodox-keyboard/</guid>
+      <description>&lt;p&gt;Now that I have a new blog setup, I can more quickly post what has been since long time in the making: my ErgoDox keyboard.&lt;/p&gt;
+&lt;p&gt;It all started with me reading &lt;a href=&#34;http://steve-yegge.blogspot.be/2008/09/programmings-dirtiest-little-secret.html&#34;&gt;Steve Yegge’s blog on touch typing&lt;/a&gt; and being convinced I should give it a try with a proper keyboard.&lt;/p&gt;
+&lt;p&gt;So on 2014-03-24 I joined a &lt;a href=&#34;https://www.massdrop.com/buy/ergodox&#34;&gt;Massdrop purchase&lt;/a&gt; for an DIY ErgoDox split keyboard. It completed a week later and delivery was done somewhat end of May.&lt;/p&gt;
+&lt;p&gt;The kit contained:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 x PCB&lt;/li&gt;
+&lt;li&gt;10 x Acrylic case Plates&lt;/li&gt;
+&lt;li&gt;1 x Teensy USB Board, Version 2&lt;/li&gt;
+&lt;li&gt;1 x MCP23018 I/O expander&lt;/li&gt;
+&lt;li&gt;2 x 3.5mm TRRS connector&lt;/li&gt;
+&lt;li&gt;1 x USB mini B plug&lt;/li&gt;
+&lt;li&gt;1 x 0.1uF ceramic capacitor&lt;/li&gt;
+&lt;li&gt;76 x 1N4148W-7-F diode (surface-mount)&lt;/li&gt;
+&lt;li&gt;1 x 2.2k ohm resistor&lt;/li&gt;
+&lt;li&gt;3 x 3mm T1 LED&lt;/li&gt;
+&lt;li&gt;2 x 220 ohm resistor&lt;/li&gt;
+&lt;li&gt;76 x Cherry MX switch&lt;/li&gt;
+&lt;li&gt;2 x USB cable Male A to male mini B&lt;/li&gt;
+&lt;li&gt;1 x TRRS cable&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;14 x Case screws/nuts&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/ed-kit.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On 2014-05-30 I also joined a keycaps drop and ordered the day later:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clear Ergodox DCS Keycaps (76 keys) &lt;img src=&#34;/img/clear-keycaps.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally on 2014-08-20 I joined a Grifiti ErgoDox Wrist Rest drop.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/MD-15532_20160203111121_48a0debeb1e9cd0c.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;I followed the instructions at Massdrop (now in the &lt;a href=&#34;https://archive.is/Skgwl&#34;&gt;archive&lt;/a&gt;, see &lt;a href=&#34;https://www.ergodox.io/#guide&#34;&gt;these&lt;/a&gt; too to have an idea)&lt;/p&gt;
+&lt;p&gt;Initially progress has been very slow at the beginning on my side. I had to dig out of some boxes my old soldering iron…&lt;/p&gt;
+&lt;p&gt;I started with the USB connector.&lt;/p&gt;
+&lt;p&gt;It has been immediately evident that soldering SMD diodes is a pain in the neck: they are so tiny (3 mm long, 1.5 mm wide) and my tools/eyes not really up to the task.&lt;/p&gt;
+&lt;p&gt;So I went to the VUB University &lt;a href=&#34;http://www.fablab-brussels.be/fablab-english/&#34;&gt;Fablab&lt;/a&gt;: on Wednesdays it is open to the public. I did some ten/twenty SMD diodes.&lt;/p&gt;
+&lt;p&gt;Then I continued with my little iron but soon after it failed miserably of old age. So I could not solder any more. My Eurocontrol collegue “Tasso” to the rescue: he provided with a new iron and then work could continue.&lt;/p&gt;
+&lt;p&gt;But kids’ summer holidays were now over so no more time for me to tinker! It’ll all have to wait 2015.&lt;/p&gt;
+&lt;p&gt;Now in July 2015 all started again, the pain continued thanks to those little tiny SMD diodes and them being 76! Pain, pain, pain.&lt;/p&gt;
+&lt;p&gt;I did a small test completing first a column on the left side and a few keys on the right half, loaded the firmaware: it all worked. So now &lt;em&gt;just&lt;/em&gt; a matter of finishing up. But again time was up…completion had to wait for next summer holidays.&lt;/p&gt;
+&lt;p&gt;Summer 2016 was great: I finished everything up and was ready to try it.&lt;/p&gt;
+&lt;p&gt;Buuuum! Some keys were not working.&lt;/p&gt;
+&lt;p&gt;Soon I noticed that it was a full column and then I inspected my soldering and found that on one of the keys it was really a mess. A quick fix made it all work correctly!!!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SUCCESS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I decided to keep a QWERTY layout, but I have not yet really execised for touch typing. That seems to need so much commitment!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Blog Engine</title>
+      <link>/2018/01/02/new-blog-engine/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/02/new-blog-engine/</guid>
+      <description>&lt;p&gt;I finally decided to give it a try and then switched to &lt;code&gt;blogdown&lt;/code&gt; (&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;here the free book&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;I sort of followed the migration suggestions in the book, but when I tried to switch to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34;&gt;Netlify&lt;/a&gt; I got everyting messed up with my OVH setup so I am still with Github Pages…one step at a time…&lt;/p&gt;
+&lt;p&gt;I hope this setup will lower the barrier and allow me to blog and share more.&lt;/p&gt;
+&lt;p&gt;I am already looking forward to using the amazing features provided by Hugo, e.g. &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. So if I want to cite one of my tweets I simply use &lt;code&gt;blogdown::shortcode(...)&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Platonic Geodesic: a grid from all 5 regular convex polyhedra.&lt;br&gt;Inspired by &lt;a href=&#34;https://twitter.com/mbostock?ref_src=twsrc%5Etfw&#34;&gt;@mbostock&lt;/a&gt; original Geodesic Rainbow&lt;a href=&#34;https://t.co/ohK6LVyDGk&#34;&gt;https://t.co/ohK6LVyDGk&lt;/a&gt; &lt;a href=&#34;https://t.co/7HGQWgiXIG&#34;&gt;pic.twitter.com/7HGQWgiXIG&lt;/a&gt;&lt;/p&gt;&amp;mdash; espinielli (@espinielli) &lt;a href=&#34;https://twitter.com/espinielli/status/917040685437652992?ref_src=twsrc%5Etfw&#34;&gt;October 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Data science and R</title>
       <link>/project/r-and-co/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
@@ -1352,44 +1419,6 @@ But here we are limited by our IT infrastructure, the framework contract we have
 &lt;p&gt;Few friends working at the same big Internet company (both in USA and Europe) told me that they were not surprised of the outcome because, even if they think I could have made it, the whole selection process is skewed towards the negative: it only takes one &lt;em&gt;no&lt;/em&gt; from the interview panel to get a negative feedback.&lt;/p&gt;
 
 &lt;p&gt;Well, I am sure I got more than one &lt;em&gt;no&lt;/em&gt;!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>on revising</title>
-      <link>/2013/05/13/on-revising/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/05/13/on-revising/</guid>
-      <description>Lately I found myself involved into writing.
-
-And I have been often cought into the vicious cycle of revising my (or other&#39;s) text without
-really understanding how to do it properly and when to stop.
-
-
-I want to summarize some of the advise I found on the web.
-
-I put it here for me to find it again and share.
-
-Let&#39;s first paraphrase the famous &lt;a href=&#34;http://en.wikipedia.org/wiki/Grook&#34;&gt;grook&lt;/a&gt;
-from &lt;a href=&#34;http://en.wikipedia.org/wiki/Piet_Hein_(scientist)&#34;&gt;Piet Hein&lt;/a&gt;:
-
-&lt;blockquote&gt;THE ROAD TO WRITING?&lt;br /&gt;Well, it&#39;s plain&lt;br /&gt;and simple to express.&lt;br /&gt;revise and revise and revise again,&lt;br /&gt;but less and less and less.&lt;/blockquote&gt;
-
-I found an interesting &lt;a href=&#34;http://www.exampler.com/old-blog/2004/#two-sentences&#34;&gt;post&lt;/a&gt;
-by &lt;a href=&#34;http://en.wikipedia.org/wiki/Brian_Marick&#34;&gt;Brian Marick&lt;/a&gt;.
-&lt;br/&gt;(And for now I reformat it here for my own use. But I will revise it later ;-)&lt;br/&gt;&lt;br /&gt;&lt;br /&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;If a sentence is unclear&lt;/b&gt;, do not fix it by adding more words. &lt;b&gt;Fix it by splitting it into two sentences&lt;/b&gt;. Then maybe add a third.&lt;/li&gt;&lt;li&gt;&lt;b&gt;If a paragraph is unclear&lt;/b&gt;, do not fix it by adding more sentences. First look earlier in the piece. Can you find a place to add a few sentences that will make the later idea clearer? Perhaps you can rule out an interpretation that will later cause confusion. &lt;b&gt;Write text to head off the problem&lt;/b&gt;, then return to adjust the guilty paragraph.&lt;/li&gt;&lt;li&gt;&lt;b&gt;If an idea or procedure is complicated&lt;/b&gt;, don&#39;t add more words explaining it. &lt;b&gt;Add an example&lt;/b&gt;. If the example is too complicated, don&#39;t add more words explaining it. Precede it with a simpler example, then change the explanation of the complicated example to focus on what it adds to the simpler one.&lt;/li&gt;&lt;li&gt;&lt;b&gt;If you use change tracking, turn display of changes off&lt;/b&gt;. You won&#39;t be able to make the new text read well if it&#39;s all mixed up with the old text.&lt;/li&gt;&lt;li&gt;&lt;b&gt;After you change a sentence, leave it aside for a while&lt;/b&gt;, then come back and reread at least the whole paragraph that contains it. Then tweak the sentence to make it fit better into its environment.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&amp;nbsp;How do you find what needs revision?&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Can you turn that bullet list into one or more paragraphs?&lt;/b&gt; Bullet lists are, on average, easier for writers but harder for readers. They&#39;re easier for writers because you don&#39;t have to worry about transitions between one idea and the next. They&#39;re harder for readers because there are no transitions guiding them from one idea to the next. Will their eyes glaze over because you&#39;re not providing them with a sense of flow?&lt;/li&gt;&lt;li&gt;&lt;b&gt;Read your text aloud&lt;/b&gt;. You don&#39;t have to write like you speak, but reading aloud changes your perspective. Awkwardness will jump out at you.  Reading aloud is one way to get some distance, to separate the piece from your memory of writing it.&lt;br /&gt;&lt;b&gt;Putting it aside for a day or, better, a week&lt;/b&gt; does the same thing.&lt;br /&gt;I find that &lt;b&gt;reading a printed copy helps&lt;/b&gt; me see things I don&#39;t see on a screen.&lt;br /&gt;&lt;br /&gt;Can you find other tricks?&lt;br /&gt;Richard P. Gabriel tells the story of one writer who would tape his work to a wall, go to the other side of the room, and read it through binoculars.&lt;br /&gt;&lt;br /&gt;Print the piece with a wide margin on one side. Next to each paragraph, &lt;b&gt;scribble a few words about the paragraph&#39;s topic. Now read the scribbles&lt;/b&gt;. Do they form a progression of thought, a developing story of explanation? Or are they more like a bunch of thoughts hitched together in any old order? If so, shuffle them into a better order. (Some people cut the paragraphs out and move them around; I usually draw arrows from where the paragraph is to where it should go. I suspect the other people do better.) &lt;br /&gt;&lt;br /&gt;Sometimes you read a piece where a particular secondary idea or clever chunk of text seems to have undue importance. It&#39;s almost as if the piece were distorted to find a way to make that gem fit. That&#39;s usually because it was. The gem came first, the piece grew away from it, but the author forced it to stay. &lt;b&gt;Ask what your favorite bit of the piece is, then throw it out&lt;/b&gt; - or at least consider how the piece would read if you dropped it. I find this useful to do when I get bogged down during writing.&lt;/li&gt;&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Automatically extracting bomb drops from the Blitz Bomb Census maps</title>
-      <link>/2012/05/19/automatically-extracting-bomb-drops/</link>
-      <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/2012/05/19/automatically-extracting-bomb-drops/</guid>
-      <description>I just finished &lt;a href=&#34;http://en.wikipedia.org/wiki/Blackout/All_Clear&#34;&gt;Blackout by Connie Willis&lt;/a&gt;&amp;nbsp;and I was wondering where she did get all the exact times when the air raids of The Blitz were happening.&lt;br /&gt;I am curious because I was thinking that a timeline map would give a visual effect of the huge destruction and hard times the Londoners had to go through...so I googled for it and found the following:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;a nice &lt;a href=&#34;http://blitzbombcensusmaps.wordpress.com/&#34;&gt;research blog&lt;/a&gt;&amp;nbsp;which uses the &lt;a href=&#34;http://www.nationalarchives.gov.uk/records/research-guides/maps-bomb-census-survey.htm&#34;&gt;Blitz Bomb Census&lt;/a&gt; from &lt;a href=&#34;http://www.nationalarchives.gov.uk/&#34;&gt;The National Archives&lt;/a&gt;&lt;/li&gt;&lt;li&gt;a &lt;a href=&#34;http://www.guardian.co.uk/news/datablog/2010/sep/06/london-blitz-bomb-map-september-7-1940&#34;&gt;blog entry&lt;/a&gt; from the Guardian about the first day - and data - of the Blitz over London.&lt;br /&gt;&amp;nbsp;Here the source of info is the &lt;a href=&#34;http://www.cityoflondon.gov.uk/Corporation/LGNL_Services/Leisure_and_culture/Records_and_archives/&#34;&gt;London Metropolitan Archives&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;Both examples show nice data visualization opportunities, but they both show how difficult it is to obtain data. Digital access to historical data could triggers a blossoming of applications!&lt;br /&gt;&lt;br /&gt;Anyway I experimented with the little &lt;a href=&#34;http://blitzbombcensusmaps.files.wordpress.com/2012/04/example-of-the-aggregate-maps.jpg&#34;&gt;map&lt;/a&gt;&amp;nbsp;from the first blog and wrote a little program using &lt;a href=&#34;http://simplecv.org/&#34;&gt;SimpleCV&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;This is were I started from:&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-TCP_DXTqInE/T7d2mtikd7I/AAAAAAAAAuA/lEMv3-q6Ez0/s1600/the_blitz.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;175&#34; src=&#34;http://1.bp.blogspot.com/-TCP_DXTqInE/T7d2mtikd7I/AAAAAAAAAuA/lEMv3-q6Ez0/s320/the_blitz.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;and this is what I got (without too much work, I must admit):&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-Ah6GjORTdBU/T7d261ibIcI/AAAAAAAAAuI/giWlVstQcp0/s1600/the_blitz_highlighted_bombs.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;175&#34; src=&#34;http://4.bp.blogspot.com/-Ah6GjORTdBU/T7d261ibIcI/AAAAAAAAAuI/giWlVstQcp0/s320/the_blitz_highlighted_bombs.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;The code is quite simple and the parameters could be changed to get higher accuracy.&lt;br /&gt;&lt;br /&gt;&lt;pre class=&#34;brush:python&#34;&gt;blz = Image(&#34;./sampleimages/the_blitz.png&#34;)&lt;br /&gt;img = blz.copy()&lt;br /&gt;dist = img.colorDistance(SimpleCV.Color.WHITE)&lt;br /&gt;dist.dilate(2)&lt;br /&gt;&lt;br /&gt;segmented = dist.stretch(240, 255)&lt;br /&gt;blobs = segmented.findBlobs()&lt;br /&gt;if blobs:&lt;br /&gt; circles = blobs.filter([b.isCircle(0.6) for b in blobs])&lt;br /&gt; for c in circles:&lt;br /&gt;  img.drawCircle((c.x, c.y),&lt;br /&gt;                 c.radius(),&lt;br /&gt;                 SimpleCV.Color.YELLOW,&lt;br /&gt;                 2)&lt;br /&gt; img.show()&lt;br /&gt;&lt;br /&gt;&lt;/pre&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCore.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCoreDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;   &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;   &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;   &lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;    SyntaxHighlighter.config.bloggerMode = true;     SyntaxHighlighter.all(); &lt;/script&gt;
 </description>
     </item>
     

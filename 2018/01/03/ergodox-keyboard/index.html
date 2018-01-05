@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="/2015/08/08/learning-reactive-vega/">
+  <link rel="canonical" href="/2018/01/03/ergodox-keyboard/">
 
   
 
-  <title>Learning Vega 2.0 a.k.a. Reactive Vega | Enrico&#39;s Blog</title>
+  <title>ErgoDox keyboard | Enrico&#39;s Blog</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -157,14 +157,14 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Learning Vega 2.0 a.k.a. Reactive Vega</h1>
+    <h1 itemprop="name">ErgoDox keyboard</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2015-08-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      2015 August  8 00:00 UTC
+    <time datetime="2018-01-03 15:00:00 &#43;0000 UTC" itemprop="datePublished">
+      2018 January  3 15:00 UTC
     </time>
   </span>
 
@@ -176,16 +176,7 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/tags/vega">vega</a
-    >, 
-    
-    <a href="/tags/grammar-of-graphics">Grammar of graphics</a
-    >, 
-    
-    <a href="/tags/d3.js">D3.js</a
-    >, 
-    
-    <a href="/tags/grammar-of-interaction">Grammar of interaction</a
+    <a href="/tags/keyboard">keyboard</a
     >
     
   </span>
@@ -198,35 +189,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2f2015%2f08%2f08%2flearning-reactive-vega%2f"
+         href="https://www.facebook.com/sharer.php?u=%2f2018%2f01%2f03%2fergodox-keyboard%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Learning%20Vega%202.0%20a.k.a.%20Reactive%20Vega&amp;url=%2f2015%2f08%2f08%2flearning-reactive-vega%2f"
+         href="https://twitter.com/intent/tweet?text=ErgoDox%20keyboard&amp;url=%2f2018%2f01%2f03%2fergodox-keyboard%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2015%2f08%2f08%2flearning-reactive-vega%2f&amp;title=Learning%20Vega%202.0%20a.k.a.%20Reactive%20Vega"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2018%2f01%2f03%2fergodox-keyboard%2f&amp;title=ErgoDox%20keyboard"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2f2015%2f08%2f08%2flearning-reactive-vega%2f&amp;title=Learning%20Vega%202.0%20a.k.a.%20Reactive%20Vega"
+         href="http://service.weibo.com/share/share.php?url=%2f2018%2f01%2f03%2fergodox-keyboard%2f&amp;title=ErgoDox%20keyboard"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Learning%20Vega%202.0%20a.k.a.%20Reactive%20Vega&amp;body=%2f2015%2f08%2f08%2flearning-reactive-vega%2f">
+         href="mailto:?subject=ErgoDox%20keyboard&amp;body=%2f2018%2f01%2f03%2fergodox-keyboard%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -239,119 +230,48 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<style>
-h1 ~ aside {
-  font-size: small;
-  right: 0;
-  position: absolute;
-  width: 180px;
-}
-</style>
-
-<h2 id="a-grammar-of-graphics">A Grammar of Graphics</h2>
-
-<p>Vega 2.0 adds a <em>grammar of interaction</em> to the <em>grammar of graphics</em> implemented in Vega 1.0.</p>
-
-<p>When you say <em>grammar of graphics</em> all roads bring you to</p>
-
-<blockquote>
-<p>Leland Wilkinson
-<a href="http://books.google.com/books/about/The_Grammar_of_Graphics.html?id=_kRX4LoFfGQC" target="_blank">The Grammar of Graphics</a>
-Springer Science &amp; Business Media, Jul 15, 2005</p>
-</blockquote>
-
-<p>But given <a href="http://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/" target="_blank">the price of 100+ USD</a>,
-I am not even thinking of getting my hands on it.</p>
-
-<p>So the next thing you can look at is who has build upon this conceptual framework.
-And then we bump into</p>
-
-<blockquote>
-<p>Hadley Wickham.
-A layered grammar of graphics.
-Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, 2010.
-<a href="http://vita.had.co.nz/papers/layered-grammar.html" target="_blank">http://vita.had.co.nz/papers/layered-grammar.html</a></p>
-</blockquote>
-
-<p>which implements a (layered) grammar of graphics as a package for the excellent
-<a href="https://www.r-project.org/" target="_blank">R language</a>.
-The article in the &ldquo;Conclusions&rdquo; section raises the question of how to add interaction to the <code>ggplot2</code> framework.</p>
-
-<h2 id="and-a-grammar-of-interaction">&hellip; and a Grammar of Interaction</h2>
-
-<p>Moving to Vega, from its own site</p>
-
-<blockquote>
-<p>Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs</p>
-</blockquote>
-
-<p>The <em>interactive</em> was not present in the first implementation as of Apr 2014, it has been added and publicly described in</p>
-
-<blockquote>
-<p>Arvind Satyanarayan, Kanit Wongsuphasawat, Jeffrey Heer
-Declarative Interaction Design for Data Visualization
-ACM User Interface Software &amp; Technology (UIST), 2014,
-<a href="http://idl.cs.washington.edu/papers/reactive-vega" target="_blank">http://idl.cs.washington.edu/papers/reactive-vega</a></p>
-</blockquote>
-
-<p>The companion video explains things further:</p>
-
-<iframe class="player" src="//player.vimeo.com/video/100936827" width="630" height="354" frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1"></iframe>
-
-<h2 id="and-now-let-s-use-it">And now let&rsquo;s use it</h2>
-
-<p>All that reading is ok but without doing I do not fully get it (and even then &hellip; ;-)
-I need <a href="http://bost.ocks.org/mike/example/" target="_blank">examples</a></p>
-
-<p>So the <a href="https://github.com/vega/vega/wiki/Tutorial" target="_blank">Vega tutorial</a> is a very good starting point
-(and like all tutorials <a href="https://github.com/vega/vega/issues/308" target="_blank">it can be perfected</a> by
-<a href="https://github.com/vega/vega/issues/308#issuecomment-125266356" target="_blank">inspirational minds</a>),
-as well as the interactive and non examples in the <a href="http://vega.github.io/vega-editor/?spec=bar" target="_blank">Vega Editor</a>.</p>
-
-<p>Here of course you have less textual description about the what&rsquo;s and why&rsquo;s.</p>
-
-<p>The tutorial shows you how to build a (vertical) bar chart. Here it is:</p>
-
-<iframe src="https://cdn.rawgit.com/espinielli/358d490182efc1beace5/raw/87428be8d9493ae67c1909162a4a5bf2fd05d063/index.html"
-    width="250px" height="450px" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
-
-<p>So as my homework I implemented what requested as en exercise at the end of the tutorial.
-That is</p>
-
-<p>&ldquo;convert the (vertical) bar plot
-to an horizontal one&rdquo;</p>
-
-<p>Here it is:</p>
-
-<iframe src="https://cdn.rawgit.com/espinielli/64b0be9bc33d1405bc92/raw/ab9d7be1b4fa9ab72d40555803579896bf7815fc/index.html"
-    width="450px" height="250px" border="1px solid #DEDEDE" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
-
-<p>The interactive bit in both blocks is evident when you hover your mouse on the bars and the relevant amount is textually shown.
-Simple and it renders the concept.</p>
-
-<p>And finally a little example with yearly number of flight in Europe:</p>
-
-<iframe src="https://cdn.rawgit.com/espinielli/87047968c67c02dbcb8d/raw/a570dc7500c87f3fc6cba48a62d12725bfc2e4c5/index.html"
-    width="480px" height="180px" border="1px solid #DEDEDE" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
-<p>The following questions remain for me:</p>
-
-<ol>
-<li><p>How to I pad the graph so that my boundary point are not so close to the axes?
-This <a href="https://github.com/vega/vega/issues/104" target="_blank">issue</a> calls for an offset to be added to the spec.</p></li>
-
-<li><p>How do I link events from widgets external to the graph to interactions in the graph?
-(Here I think the <a href="http://idl.cs.washington.edu/papers/reactive-vega" target="_blank">Reactive Vega</a>
-supplemental material, i.e. <code>ex_jobs.json</code>, watch at min 3:19 of reactive vega video above, will help,
-as well as <a href="https://github.com/vega/vega/wiki/Signals#user-content-event-stream-selectors" target="_blank">CSS selector for Signals</a>
-in the Vega documentation)</p></li>
-</ol>
-
-<p>If you want to daydream and see the potentials of Vega watch the recent conference presentation from Prof. Jeffrey Heer:</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GdoDLuPe-Wg" frameborder="0" allowfullscreen></iframe>
+      <p>Now that I have a new blog setup, I can more quickly post what has been since long time in the making: my ErgoDox keyboard.</p>
+<p>It all started with me reading <a href="http://steve-yegge.blogspot.be/2008/09/programmings-dirtiest-little-secret.html">Steve Yegge’s blog on touch typing</a> and being convinced I should give it a try with a proper keyboard.</p>
+<p>So on 2014-03-24 I joined a <a href="https://www.massdrop.com/buy/ergodox">Massdrop purchase</a> for an DIY ErgoDox split keyboard. It completed a week later and delivery was done somewhat end of May.</p>
+<p>The kit contained:</p>
+<ul>
+<li>2 x PCB</li>
+<li>10 x Acrylic case Plates</li>
+<li>1 x Teensy USB Board, Version 2</li>
+<li>1 x MCP23018 I/O expander</li>
+<li>2 x 3.5mm TRRS connector</li>
+<li>1 x USB mini B plug</li>
+<li>1 x 0.1uF ceramic capacitor</li>
+<li>76 x 1N4148W-7-F diode (surface-mount)</li>
+<li>1 x 2.2k ohm resistor</li>
+<li>3 x 3mm T1 LED</li>
+<li>2 x 220 ohm resistor</li>
+<li>76 x Cherry MX switch</li>
+<li>2 x USB cable Male A to male mini B</li>
+<li>1 x TRRS cable</li>
+<li><p>14 x Case screws/nuts</p>
+<p><img src="/img/ed-kit.png" /><!-- --></p></li>
+</ul>
+<p>On 2014-05-30 I also joined a keycaps drop and ordered the day later:</p>
+<ul>
+<li>Clear Ergodox DCS Keycaps (76 keys) <img src="/img/clear-keycaps.jpg" /><!-- --></li>
+</ul>
+<p>Finally on 2014-08-20 I joined a Grifiti ErgoDox Wrist Rest drop.</p>
+<p><img src="/img/MD-15532_20160203111121_48a0debeb1e9cd0c.jpg" /><!-- --></p>
+<p>I followed the instructions at Massdrop (now in the <a href="https://archive.is/Skgwl">archive</a>, see <a href="https://www.ergodox.io/#guide">these</a> too to have an idea)</p>
+<p>Initially progress has been very slow at the beginning on my side. I had to dig out of some boxes my old soldering iron…</p>
+<p>I started with the USB connector.</p>
+<p>It has been immediately evident that soldering SMD diodes is a pain in the neck: they are so tiny (3 mm long, 1.5 mm wide) and my tools/eyes not really up to the task.</p>
+<p>So I went to the VUB University <a href="http://www.fablab-brussels.be/fablab-english/">Fablab</a>: on Wednesdays it is open to the public. I did some ten/twenty SMD diodes.</p>
+<p>Then I continued with my little iron but soon after it failed miserably of old age. So I could not solder any more. My Eurocontrol collegue “Tasso” to the rescue: he provided with a new iron and then work could continue.</p>
+<p>But kids’ summer holidays were now over so no more time for me to tinker! It’ll all have to wait 2015.</p>
+<p>Now in July 2015 all started again, the pain continued thanks to those little tiny SMD diodes and them being 76! Pain, pain, pain.</p>
+<p>I did a small test completing first a column on the left side and a few keys on the right half, loaded the firmaware: it all worked. So now <em>just</em> a matter of finishing up. But again time was up…completion had to wait for next summer holidays.</p>
+<p>Summer 2016 was great: I finished everything up and was ready to try it.</p>
+<p>Buuuum! Some keys were not working.</p>
+<p>Soon I noticed that it was a full column and then I inspected my soldering and found that on one of the keys it was really a mess. A quick fix made it all work correctly!!!!</p>
+<p><strong>SUCCESS</strong></p>
+<p>I decided to keep a QWERTY layout, but I have not yet really execised for touch typing. That seems to need so much commitment!</p>
 
     </div>
   </div>
@@ -362,13 +282,10 @@ in the Vega documentation)</p></li>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/"><span
-      aria-hidden="true">&larr;</span> How to add a new chart type to dc.js</a></li>
+    <li class="previous"><a href="/2018/01/02/new-blog-engine/"><span
+      aria-hidden="true">&larr;</span> New Blog Engine</a></li>
     
 
-    
-    <li class="next"><a href="/2016/04/02/dvd2tablet/">DVD to Android Tablet <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

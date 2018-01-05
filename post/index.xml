@@ -7,8 +7,75 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
-    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jan 2018 15:00:00 +0000</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ErgoDox keyboard</title>
+      <link>/2018/01/03/ergodox-keyboard/</link>
+      <pubDate>Wed, 03 Jan 2018 15:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/03/ergodox-keyboard/</guid>
+      <description>&lt;p&gt;Now that I have a new blog setup, I can more quickly post what has been since long time in the making: my ErgoDox keyboard.&lt;/p&gt;
+&lt;p&gt;It all started with me reading &lt;a href=&#34;http://steve-yegge.blogspot.be/2008/09/programmings-dirtiest-little-secret.html&#34;&gt;Steve Yegge’s blog on touch typing&lt;/a&gt; and being convinced I should give it a try with a proper keyboard.&lt;/p&gt;
+&lt;p&gt;So on 2014-03-24 I joined a &lt;a href=&#34;https://www.massdrop.com/buy/ergodox&#34;&gt;Massdrop purchase&lt;/a&gt; for an DIY ErgoDox split keyboard. It completed a week later and delivery was done somewhat end of May.&lt;/p&gt;
+&lt;p&gt;The kit contained:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 x PCB&lt;/li&gt;
+&lt;li&gt;10 x Acrylic case Plates&lt;/li&gt;
+&lt;li&gt;1 x Teensy USB Board, Version 2&lt;/li&gt;
+&lt;li&gt;1 x MCP23018 I/O expander&lt;/li&gt;
+&lt;li&gt;2 x 3.5mm TRRS connector&lt;/li&gt;
+&lt;li&gt;1 x USB mini B plug&lt;/li&gt;
+&lt;li&gt;1 x 0.1uF ceramic capacitor&lt;/li&gt;
+&lt;li&gt;76 x 1N4148W-7-F diode (surface-mount)&lt;/li&gt;
+&lt;li&gt;1 x 2.2k ohm resistor&lt;/li&gt;
+&lt;li&gt;3 x 3mm T1 LED&lt;/li&gt;
+&lt;li&gt;2 x 220 ohm resistor&lt;/li&gt;
+&lt;li&gt;76 x Cherry MX switch&lt;/li&gt;
+&lt;li&gt;2 x USB cable Male A to male mini B&lt;/li&gt;
+&lt;li&gt;1 x TRRS cable&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;14 x Case screws/nuts&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/ed-kit.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On 2014-05-30 I also joined a keycaps drop and ordered the day later:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clear Ergodox DCS Keycaps (76 keys) &lt;img src=&#34;/img/clear-keycaps.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally on 2014-08-20 I joined a Grifiti ErgoDox Wrist Rest drop.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/MD-15532_20160203111121_48a0debeb1e9cd0c.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;I followed the instructions at Massdrop (now in the &lt;a href=&#34;https://archive.is/Skgwl&#34;&gt;archive&lt;/a&gt;, see &lt;a href=&#34;https://www.ergodox.io/#guide&#34;&gt;these&lt;/a&gt; too to have an idea)&lt;/p&gt;
+&lt;p&gt;Initially progress has been very slow at the beginning on my side. I had to dig out of some boxes my old soldering iron…&lt;/p&gt;
+&lt;p&gt;I started with the USB connector.&lt;/p&gt;
+&lt;p&gt;It has been immediately evident that soldering SMD diodes is a pain in the neck: they are so tiny (3 mm long, 1.5 mm wide) and my tools/eyes not really up to the task.&lt;/p&gt;
+&lt;p&gt;So I went to the VUB University &lt;a href=&#34;http://www.fablab-brussels.be/fablab-english/&#34;&gt;Fablab&lt;/a&gt;: on Wednesdays it is open to the public. I did some ten/twenty SMD diodes.&lt;/p&gt;
+&lt;p&gt;Then I continued with my little iron but soon after it failed miserably of old age. So I could not solder any more. My Eurocontrol collegue “Tasso” to the rescue: he provided with a new iron and then work could continue.&lt;/p&gt;
+&lt;p&gt;But kids’ summer holidays were now over so no more time for me to tinker! It’ll all have to wait 2015.&lt;/p&gt;
+&lt;p&gt;Now in July 2015 all started again, the pain continued thanks to those little tiny SMD diodes and them being 76! Pain, pain, pain.&lt;/p&gt;
+&lt;p&gt;I did a small test completing first a column on the left side and a few keys on the right half, loaded the firmaware: it all worked. So now &lt;em&gt;just&lt;/em&gt; a matter of finishing up. But again time was up…completion had to wait for next summer holidays.&lt;/p&gt;
+&lt;p&gt;Summer 2016 was great: I finished everything up and was ready to try it.&lt;/p&gt;
+&lt;p&gt;Buuuum! Some keys were not working.&lt;/p&gt;
+&lt;p&gt;Soon I noticed that it was a full column and then I inspected my soldering and found that on one of the keys it was really a mess. A quick fix made it all work correctly!!!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SUCCESS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I decided to keep a QWERTY layout, but I have not yet really execised for touch typing. That seems to need so much commitment!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Blog Engine</title>
+      <link>/2018/01/02/new-blog-engine/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/02/new-blog-engine/</guid>
+      <description>&lt;p&gt;I finally decided to give it a try and then switched to &lt;code&gt;blogdown&lt;/code&gt; (&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;here the free book&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;I sort of followed the migration suggestions in the book, but when I tried to switch to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34;&gt;Netlify&lt;/a&gt; I got everyting messed up with my OVH setup so I am still with Github Pages…one step at a time…&lt;/p&gt;
+&lt;p&gt;I hope this setup will lower the barrier and allow me to blog and share more.&lt;/p&gt;
+&lt;p&gt;I am already looking forward to using the amazing features provided by Hugo, e.g. &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. So if I want to cite one of my tweets I simply use &lt;code&gt;blogdown::shortcode(...)&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Platonic Geodesic: a grid from all 5 regular convex polyhedra.&lt;br&gt;Inspired by &lt;a href=&#34;https://twitter.com/mbostock?ref_src=twsrc%5Etfw&#34;&gt;@mbostock&lt;/a&gt; original Geodesic Rainbow&lt;a href=&#34;https://t.co/ohK6LVyDGk&#34;&gt;https://t.co/ohK6LVyDGk&lt;/a&gt; &lt;a href=&#34;https://t.co/7HGQWgiXIG&#34;&gt;pic.twitter.com/7HGQWgiXIG&lt;/a&gt;&lt;/p&gt;&amp;mdash; espinielli (@espinielli) &lt;a href=&#34;https://twitter.com/espinielli/status/917040685437652992?ref_src=twsrc%5Etfw&#34;&gt;October 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Docker image for locally testing Oracle</title>
@@ -1355,24 +1422,6 @@ I like: &lt;a href=&#34;http://en.wikipedia.org/wiki/Alan_Kay&#34; target=&#34;_
 &lt;a href=&#34;http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html&#34; target=&#34;_blank&#34;&gt;SICP&lt;/a&gt;,
 &lt;a href=&#34;http://paulgraham.com/&#34; target=&#34;_blank&#34;&gt;Paul Graham&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>syntax highlight</title>
-      <link>/2012/04/18/this-code-shows-how-to-syntax-highligh/</link>
-      <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/2012/04/18/this-code-shows-how-to-syntax-highligh/</guid>
-      <description>The following example shows how to syntax highligh some snippet of code in a very minimalistic way.&lt;br /&gt;I used it by symlinking to a file in the version control repo and name it in as the argument of&lt;br /&gt;&lt;code&gt;$(&#39;#code-area&#39;).load()&lt;/code&gt; and here it is:  &lt;br /&gt;&lt;pre class=&#34;brush:html&#34;&gt;&lt;html&gt;&lt;br /&gt;&lt;head&gt;&lt;br /&gt;  &lt;title&gt;code higlighted with minimal javascript&lt;/title&gt;&lt;br /&gt;  &lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&#34;&gt;&lt;/script&gt;&lt;br /&gt;  &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/3.0.83/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;br /&gt;  &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/3.0.83/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;br /&gt;  &lt;link href=&#34;http://alexgorbatchev.com/pub/sh/3.0.83/styles/shThemeDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;br /&gt;&lt;/head&gt;&lt;br /&gt;&lt;body&gt;&lt;br /&gt;&lt;h1&gt;&lt;br /&gt;Metacircular code highlighting&lt;/h1&gt;&lt;br /&gt;The following code is an highlighted version of this very page using&lt;br /&gt;&lt;a href=&#34;http://alexgorbatchev.com/SyntaxHighlighter&#34;&gt;SyntaxHighlighter&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;You need a decent modern browser to enjoy it.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;syntaxhighlighter  xml&#34;&gt;&lt;br /&gt;  &lt;pre class=&#34;brush: xml&#34; id=&#34;code-area&#34;&gt;&lt;br /&gt;  &lt;/pre&gt;&lt;/div&gt;&lt;script&gt;  $(&#39;#code-area&#39;).load(&#34;http://pastebin.com/raw.php?i=LP5RTiPx&#34;, function() {      SyntaxHighlighter.autoloader(      &#39;html  http://alexgorbatchev.com/pub/sh/current/3.0.83/scripts/shBrushXml.js&#39;);      SyntaxHighlighter.all();   }); &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;!-- Add Current CSS styles --&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCore.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCoreDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;  &lt;!-- Add Current JS scripts --&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;  &lt;!-- Add Current Brushes --&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;  &lt;!-- Call SyntaxHighlighter --&gt;&lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;    SyntaxHighlighter.config.bloggerMode = true;     SyntaxHighlighter.all(); &lt;/script&gt;</description>
-    </item>
-    
-    <item>
-      <title>Git and RSA identities</title>
-      <link>/2012/02/06/git-and-rsa-identities/</link>
-      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/2012/02/06/git-and-rsa-identities/</guid>
-      <description>Here is the solution I found to be able to use &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;git&lt;/span&gt; with a different RSA identity than the &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;rsa_id&lt;/span&gt; default one.&lt;br /&gt;&lt;br /&gt;My repo on github is &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;logback-android&lt;/span&gt; and my user account is &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;espinielli&lt;/span&gt;.&lt;br /&gt;I did generate an SSH key as per github help and named it &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;github_rsa&lt;/span&gt;:&lt;br /&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &#34;your_email@youremail.com&#34; -f github_rsa&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;I then added the following section in &lt;span style=&#34;font-family: &#39;Courier New&#39;, Courier, monospace;&#34;&gt;~/.ssh/config&lt;/span&gt;&lt;br /&gt;&lt;code&gt;# github for espinielli&lt;br /&gt;Host github&lt;br /&gt;HostName github.com&lt;br /&gt;User espinielli&lt;br /&gt;IdentityFile /Users/espin/.ssh/github_rsa&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;From within the repo directory (I cloned it before via http):&lt;br /&gt;&lt;code&gt;$ git remote add gh ssh://git@github.com/espinielli/logback-android.git&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;And finally I am able to use it like this:&lt;br /&gt;&lt;code&gt;$ git push gh master&lt;/code&gt;</description>
     </item>
     
   </channel>

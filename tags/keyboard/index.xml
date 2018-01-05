@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyboard on Enrico&#39;s Blog</title>
+    <link>/tags/keyboard/</link>
+    <description>Recent content in Keyboard on Enrico&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
+    <lastBuildDate>Wed, 03 Jan 2018 15:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/keyboard/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ErgoDox keyboard</title>
+      <link>/2018/01/03/ergodox-keyboard/</link>
+      <pubDate>Wed, 03 Jan 2018 15:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/03/ergodox-keyboard/</guid>
+      <description>&lt;p&gt;Now that I have a new blog setup, I can more quickly post what has been since long time in the making: my ErgoDox keyboard.&lt;/p&gt;
+&lt;p&gt;It all started with me reading &lt;a href=&#34;http://steve-yegge.blogspot.be/2008/09/programmings-dirtiest-little-secret.html&#34;&gt;Steve Yegge’s blog on touch typing&lt;/a&gt; and being convinced I should give it a try with a proper keyboard.&lt;/p&gt;
+&lt;p&gt;So on 2014-03-24 I joined a &lt;a href=&#34;https://www.massdrop.com/buy/ergodox&#34;&gt;Massdrop purchase&lt;/a&gt; for an DIY ErgoDox split keyboard. It completed a week later and delivery was done somewhat end of May.&lt;/p&gt;
+&lt;p&gt;The kit contained:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 x PCB&lt;/li&gt;
+&lt;li&gt;10 x Acrylic case Plates&lt;/li&gt;
+&lt;li&gt;1 x Teensy USB Board, Version 2&lt;/li&gt;
+&lt;li&gt;1 x MCP23018 I/O expander&lt;/li&gt;
+&lt;li&gt;2 x 3.5mm TRRS connector&lt;/li&gt;
+&lt;li&gt;1 x USB mini B plug&lt;/li&gt;
+&lt;li&gt;1 x 0.1uF ceramic capacitor&lt;/li&gt;
+&lt;li&gt;76 x 1N4148W-7-F diode (surface-mount)&lt;/li&gt;
+&lt;li&gt;1 x 2.2k ohm resistor&lt;/li&gt;
+&lt;li&gt;3 x 3mm T1 LED&lt;/li&gt;
+&lt;li&gt;2 x 220 ohm resistor&lt;/li&gt;
+&lt;li&gt;76 x Cherry MX switch&lt;/li&gt;
+&lt;li&gt;2 x USB cable Male A to male mini B&lt;/li&gt;
+&lt;li&gt;1 x TRRS cable&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;14 x Case screws/nuts&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/ed-kit.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On 2014-05-30 I also joined a keycaps drop and ordered the day later:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clear Ergodox DCS Keycaps (76 keys) &lt;img src=&#34;/img/clear-keycaps.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally on 2014-08-20 I joined a Grifiti ErgoDox Wrist Rest drop.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/MD-15532_20160203111121_48a0debeb1e9cd0c.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;I followed the instructions at Massdrop (now in the &lt;a href=&#34;https://archive.is/Skgwl&#34;&gt;archive&lt;/a&gt;, see &lt;a href=&#34;https://www.ergodox.io/#guide&#34;&gt;these&lt;/a&gt; too to have an idea)&lt;/p&gt;
+&lt;p&gt;Initially progress has been very slow at the beginning on my side. I had to dig out of some boxes my old soldering iron…&lt;/p&gt;
+&lt;p&gt;I started with the USB connector.&lt;/p&gt;
+&lt;p&gt;It has been immediately evident that soldering SMD diodes is a pain in the neck: they are so tiny (3 mm long, 1.5 mm wide) and my tools/eyes not really up to the task.&lt;/p&gt;
+&lt;p&gt;So I went to the VUB University &lt;a href=&#34;http://www.fablab-brussels.be/fablab-english/&#34;&gt;Fablab&lt;/a&gt;: on Wednesdays it is open to the public. I did some ten/twenty SMD diodes.&lt;/p&gt;
+&lt;p&gt;Then I continued with my little iron but soon after it failed miserably of old age. So I could not solder any more. My Eurocontrol collegue “Tasso” to the rescue: he provided with a new iron and then work could continue.&lt;/p&gt;
+&lt;p&gt;But kids’ summer holidays were now over so no more time for me to tinker! It’ll all have to wait 2015.&lt;/p&gt;
+&lt;p&gt;Now in July 2015 all started again, the pain continued thanks to those little tiny SMD diodes and them being 76! Pain, pain, pain.&lt;/p&gt;
+&lt;p&gt;I did a small test completing first a column on the left side and a few keys on the right half, loaded the firmaware: it all worked. So now &lt;em&gt;just&lt;/em&gt; a matter of finishing up. But again time was up…completion had to wait for next summer holidays.&lt;/p&gt;
+&lt;p&gt;Summer 2016 was great: I finished everything up and was ready to try it.&lt;/p&gt;
+&lt;p&gt;Buuuum! Some keys were not working.&lt;/p&gt;
+&lt;p&gt;Soon I noticed that it was a full column and then I inspected my soldering and found that on one of the keys it was really a mess. A quick fix made it all work correctly!!!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SUCCESS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I decided to keep a QWERTY layout, but I have not yet really execised for touch typing. That seems to need so much commitment!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
