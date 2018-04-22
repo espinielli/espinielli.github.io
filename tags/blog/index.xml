@@ -2,33 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Enrico&#39;s Blog</title>
-    <link>/tags/blog/</link>
+    <link>http://enrico.spinielli.net/tags/blog/</link>
     <description>Recent content in Blog on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Fri, 20 Jan 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/blog/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>LaTeX on Blogger again</title>
-      <link>/2012/01/20/latex-on-blogger-again/</link>
+      <link>http://enrico.spinielli.net/2012/01/20/latex-on-blogger-again/</link>
       <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/01/20/latex-on-blogger-again/</guid>
-      <description>&lt;script type=&#34;text/x-mathjax-config&#34;&gt;MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});&lt;/script&gt; &lt;script src=&#34;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34; type=&#34;text/javascript&#34;&gt; &lt;/script&gt; &lt;a href=&#34;http://ongiantsshoulders.blogspot.com/2009/11/text-on-latex-snippet-in-blogger-from.html&#34;&gt;My previous post&lt;/a&gt;&amp;nbsp;about&amp;nbsp;LaTeX&amp;nbsp;&amp;nbsp;on Blogger&amp;nbsp;reported that the solution described there did not work anymore...&lt;br /&gt;Now I found &lt;a href=&#34;http://irrep.blogspot.com/2011/07/mathjax-in-blogger-ii.html&#34;&gt;a new solution&lt;/a&gt; based on &lt;a href=&#34;http://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;So let&#39;s try it straight away with inline math, like the great equation \(e^{-2\pi}\), and with displayed math like the following:&lt;br /&gt;\[ \left [ - \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi&lt;br /&gt;= i \hbar \frac{\partial}{\partial t} \Psi \]</description>
+      <guid>http://enrico.spinielli.net/2012/01/20/latex-on-blogger-again/</guid>
+      <description>MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});  My previous post&amp;nbsp;about&amp;nbsp;LaTeX&amp;nbsp;&amp;nbsp;on Blogger&amp;nbsp;reported that the solution described there did not work anymore...
+Now I found a new solution based on mathjax.
+So let&#39;s try it straight away with inline math, like the great equation \(e^{-2\pi}\), and with displayed math like the following:
+\[ \left [ - \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi
+= i \hbar \frac{\partial}{\partial t} \Psi \]</description>
     </item>
     
     <item>
       <title>LaTeX on Blogger</title>
-      <link>/2009/11/11/text-on-latex-snippet-in-blogger-from/</link>
+      <link>http://enrico.spinielli.net/2009/11/11/text-on-latex-snippet-in-blogger-from/</link>
       <pubDate>Wed, 11 Nov 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/11/11/text-on-latex-snippet-in-blogger-from/</guid>
-      <description>&lt;p&gt;An inline snippet of LaTeX \(e^{\pi i}+1=0\) in blogger (from &lt;a href=&#34;http://watchmath.com/vlog/?p=438&#34; target=&#34;_blank&#34;&gt;http://watchmath.com/vlog/?p=438&lt;/a&gt; but it now, Oct 2010, shows crap!).&lt;/p&gt;
-
-&lt;p&gt;You can as well have it in display style \[e^{\pi i}+1=0\].&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/11/11/text-on-latex-snippet-in-blogger-from/</guid>
+      <description>An inline snippet of LaTeX \(e^{\pi i}+1=0\) in blogger (from http://watchmath.com/vlog/?p=438 but it now, Oct 2010, shows crap!).
+You can as well have it in display style \[e^{\pi i}+1=0\].</description>
     </item>
     
   </channel>

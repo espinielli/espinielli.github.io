@@ -2,40 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Smalltalk on Enrico&#39;s Blog</title>
-    <link>/tags/smalltalk/</link>
+    <link>http://enrico.spinielli.net/tags/smalltalk/</link>
     <description>Recent content in Smalltalk on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Sat, 26 Mar 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/smalltalk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/smalltalk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>(What was) Croquet is maybe still alive</title>
-      <link>/2011/03/26/what-was-croquet-is-maybe-still-alive/</link>
+      <link>http://enrico.spinielli.net/2011/03/26/what-was-croquet-is-maybe-still-alive/</link>
       <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/03/26/what-was-croquet-is-maybe-still-alive/</guid>
-      <description>&lt;p&gt;It seems there is still some hope to see &lt;a href=&#34;http://www.opencroquet.org/&#34; target=&#34;_blank&#34;&gt;Croquet&lt;/a&gt; (or, &lt;a href=&#34;http://www.opencobalt.org/&#34; target=&#34;_blank&#34;&gt;OpenCobalt&lt;/a&gt; which took off from where Croquet stopped) alive and based on latest &lt;a href=&#34;http://www.squeak.org/&#34; target=&#34;_blank&#34;&gt;Squeak&lt;/a&gt; and more importantly using Cog VM.&lt;/p&gt;
-
-&lt;p&gt;Matthew Fulmer reports it &lt;a href=&#34;http://lists.squeakfoundation.org/pipermail/squeak-dev/2011-March/158209.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The potentials are magical as explained by &lt;a href=&#34;http://inventing-the-future.wetmachine.com/content/controlling-time-teatime&#34; target=&#34;_blank&#34;&gt;Howard Stearns&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2011/03/26/what-was-croquet-is-maybe-still-alive/</guid>
+      <description>It seems there is still some hope to see Croquet (or, OpenCobalt which took off from where Croquet stopped) alive and based on latest Squeak and more importantly using Cog VM.
+Matthew Fulmer reports it here.
+The potentials are magical as explained by Howard Stearns.</description>
     </item>
     
     <item>
       <title>Investigating Pier</title>
-      <link>/2010/10/31/investigating-pier/</link>
+      <link>http://enrico.spinielli.net/2010/10/31/investigating-pier/</link>
       <pubDate>Sun, 31 Oct 2010 00:00:00 +0000</pubDate>
       
-      <guid>/2010/10/31/investigating-pier/</guid>
-      <description>&lt;p&gt;I have been playing around with &lt;a href=&#34;http://www.piercms.com/&#34; target=&#34;_blank&#34;&gt;Pier&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It is fun, especially when you can extend it to show LaTeX formulae (this is still work in progress given I am using the js from &lt;a href=&#34;http://www.mathjax.org/&#34; target=&#34;_blank&#34;&gt;MathJax&lt;/a&gt; [even if forbidden], but hey I wanted a proof of concept!)&lt;/p&gt;
-
-&lt;p&gt;I will try to complete it: whatch out &amp;lsquo;Beautiful Math for Pier&amp;rsquo; on &lt;a href=&#34;http://www.squeaksource.com/&#34; target=&#34;_blank&#34;&gt;squeaksource&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2010/10/31/investigating-pier/</guid>
+      <description>I have been playing around with Pier.
+It is fun, especially when you can extend it to show LaTeX formulae (this is still work in progress given I am using the js from MathJax [even if forbidden], but hey I wanted a proof of concept!)
+I will try to complete it: whatch out &amp;lsquo;Beautiful Math for Pier&amp;rsquo; on squeaksource.</description>
     </item>
     
   </channel>

@@ -2,105 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Enrico&#39;s Blog</title>
-    <link>/tags/python/</link>
+    <link>http://enrico.spinielli.net/tags/python/</link>
     <description>Recent content in Python on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Sun, 09 Jul 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/python/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PyCalCal</title>
-      <link>/project/pycalcal/</link>
+      <link>http://enrico.spinielli.net/project/pycalcal/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/pycalcal/</guid>
+      <guid>http://enrico.spinielli.net/project/pycalcal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automatically extracting bomb drops from the Blitz Bomb Census maps</title>
-      <link>/2012/05/19/automatically-extracting-bomb-drops/</link>
+      <link>http://enrico.spinielli.net/2012/05/19/automatically-extracting-bomb-drops/</link>
       <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/19/automatically-extracting-bomb-drops/</guid>
-      <description>I just finished &lt;a href=&#34;http://en.wikipedia.org/wiki/Blackout/All_Clear&#34;&gt;Blackout by Connie Willis&lt;/a&gt;&amp;nbsp;and I was wondering where she did get all the exact times when the air raids of The Blitz were happening.&lt;br /&gt;I am curious because I was thinking that a timeline map would give a visual effect of the huge destruction and hard times the Londoners had to go through...so I googled for it and found the following:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;a nice &lt;a href=&#34;http://blitzbombcensusmaps.wordpress.com/&#34;&gt;research blog&lt;/a&gt;&amp;nbsp;which uses the &lt;a href=&#34;http://www.nationalarchives.gov.uk/records/research-guides/maps-bomb-census-survey.htm&#34;&gt;Blitz Bomb Census&lt;/a&gt; from &lt;a href=&#34;http://www.nationalarchives.gov.uk/&#34;&gt;The National Archives&lt;/a&gt;&lt;/li&gt;&lt;li&gt;a &lt;a href=&#34;http://www.guardian.co.uk/news/datablog/2010/sep/06/london-blitz-bomb-map-september-7-1940&#34;&gt;blog entry&lt;/a&gt; from the Guardian about the first day - and data - of the Blitz over London.&lt;br /&gt;&amp;nbsp;Here the source of info is the &lt;a href=&#34;http://www.cityoflondon.gov.uk/Corporation/LGNL_Services/Leisure_and_culture/Records_and_archives/&#34;&gt;London Metropolitan Archives&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;Both examples show nice data visualization opportunities, but they both show how difficult it is to obtain data. Digital access to historical data could triggers a blossoming of applications!&lt;br /&gt;&lt;br /&gt;Anyway I experimented with the little &lt;a href=&#34;http://blitzbombcensusmaps.files.wordpress.com/2012/04/example-of-the-aggregate-maps.jpg&#34;&gt;map&lt;/a&gt;&amp;nbsp;from the first blog and wrote a little program using &lt;a href=&#34;http://simplecv.org/&#34;&gt;SimpleCV&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;This is were I started from:&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-TCP_DXTqInE/T7d2mtikd7I/AAAAAAAAAuA/lEMv3-q6Ez0/s1600/the_blitz.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;175&#34; src=&#34;http://1.bp.blogspot.com/-TCP_DXTqInE/T7d2mtikd7I/AAAAAAAAAuA/lEMv3-q6Ez0/s320/the_blitz.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;and this is what I got (without too much work, I must admit):&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-Ah6GjORTdBU/T7d261ibIcI/AAAAAAAAAuI/giWlVstQcp0/s1600/the_blitz_highlighted_bombs.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;175&#34; src=&#34;http://4.bp.blogspot.com/-Ah6GjORTdBU/T7d261ibIcI/AAAAAAAAAuI/giWlVstQcp0/s320/the_blitz_highlighted_bombs.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;The code is quite simple and the parameters could be changed to get higher accuracy.&lt;br /&gt;&lt;br /&gt;&lt;pre class=&#34;brush:python&#34;&gt;blz = Image(&#34;./sampleimages/the_blitz.png&#34;)&lt;br /&gt;img = blz.copy()&lt;br /&gt;dist = img.colorDistance(SimpleCV.Color.WHITE)&lt;br /&gt;dist.dilate(2)&lt;br /&gt;&lt;br /&gt;segmented = dist.stretch(240, 255)&lt;br /&gt;blobs = segmented.findBlobs()&lt;br /&gt;if blobs:&lt;br /&gt; circles = blobs.filter([b.isCircle(0.6) for b in blobs])&lt;br /&gt; for c in circles:&lt;br /&gt;  img.drawCircle((c.x, c.y),&lt;br /&gt;                 c.radius(),&lt;br /&gt;                 SimpleCV.Color.YELLOW,&lt;br /&gt;                 2)&lt;br /&gt; img.show()&lt;br /&gt;&lt;br /&gt;&lt;/pre&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCore.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCoreDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;   &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;   &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;   &lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;    SyntaxHighlighter.config.bloggerMode = true;     SyntaxHighlighter.all(); &lt;/script&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2012/05/19/automatically-extracting-bomb-drops/</guid>
+      <description>I just finished Blackout by Connie Willis&amp;nbsp;and I was wondering where she did get all the exact times when the air raids of The Blitz were happening.
+I am curious because I was thinking that a timeline map would give a visual effect of the huge destruction and hard times the Londoners had to go through...so I googled for it and found the following:
+a nice research blog&amp;nbsp;which uses the Blitz Bomb Census from The National Archivesa blog entry from the Guardian about the first day - and data - of the Blitz over London.</description>
     </item>
     
     <item>
       <title>PyCalCal is out!</title>
-      <link>/2009/10/26/pycalcal-is-out/</link>
+      <link>http://enrico.spinielli.net/2009/10/26/pycalcal-is-out/</link>
       <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/10/26/pycalcal-is-out/</guid>
-      <description>&lt;p&gt;I finally set to put &lt;a href=&#34;http://code.google.com/p/pycalcal/&#34; target=&#34;_blank&#34;&gt;PyCalCal&lt;/a&gt; out in the open.&lt;/p&gt;
-
-&lt;p&gt;I will need to finalize and perfect it but that is a good starting point.&lt;/p&gt;
-
-&lt;p&gt;I also added a &lt;a href=&#34;http://code.google.com/p/pycalcal/&#34; target=&#34;_blank&#34;&gt;demo web app&lt;/a&gt; using it.&lt;/p&gt;
-
-&lt;p&gt;My idea is for PyCalCal to be used as a Python library and as such use it to provide calendrica calculations as web services.&lt;/p&gt;
-
-&lt;p&gt;Stay tuned if you are interested.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/10/26/pycalcal-is-out/</guid>
+      <description>I finally set to put PyCalCal out in the open.
+I will need to finalize and perfect it but that is a good starting point.
+I also added a demo web app using it.
+My idea is for PyCalCal to be used as a Python library and as such use it to provide calendrica calculations as web services.
+Stay tuned if you are interested.</description>
     </item>
     
     <item>
       <title>Scons and noweb</title>
-      <link>/2009/06/14/scons-and-noweb/</link>
+      <link>http://enrico.spinielli.net/2009/06/14/scons-and-noweb/</link>
       <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/06/14/scons-and-noweb/</guid>
-      <description>&lt;p&gt;I was curious to see how I could integrate noweb and Scons.&lt;/p&gt;
-
-&lt;p&gt;You can download my little Sconstruct for this,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/Sconstruct.example&#34; target=&#34;_blank&#34;&gt;Sconstruct.example&lt;/a&gt;.
-It defines two builders. NoWeave is used to produce TeX or LaTeX documents,
-while NoTangle extracts the non-document artefacts, i.e. programs, config files,
-scripts &amp;hellip; It also includes productions for generating a sample program about
-Ackermann function:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;	ackdoc  &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoWeave(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.tex&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
-	ackcode &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
-	acktest &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ackTest.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The noweb source is &lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.nw&#34; target=&#34;_blank&#34;&gt;ack.nw&lt;/a&gt; and
-the companion BibTeX file is
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.bib&#34; target=&#34;_blank&#34;&gt;ack.bib&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It contains the doc chunks describing the function, the source code chunck for
-the relevant Python code and the code chunk for the unit test.&lt;/p&gt;
-
-&lt;p&gt;You can try it out executing&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;	$ scons -f Sconstruct.example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;You will get the following artefacts,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.py&#34; target=&#34;_blank&#34;&gt;ack.py&lt;/a&gt;,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.tex&#34; target=&#34;_blank&#34;&gt;ack.tex&lt;/a&gt;,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ackTest.py&#34; target=&#34;_blank&#34;&gt;ackTest.py&lt;/a&gt; and
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.pdf&#34; target=&#34;_blank&#34;&gt;ack.pdf&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Remember to run BibTeX first&amp;hellip;&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/06/14/scons-and-noweb/</guid>
+      <description>I was curious to see how I could integrate noweb and Scons.
+You can download my little Sconstruct for this, Sconstruct.example. It defines two builders. NoWeave is used to produce TeX or LaTeX documents, while NoTangle extracts the non-document artefacts, i.e. programs, config files, scripts &amp;hellip; It also includes productions for generating a sample program about Ackermann function:
+ackdoc = env.NoWeave(&amp;#39;ack.tex&amp;#39;, &amp;#39;ack.nw&amp;#39;) ackcode = env.NoTangle(&amp;#39;ack.py&amp;#39;, &amp;#39;ack.nw&amp;#39;) acktest = env.NoTangle(&amp;#39;ackTest.py&amp;#39;, &amp;#39;ack.nw&amp;#39;) The noweb source is ack.</description>
     </item>
     
     <item>
       <title>LaTeX, Python and Literate Programming</title>
-      <link>/2009/02/24/latex-python-and-literate-programming/</link>
+      <link>http://enrico.spinielli.net/2009/02/24/latex-python-and-literate-programming/</link>
       <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/02/24/latex-python-and-literate-programming/</guid>
-      <description>&lt;p&gt;In my spare time (a couple of hours per weekend&amp;hellip;!) I am implementing calcal, a Python version of calendrica-3.0.cl, the Common Lisp implementation of the calendars from &lt;a href=&#34;http://www.math.tau.ac.il/%7Enachumd/&#34; target=&#34;_blank&#34;&gt;N. Dershowitz&lt;/a&gt;, &lt;a href=&#34;http://emr.cs.iit.edu/%7Ereingold/&#34; target=&#34;_blank&#34;&gt;E. M. Reingold&lt;/a&gt; &lt;em&gt;&lt;a href=&#34;http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=9780521702386&#34; target=&#34;_blank&#34;&gt;Calendrical Calculations&lt;/a&gt;, 3rd Edition&lt;/em&gt;. (In case you are interested you can find a preview in &lt;a href=&#34;http://enrico.spinielli.googlepages.com/&#34; target=&#34;_blank&#34;&gt;my github repo&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;At some point I decided to go &lt;a href=&#34;http://en.wikipedia.org/wiki/Literate_programming&#34; target=&#34;_blank&#34;&gt;Literate Programming&lt;/a&gt; using &lt;a href=&#34;http://www.cs.tufts.edu/%7Enr/noweb/&#34; target=&#34;_blank&#34;&gt;noweb&lt;/a&gt;. This is an experiment in the experiment but so far it has been a good choice because I can define all I need in the same place and generate documentation, source code (Python, shell scripts &amp;hellip;) from the same source.&lt;/p&gt;
-
-&lt;p&gt;I also found something interesting (on a now disappeared blog &lt;a href=&#34;http://usefreetools.blogspot.com):&#34; target=&#34;_blank&#34;&gt;http://usefreetools.blogspot.com):&lt;/a&gt; &lt;a href=&#34;http://nix-tips.blogspot.com/2008/09/python-inside-latex-and-sage-too.html&#34; target=&#34;_blank&#34;&gt;executing Python from within LaTex&lt;/a&gt;! I could use it to avoid to hardcode results in my doc and just calculate them on the fly&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;The same blog was showing &lt;a href=&#34;http://usefreetools.blogspot.com/2008/07/auto-building-latex-documents-with.html&#34; target=&#34;_blank&#34;&gt;how to build LaTeX docs using SCons&lt;/a&gt;: I will defenitly use it; my Makefile isn&amp;rsquo;t that great nor easy to mantain.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/02/24/latex-python-and-literate-programming/</guid>
+      <description>In my spare time (a couple of hours per weekend&amp;hellip;!) I am implementing calcal, a Python version of calendrica-3.0.cl, the Common Lisp implementation of the calendars from N. Dershowitz, E. M. Reingold Calendrical Calculations, 3rd Edition. (In case you are interested you can find a preview in my github repo.)
+At some point I decided to go Literate Programming using noweb. This is an experiment in the experiment but so far it has been a good choice because I can define all I need in the same place and generate documentation, source code (Python, shell scripts &amp;hellip;) from the same source.</description>
     </item>
     
   </channel>

@@ -2,32 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lisp Metacircular on Enrico&#39;s Blog</title>
-    <link>/tags/lisp-metacircular/</link>
+    <link>http://enrico.spinielli.net/tags/lisp-metacircular/</link>
     <description>Recent content in Lisp Metacircular on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Wed, 18 Apr 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/lisp-metacircular/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/lisp-metacircular/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>metacircularity</title>
-      <link>/2012/04/18/metacircularity/</link>
+      <link>http://enrico.spinielli.net/2012/04/18/metacircularity/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/18/metacircularity/</guid>
-      <description>&lt;p&gt;I found and liked a very good summary of the &amp;lsquo;Maxwell Equations of software&amp;rsquo;
-motto from Alan Kay in
-&lt;a href=&#34;http://www.michaelnielsen.org/ddi/lisp-as-the-maxwells-equations-of-software/&#34; target=&#34;_blank&#34;&gt;this post&lt;/a&gt;
-from Michael Nielsen.&lt;/p&gt;
-
-&lt;p&gt;It is nice also because it has running code inspired by all the gurus and books
-I like: &lt;a href=&#34;http://en.wikipedia.org/wiki/Alan_Kay&#34; target=&#34;_blank&#34;&gt;Alan Kay&lt;/a&gt;,
-&lt;a href=&#34;http://norvig.com&#34; target=&#34;_blank&#34;&gt;Peter Norvig&lt;/a&gt;,
-&lt;a href=&#34;http://www-formal.stanford.edu/jmc/&#34; target=&#34;_blank&#34;&gt;John McCarthy&lt;/a&gt;,
-&lt;a href=&#34;http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html&#34; target=&#34;_blank&#34;&gt;SICP&lt;/a&gt;,
-&lt;a href=&#34;http://paulgraham.com/&#34; target=&#34;_blank&#34;&gt;Paul Graham&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2012/04/18/metacircularity/</guid>
+      <description>I found and liked a very good summary of the &amp;lsquo;Maxwell Equations of software&amp;rsquo; motto from Alan Kay in this post from Michael Nielsen.
+It is nice also because it has running code inspired by all the gurus and books I like: Alan Kay, Peter Norvig, John McCarthy, SICP, Paul Graham.</description>
     </item>
     
   </channel>

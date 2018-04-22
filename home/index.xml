@@ -2,13 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Enrico&#39;s Blog</title>
-    <link>/home/</link>
+    <link>http://enrico.spinielli.net/home/</link>
     <description>Recent content in Homes on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://enrico.spinielli.net/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/home/about/</guid>
+      <description>Biography Enrico is a curious geek. He loves map projections and calendrical algorithms. He sort of likes to tinker with electronics but software is much more malleable and faster, so, due to lack of time, he mainly plays with software.</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://enrico.spinielli.net/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://enrico.spinielli.net/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/home/projects/</guid>
+      <description>I am currently, actually always!, thru a learning journey</description>
+    </item>
+    
+    <item>
+      <title>Inspirations</title>
+      <link>http://enrico.spinielli.net/home/inspirations/</link>
+      <pubDate>Tue, 02 Jan 2018 15:07:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/home/inspirations/</guid>
+      <description>Structure and Interpretation of Computer Programs (and an interactive version) and Lisp (see “Ancient Text”) Smalltalk:  Alan Kay Squeak, Squeakland, SqueakJS olpc Scratch Croquet, OpenQwaq Newspeak  Virtual World Framework, Virtual Worlds Python &amp;amp; Co.  IPython Notebook, now jupyter Collaborative Calculation in the Cloud (was: SageMath on the Cloud!  R, RStudio, tidyverse Inventing fundamental new computing technologies  Fonc, Ian’s ee380 at Stanford, To trap a better mouse  N.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://enrico.spinielli.net/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

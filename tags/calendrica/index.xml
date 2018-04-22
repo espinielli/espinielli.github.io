@@ -2,20 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Calendrica on Enrico&#39;s Blog</title>
-    <link>/tags/calendrica/</link>
+    <link>http://enrico.spinielli.net/tags/calendrica/</link>
     <description>Recent content in Calendrica on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Sun, 09 Jul 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/calendrica/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/calendrica/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PyCalCal</title>
-      <link>/project/pycalcal/</link>
+      <link>http://enrico.spinielli.net/project/pycalcal/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/pycalcal/</guid>
+      <guid>http://enrico.spinielli.net/project/pycalcal/</guid>
       <description></description>
     </item>
     

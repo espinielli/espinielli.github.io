@@ -2,146 +2,625 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Enrico&#39;s Blog</title>
-    <link>/tags/</link>
+    <link>http://enrico.spinielli.net/tags/</link>
     <description>Recent content in Tags on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Mon, 26 Oct 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Algorithm</title>
-      <link>/tags/algorithm/</link>
+      <link>http://enrico.spinielli.net/tags/algorithm/</link>
       <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>/tags/algorithm/</guid>
+      <guid>http://enrico.spinielli.net/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>/tags/android/</link>
+      <link>http://enrico.spinielli.net/tags/android/</link>
       <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/android/</guid>
+      <guid>http://enrico.spinielli.net/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Astronomy</title>
-      <link>/tags/astronomy/</link>
+      <link>http://enrico.spinielli.net/tags/astronomy/</link>
       <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>/tags/astronomy/</guid>
+      <guid>http://enrico.spinielli.net/tags/astronomy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blitz</title>
-      <link>/tags/blitz/</link>
+      <link>http://enrico.spinielli.net/tags/blitz/</link>
       <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blitz/</guid>
+      <guid>http://enrico.spinielli.net/tags/blitz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>/tags/blog/</link>
+      <link>http://enrico.spinielli.net/tags/blog/</link>
       <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blog/</guid>
+      <guid>http://enrico.spinielli.net/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bullet Chart</title>
-      <link>/tags/bullet-chart/</link>
+      <link>http://enrico.spinielli.net/tags/bullet-chart/</link>
       <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
       
-      <guid>/tags/bullet-chart/</guid>
+      <guid>http://enrico.spinielli.net/tags/bullet-chart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Calendar</title>
-      <link>/tags/calendar/</link>
+      <link>http://enrico.spinielli.net/tags/calendar/</link>
       <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>/tags/calendar/</guid>
+      <guid>http://enrico.spinielli.net/tags/calendar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Calendrica</title>
-      <link>/tags/calendrica/</link>
+      <link>http://enrico.spinielli.net/tags/calendrica/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/calendrica/</guid>
+      <guid>http://enrico.spinielli.net/tags/calendrica/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>/tags/configuration/</link>
+      <link>http://enrico.spinielli.net/tags/configuration/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/configuration/</guid>
+      <guid>http://enrico.spinielli.net/tags/configuration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Croquet</title>
-      <link>/tags/croquet/</link>
+      <link>http://enrico.spinielli.net/tags/croquet/</link>
       <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>/tags/croquet/</guid>
+      <guid>http://enrico.spinielli.net/tags/croquet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>/tags/css/</link>
+      <link>http://enrico.spinielli.net/tags/css/</link>
       <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/css/</guid>
+      <guid>http://enrico.spinielli.net/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cv</title>
-      <link>/tags/cv/</link>
+      <link>http://enrico.spinielli.net/tags/cv/</link>
       <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/cv/</guid>
+      <guid>http://enrico.spinielli.net/tags/cv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>D3</title>
-      <link>/tags/d3/</link>
+      <link>http://enrico.spinielli.net/tags/d3/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/d3/</guid>
+      <guid>http://enrico.spinielli.net/tags/d3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>D3.js</title>
-      <link>/tags/d3.js/</link>
+      <link>http://enrico.spinielli.net/tags/d3.js/</link>
       <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/d3.js/</guid>
+      <guid>http://enrico.spinielli.net/tags/d3.js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Science</title>
-      <link>/tags/data-science/</link>
+      <link>http://enrico.spinielli.net/tags/data-science/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-science/</guid>
+      <guid>http://enrico.spinielli.net/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Visualization</title>
+      <link>http://enrico.spinielli.net/tags/data-visualization/</link>
+      <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dataviz</title>
+      <link>http://enrico.spinielli.net/tags/dataviz/</link>
+      <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dc.js</title>
+      <link>http://enrico.spinielli.net/tags/dc.js/</link>
+      <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/dc.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Computing</title>
+      <link>http://enrico.spinielli.net/tags/distributed-computing/</link>
+      <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/distributed-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://enrico.spinielli.net/tags/docker/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dvd</title>
+      <link>http://enrico.spinielli.net/tags/dvd/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/dvd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firefox</title>
+      <link>http://enrico.spinielli.net/tags/firefox/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geomapping</title>
+      <link>http://enrico.spinielli.net/tags/geomapping/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/geomapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geometry</title>
+      <link>http://enrico.spinielli.net/tags/geometry/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gis</title>
+      <link>http://enrico.spinielli.net/tags/gis/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://enrico.spinielli.net/tags/git/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grammar of Graphics</title>
+      <link>http://enrico.spinielli.net/tags/grammar-of-graphics/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/grammar-of-graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grammar of Interaction</title>
+      <link>http://enrico.spinielli.net/tags/grammar-of-interaction/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/grammar-of-interaction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hack</title>
+      <link>http://enrico.spinielli.net/tags/hack/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/hack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>http://enrico.spinielli.net/tags/html/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interview</title>
+      <link>http://enrico.spinielli.net/tags/interview/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://enrico.spinielli.net/tags/javascript/</link>
+      <pubDate>Tue, 21 Apr 2015 17:56:42 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kay</title>
+      <link>http://enrico.spinielli.net/tags/kay/</link>
+      <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/kay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keyboard</title>
+      <link>http://enrico.spinielli.net/tags/keyboard/</link>
+      <pubDate>Wed, 03 Jan 2018 15:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Knuth</title>
+      <link>http://enrico.spinielli.net/tags/knuth/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/knuth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>http://enrico.spinielli.net/tags/latex/</link>
+      <pubDate>Thu, 19 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lisp Metacircular</title>
+      <link>http://enrico.spinielli.net/tags/lisp-metacircular/</link>
+      <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/lisp-metacircular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Long Tail</title>
+      <link>http://enrico.spinielli.net/tags/long-tail/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/long-tail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>http://enrico.spinielli.net/tags/maps/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>http://enrico.spinielli.net/tags/math/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ml</title>
+      <link>http://enrico.spinielli.net/tags/ml/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Noweb</title>
+      <link>http://enrico.spinielli.net/tags/noweb/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/noweb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Omputer Vision</title>
+      <link>http://enrico.spinielli.net/tags/omputer-vision/</link>
+      <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/omputer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oracle</title>
+      <link>http://enrico.spinielli.net/tags/oracle/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osx</title>
+      <link>http://enrico.spinielli.net/tags/osx/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/osx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pharo</title>
+      <link>http://enrico.spinielli.net/tags/pharo/</link>
+      <pubDate>Sun, 31 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/pharo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://enrico.spinielli.net/tags/python/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>http://enrico.spinielli.net/tags/r/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recruitment</title>
+      <link>http://enrico.spinielli.net/tags/recruitment/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/recruitment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Repair</title>
+      <link>http://enrico.spinielli.net/tags/repair/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/repair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rsa</title>
+      <link>http://enrico.spinielli.net/tags/rsa/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/rsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Samsung</title>
+      <link>http://enrico.spinielli.net/tags/samsung/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/samsung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scons</title>
+      <link>http://enrico.spinielli.net/tags/scons/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/scons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scrape</title>
+      <link>http://enrico.spinielli.net/tags/scrape/</link>
+      <pubDate>Sat, 07 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/scrape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selection</title>
+      <link>http://enrico.spinielli.net/tags/selection/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/selection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smalltalk</title>
+      <link>http://enrico.spinielli.net/tags/smalltalk/</link>
+      <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/smalltalk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smartphone</title>
+      <link>http://enrico.spinielli.net/tags/smartphone/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/smartphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spherical</title>
+      <link>http://enrico.spinielli.net/tags/spherical/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/spherical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Squeak</title>
+      <link>http://enrico.spinielli.net/tags/squeak/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/squeak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stats</title>
+      <link>http://enrico.spinielli.net/tags/stats/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/stats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlight</title>
+      <link>http://enrico.spinielli.net/tags/syntax-highlight/</link>
+      <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/syntax-highlight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tex</title>
+      <link>http://enrico.spinielli.net/tags/tex/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/tex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usb</title>
+      <link>http://enrico.spinielli.net/tags/usb/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/usb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vega</title>
+      <link>http://enrico.spinielli.net/tags/vega/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/vega/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>http://enrico.spinielli.net/tags/visualization/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Publishing</title>
+      <link>http://enrico.spinielli.net/tags/web-publishing/</link>
+      <pubDate>Sun, 31 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/web-publishing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Services</title>
+      <link>http://enrico.spinielli.net/tags/web-services/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/web-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wiki</title>
+      <link>http://enrico.spinielli.net/tags/wiki/</link>
+      <pubDate>Thu, 19 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/tags/wiki/</guid>
       <description></description>
     </item>
     

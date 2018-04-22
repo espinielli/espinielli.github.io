@@ -2,47 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geomapping on Enrico&#39;s Blog</title>
-    <link>/tags/geomapping/</link>
+    <link>http://enrico.spinielli.net/tags/geomapping/</link>
     <description>Recent content in Geomapping on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Tue, 27 Oct 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/geomapping/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/geomapping/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Geomapping: what a wonderful world!</title>
-      <link>/2009/10/27/geomapping-what-wonderful-world/</link>
+      <link>http://enrico.spinielli.net/2009/10/27/geomapping-what-wonderful-world/</link>
       <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/10/27/geomapping-what-wonderful-world/</guid>
-      <description>&lt;p&gt;Suppose you have a set of lat/lon points, where do you find out their elevation?&lt;/p&gt;
-
-&lt;p&gt;Simple, let say you have the following coordinates (a cross in concrete on the top of the hill in front of my parents&amp;rsquo; place):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;45.469678, 10.970527 (I got these from &#39;Get Directions from here&#39; in google maps)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then call the relevant &lt;a href=&#34;http://www.blogger.com/getElevation?Y_Value=45.469678&amp;amp;amp;X_Value=10.970527&amp;amp;amp;Elevation_Units=METERS&amp;amp;amp;Source_Layer=-1&amp;amp;amp;Elevation_Only=true&#34; target=&#34;_blank&#34;&gt;USGS&amp;rsquo; web service&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It says&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;getElevation
-   for Latitude 45.46                   --&amp;gt; Y_Value=45.469678
-   for Longitude 10.97                --&amp;gt; X_Value=10.970527
-   return result in meters            --&amp;amp;gt; Elevation_Units=METERS
-   use the best survey available --&amp;amp;gt; Source_Layer=-1
-   not other additional info        --&amp;amp;gt; Elevation_Only=true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Why would you want elevations?&lt;/p&gt;
-
-&lt;p&gt;To plot an elevation chart of a bike or hiking tour.&lt;/p&gt;
-
-&lt;p&gt;Amazing what you can find around&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;(This was inspired by &lt;a href=&#34;http://econym.org.uk/gmap/altitude.htm&#34; target=&#34;_blank&#34;&gt;http://econym.org.uk/gmap/altitude.htm&lt;/a&gt;)&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/10/27/geomapping-what-wonderful-world/</guid>
+      <description>Suppose you have a set of lat/lon points, where do you find out their elevation?
+Simple, let say you have the following coordinates (a cross in concrete on the top of the hill in front of my parents&amp;rsquo; place):
+45.469678, 10.970527 (I got these from &#39;Get Directions from here&#39; in google maps)  Then call the relevant USGS&amp;rsquo; web service
+It says
+getElevation for Latitude 45.46 --&amp;gt; Y_Value=45.469678 for Longitude 10.</description>
     </item>
     
   </channel>

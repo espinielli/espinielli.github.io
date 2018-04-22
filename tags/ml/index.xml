@@ -2,35 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ml on Enrico&#39;s Blog</title>
-    <link>/tags/ml/</link>
+    <link>http://enrico.spinielli.net/tags/ml/</link>
     <description>Recent content in Ml on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Sun, 09 Jul 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/ml/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Learning: neither Deep nor Machine, just Human</title>
-      <link>/project/learning/</link>
+      <link>http://enrico.spinielli.net/project/learning/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/learning/</guid>
-      <description>&lt;p&gt;On one side I am intrigued by Data
-Analysis and Visualization (see some of my &lt;a href=&#34;http://bl.ocks.org/espinielli&amp;gt;&#34; title=&#34;Enrico Spinielli&#39;s blocks&#34; target=&#34;_blank&#34;&gt;D3 [et al.] blocks&lt;/a&gt; or my &lt;a href=&#34;/project/r-and-co/&#34;&gt;R project&lt;/a&gt;) and on
-the other side by Machine Learning.&lt;/p&gt;
-
-&lt;p&gt;For ML I am very slowly going thru some &lt;a href=&#34;https://en.wikipedia.org/wiki/Massive_open_online_course&amp;gt;&#34; title=&#34;wikipedia: MOOC&#34; target=&#34;_blank&#34;&gt;MOOC&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.andrewng.org/&amp;gt;&#34; title=&#34;Andrew Ng&#39;s Home Page&#34; target=&#34;_blank&#34;&gt;Andrew Ng&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.coursera.org/learn/machine-learning&amp;gt;&#34; title=&#34;Coursera: Machine Learning&#34; target=&#34;_blank&#34;&gt;Machine Learning&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://statlearning.class.stanford.edu/&amp;gt;&#34; title=&#34;Statistical Learning MOOC&#34; target=&#34;_blank&#34;&gt;Statistical Learning&lt;/a&gt; by Stanford University Profs.
-&lt;a href=&#34;http://web.stanford.edu/~hastie/&amp;gt;&#34; title=&#34;Prof Trevor Hastie&#34; target=&#34;_blank&#34;&gt;Trevor Hastie&lt;/a&gt; and &lt;a href=&#34;https://statweb.stanford.edu/~tibs/&amp;gt;&#34; title=&#34;Prof Rob Tibshirani&#34; target=&#34;_blank&#34;&gt;Rob Tibshirani&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ai.stanford.edu/~koller/&amp;gt;&#34; title=&#34;Daphne Koller&#39;s Home Page&#34; target=&#34;_blank&#34;&gt;Daphne Koller&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.coursera.org/specializations/probabilistic-graphical-models&amp;gt;&#34; title=&#34;Probabilistic Graphical Models&#34; target=&#34;_blank&#34;&gt;Probabilistic Graphical Models&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Wish me luck.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/project/learning/</guid>
+      <description>On one side I am intrigued by Data Analysis and Visualization (see some of my D3 [et al.] blocks or my R project) and on the other side by Machine Learning.
+For ML I am very slowly going thru some MOOC:
+ Andrew Ng&amp;rsquo;s Machine Learning. Statistical Learning by Stanford University Profs. Trevor Hastie and Rob Tibshirani. Daphne Koller&amp;rsquo;s Probabilistic Graphical Models.  Wish me luck.</description>
     </item>
     
   </channel>

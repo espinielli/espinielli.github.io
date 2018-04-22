@@ -2,12 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types on Enrico&#39;s Blog</title>
-    <link>/publication_types/</link>
+    <link>http://enrico.spinielli.net/publication_types/</link>
     <description>Recent content in Publication_types on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
-    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

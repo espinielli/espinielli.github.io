@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="generator" content="Hugo 0.39" />
   <meta name="author" content="Enrico Spinielli">
   <meta name="description" content="Curious geek">
 
@@ -46,13 +46,13 @@
     
   
 
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Enrico&#39;s Blog">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Enrico&#39;s Blog">
+  <link rel="alternate" href="http://enrico.spinielli.net/index.xml" type="application/rss+xml" title="Enrico&#39;s Blog">
+  <link rel="feed" href="http://enrico.spinielli.net/index.xml" type="application/rss+xml" title="Enrico&#39;s Blog">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/">
+  <link rel="canonical" href="http://enrico.spinielli.net/2015/04/21/how-to-add-a-new-chart-type-to-dcjs/">
 
   
 
@@ -201,35 +201,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fenrico.spinielli.net%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js&amp;url=%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f"
+         href="https://twitter.com/intent/tweet?text=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js&amp;url=http%3a%2f%2fenrico.spinielli.net%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f&amp;title=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fenrico.spinielli.net%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f&amp;title=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f&amp;title=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fenrico.spinielli.net%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f&amp;title=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js&amp;body=%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f">
+         href="mailto:?subject=How%20to%20add%20a%20new%20chart%20type%20to%20dc.js&amp;body=http%3a%2f%2fenrico.spinielli.net%2f2015%2f04%2f21%2fhow-to-add-a-new-chart-type-to-dcjs%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -278,7 +278,8 @@ from the <a href="https://github.com/d3/d3-plugins/tree/master/bullet" target="_
       <span style="color:#e6db74">&#39;src/bullet-chart.js&#39;</span>,
       <span style="color:#e6db74">&#39;src/footer.js&#39;</span>  <span style="color:#75715e">// NOTE: keep this last
 </span><span style="color:#75715e"></span>    ];
-  </code></pre></div>
+  
+</code></pre></div>
 
 <ul>
 <li>add the example file <code>examples\web\bullet.html</code>, a copy of <code>ord.html</code>
@@ -342,7 +343,8 @@ for example, and update <code>examples\web\index.html</code> accordingly</li>
 		<span style="color:#75715e">//-----------------
 </span><span style="color:#75715e"></span>	
 	 <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_chart</span>.<span style="color:#a6e22e">anchor</span>(<span style="color:#a6e22e">parent</span>, <span style="color:#a6e22e">chartGroup</span>);
-	};</code></pre></div>
+	};
+</code></pre></div>
 
 <p>The rationale for the mixin used is:</p>
 
@@ -410,7 +412,8 @@ parametrization of the title <code>transform</code>.</p>
         })
 
     <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_chart</span>;
-  };</code></pre></div>
+  };
+</code></pre></div>
 
 <p>The proper positioning of the title is taken care by the <code>titleTranslate</code> function.
 Titles will either be on the left of the bullet bar in the horizontal layout or
@@ -437,7 +440,8 @@ for a better approach.</p>
       }
       <span style="color:#a6e22e">_bulletWidth</span> <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#a6e22e">_</span>;
       <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_chart</span>;
-  };</code></pre></div></p>
+  };
+</code></pre></div></p>
 
 <h3 id="bulletheight">.bulletHeight</h3>
 
@@ -452,7 +456,8 @@ for a better approach.</p>
       }
       <span style="color:#a6e22e">_bulletHeight</span> <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#a6e22e">_</span>;
       <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_chart</span>;
-  };</code></pre></div>
+  };
+</code></pre></div>
 
 <h3 id="bulletmargin">.bulletMargin</h3>
 
@@ -467,7 +472,8 @@ for a better approach.</p>
       }
       <span style="color:#a6e22e">_bulletMargin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_</span>;
       <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_chart</span>;
-  };</code></pre></div>
+  };
+</code></pre></div>
 
 <h3 id="orient">.orient</h3>
 
@@ -492,7 +498,8 @@ position.</p>
       <span style="color:#a6e22e">_bulletOrient</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_</span>;
       <span style="color:#a6e22e">_titleTranslate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">titleTranslate</span>(<span style="color:#a6e22e">_bulletOrient</span>);
       <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_chart</span>;
-  };</code></pre></div>
+  };
+</code></pre></div>
 
 <h3 id="titletranslate-internal">titleTranslate (internal)</h3>
 
@@ -512,7 +519,8 @@ the title/subtitle for the vertical and horizontal layout.</p>
     }
 
     <span style="color:#66d9ef">return</span> [<span style="color:#f92672">-</span><span style="color:#ae81ff">6</span>, <span style="color:#a6e22e">_bulletHeight</span> <span style="color:#960050;background-color:#1e0010">/ 2];</span>
-  }</code></pre></div>
+  }
+</code></pre></div>
 
 <h2 id="example">Example</h2>
 
@@ -604,7 +612,8 @@ on the knowledge that the default implementation of <code>.data()</code> is retu
   .<span style="color:#a6e22e">dimension</span>(<span style="color:#a6e22e">titleDimension</span>)
   .<span style="color:#a6e22e">group</span>(<span style="color:#a6e22e">statusGroup</span>);
 
-<span style="color:#a6e22e">chart2</span>.<span style="color:#a6e22e">render</span>();</code></pre></div>
+<span style="color:#a6e22e">chart2</span>.<span style="color:#a6e22e">render</span>();
+</code></pre></div>
 
 <h3 id="a-matter-of-style">A Matter of Style</h3>
 
@@ -656,7 +665,8 @@ via CSS</p>
     .<span style="color:#a6e22e">height</span>(<span style="color:#ae81ff">450</span>)
     .<span style="color:#a6e22e">orient</span>(<span style="color:#e6db74">&#34;left&#34;</span>)
     .<span style="color:#a6e22e">dimension</span>(<span style="color:#a6e22e">titleDimension</span>)
-    .<span style="color:#a6e22e">group</span>(<span style="color:#a6e22e">statusGroup</span>);</code></pre></div>
+    .<span style="color:#a6e22e">group</span>(<span style="color:#a6e22e">statusGroup</span>);
+</code></pre></div>
 
 <p>and have sensible width/height/margins being calculated by the
 internals of the implementation, with the above methods available
@@ -676,7 +686,8 @@ I haven&rsquo;t really tackled colors customization.</p>
     .<span style="color:#a6e22e">orient</span>(<span style="color:#e6db74">&#34;left&#34;</span>)
     .<span style="color:#a6e22e">dimension</span>(<span style="color:#a6e22e">titleDimension</span>)
     .<span style="color:#a6e22e">group</span>(<span style="color:#a6e22e">statusGroup</span>)
-    .<span style="color:#a6e22e">colors</span>(<span style="color:#a6e22e">d3</span>.<span style="color:#a6e22e">scale</span>.<span style="color:#a6e22e">ordinal</span>().<span style="color:#a6e22e">range</span>([<span style="color:#e6db74">&#39;red&#39;</span>,<span style="color:#e6db74">&#39;green&#39;</span>,<span style="color:#e6db74">&#39;blue&#39;</span>]));</code></pre></div>
+    .<span style="color:#a6e22e">colors</span>(<span style="color:#a6e22e">d3</span>.<span style="color:#a6e22e">scale</span>.<span style="color:#a6e22e">ordinal</span>().<span style="color:#a6e22e">range</span>([<span style="color:#e6db74">&#39;red&#39;</span>,<span style="color:#e6db74">&#39;green&#39;</span>,<span style="color:#e6db74">&#39;blue&#39;</span>]));
+</code></pre></div>
 
 <p>you would be able to define the three colors for the <code>bad</code>,
 <code>satisfactory</code> and <code>good</code> ranges.</p>
@@ -718,12 +729,12 @@ aside {
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="/2015/02/07/html-scraping/"><span
+    <li class="previous"><a href="http://enrico.spinielli.net/2015/02/07/html-scraping/"><span
       aria-hidden="true">&larr;</span> HTML Scraping or Surviving Orrible Corporate Tools</a></li>
     
 
     
-    <li class="next"><a href="/2015/08/08/learning-reactive-vega/">Learning Vega 2.0 a.k.a. Reactive Vega <span
+    <li class="next"><a href="http://enrico.spinielli.net/2015/08/08/learning-reactive-vega/">Learning Vega 2.0 a.k.a. Reactive Vega <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
@@ -805,6 +816,13 @@ aside {
       <script>hljs.initHighlightingOnLoad();</script>
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
     
     
 

@@ -2,30 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Astronomy on Enrico&#39;s Blog</title>
-    <link>/tags/astronomy/</link>
+    <link>http://enrico.spinielli.net/tags/astronomy/</link>
     <description>Recent content in Astronomy on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Mon, 26 Oct 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/astronomy/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/astronomy/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PyCalCal is out!</title>
-      <link>/2009/10/26/pycalcal-is-out/</link>
+      <link>http://enrico.spinielli.net/2009/10/26/pycalcal-is-out/</link>
       <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/10/26/pycalcal-is-out/</guid>
-      <description>&lt;p&gt;I finally set to put &lt;a href=&#34;http://code.google.com/p/pycalcal/&#34; target=&#34;_blank&#34;&gt;PyCalCal&lt;/a&gt; out in the open.&lt;/p&gt;
-
-&lt;p&gt;I will need to finalize and perfect it but that is a good starting point.&lt;/p&gt;
-
-&lt;p&gt;I also added a &lt;a href=&#34;http://code.google.com/p/pycalcal/&#34; target=&#34;_blank&#34;&gt;demo web app&lt;/a&gt; using it.&lt;/p&gt;
-
-&lt;p&gt;My idea is for PyCalCal to be used as a Python library and as such use it to provide calendrica calculations as web services.&lt;/p&gt;
-
-&lt;p&gt;Stay tuned if you are interested.&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/10/26/pycalcal-is-out/</guid>
+      <description>I finally set to put PyCalCal out in the open.
+I will need to finalize and perfect it but that is a good starting point.
+I also added a demo web app using it.
+My idea is for PyCalCal to be used as a Python library and as such use it to provide calendrica calculations as web services.
+Stay tuned if you are interested.</description>
     </item>
     
   </channel>

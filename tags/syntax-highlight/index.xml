@@ -2,21 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syntax Highlight on Enrico&#39;s Blog</title>
-    <link>/tags/syntax-highlight/</link>
+    <link>http://enrico.spinielli.net/tags/syntax-highlight/</link>
     <description>Recent content in Syntax Highlight on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Wed, 18 Apr 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/syntax-highlight/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/syntax-highlight/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>syntax highlight</title>
-      <link>/2012/04/18/this-code-shows-how-to-syntax-highligh/</link>
+      <link>http://enrico.spinielli.net/2012/04/18/this-code-shows-how-to-syntax-highligh/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/18/this-code-shows-how-to-syntax-highligh/</guid>
-      <description>The following example shows how to syntax highligh some snippet of code in a very minimalistic way.&lt;br /&gt;I used it by symlinking to a file in the version control repo and name it in as the argument of&lt;br /&gt;&lt;code&gt;$(&#39;#code-area&#39;).load()&lt;/code&gt; and here it is:  &lt;br /&gt;&lt;pre class=&#34;brush:html&#34;&gt;&lt;html&gt;&lt;br /&gt;&lt;head&gt;&lt;br /&gt;  &lt;title&gt;code higlighted with minimal javascript&lt;/title&gt;&lt;br /&gt;  &lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&#34;&gt;&lt;/script&gt;&lt;br /&gt;  &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/3.0.83/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;br /&gt;  &lt;script src=&#34;http://alexgorbatchev.com/pub/sh/3.0.83/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;br /&gt;  &lt;link href=&#34;http://alexgorbatchev.com/pub/sh/3.0.83/styles/shThemeDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;br /&gt;&lt;/head&gt;&lt;br /&gt;&lt;body&gt;&lt;br /&gt;&lt;h1&gt;&lt;br /&gt;Metacircular code highlighting&lt;/h1&gt;&lt;br /&gt;The following code is an highlighted version of this very page using&lt;br /&gt;&lt;a href=&#34;http://alexgorbatchev.com/SyntaxHighlighter&#34;&gt;SyntaxHighlighter&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;You need a decent modern browser to enjoy it.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;syntaxhighlighter  xml&#34;&gt;&lt;br /&gt;  &lt;pre class=&#34;brush: xml&#34; id=&#34;code-area&#34;&gt;&lt;br /&gt;  &lt;/pre&gt;&lt;/div&gt;&lt;script&gt;  $(&#39;#code-area&#39;).load(&#34;http://pastebin.com/raw.php?i=LP5RTiPx&#34;, function() {      SyntaxHighlighter.autoloader(      &#39;html  http://alexgorbatchev.com/pub/sh/current/3.0.83/scripts/shBrushXml.js&#39;);      SyntaxHighlighter.all();   }); &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;!-- Add Current CSS styles --&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCore.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shCoreDefault.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;&lt;link href=&#34;http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/link&gt;  &lt;!-- Add Current JS scripts --&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;  &lt;!-- Add Current Brushes --&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;script src=&#34;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;  &lt;!-- Call SyntaxHighlighter --&gt;&lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;    SyntaxHighlighter.config.bloggerMode = true;     SyntaxHighlighter.all(); &lt;/script&gt;</description>
+      <guid>http://enrico.spinielli.net/2012/04/18/this-code-shows-how-to-syntax-highligh/</guid>
+      <description>The following example shows how to syntax highligh some snippet of code in a very minimalistic way.
+I used it by symlinking to a file in the version control repo and name it in as the argument of
+$(&#39;#code-area&#39;).load() and here it is: 
+
+code higlighted with minimal javascript
+
+
+
+
+
+
+
+Metacircular code highlighting
+The following code is an highlighted version of this very page using</description>
     </item>
     
   </channel>

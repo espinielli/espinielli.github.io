@@ -2,24 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization on Enrico&#39;s Blog</title>
-    <link>/tags/visualization/</link>
+    <link>http://enrico.spinielli.net/tags/visualization/</link>
     <description>Recent content in Visualization on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Sun, 09 Jul 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/visualization/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Data science and R</title>
-      <link>/project/r-and-co/</link>
+      <link>http://enrico.spinielli.net/project/r-and-co/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/r-and-co/</guid>
-      <description>&lt;p&gt;Data Analysis is big part of my daily job and I am promoting the use
-of &lt;a href=&#34;https://www.r-project.org/&amp;gt;&#34; title=&#34;The R Project for Statistical Computing&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt; for reproducibility, exploratory data analysis and for visualization
-too (using for example &lt;a href=&#34;http://hadley.nz/&amp;gt;&#34; title=&#34;Hadley Wickham&#39;s Home Page&#34; target=&#34;_blank&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://ggplot2.org/&amp;gt;&#34; title=&#34;ggplot2&#34; target=&#34;_blank&#34;&gt;ggplot2&lt;/a&gt;!)&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/project/r-and-co/</guid>
+      <description>Data Analysis is big part of my daily job and I am promoting the use of R for reproducibility, exploratory data analysis and for visualization too (using for example Hadley Wickham&amp;rsquo;s ggplot2!)</description>
     </item>
     
   </channel>

@@ -2,107 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usb on Enrico&#39;s Blog</title>
-    <link>/tags/usb/</link>
+    <link>http://enrico.spinielli.net/tags/usb/</link>
     <description>Recent content in Usb on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Fri, 30 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/usb/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>How Internet Long Tail Helped Me Fixing My Smartphone</title>
-      <link>/2015/01/30/how-internet-long-tail-helped-me-fixing-my-smartphone/</link>
+      <link>http://enrico.spinielli.net/2015/01/30/how-internet-long-tail-helped-me-fixing-my-smartphone/</link>
       <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/01/30/how-internet-long-tail-helped-me-fixing-my-smartphone/</guid>
-      <description>
-
-&lt;p&gt;I am just more and more amazed by the opportunities offered by the current Internet connectivity: they call it the &lt;a href=&#34;http://en.wikipedia.org/wiki/Long_tail&#34; target=&#34;_blank&#34;&gt;long tail&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It strikes me that just few years ago what I have done would have been extreemely difficult or very expensive &amp;hellip; or both.&lt;/p&gt;
-
-&lt;p&gt;&lt;br/&gt;
-So here is the story of how I was able to fix my Samsung Galaxy S2, the steps I followed and the resources that helped me.&lt;/p&gt;
-
-&lt;h2 id=&#34;erratic-malfunctioning&#34;&gt;Erratic Malfunctioning&lt;/h2&gt;
-
-&lt;p&gt;During summer 2014 my S2 started behaving erratically: it was suddenly switching off and back on, charging was giving sings of malfunctioning.&lt;/p&gt;
-
-&lt;p&gt;I initially thought this was due to the battery.&lt;/p&gt;
-
-&lt;p&gt;Andy, a friend and collegue of mine, gave me one of his spare batteries but the symptoms didn&amp;rsquo;t disappear.
-The situation was annoying but, to be frank, not frequent enough to push me to immediate action.&lt;/p&gt;
-
-&lt;p&gt;Then in November I decided to investigate whether anybody else had experienced similar problems.&lt;/p&gt;
-
-&lt;h2 id=&#34;you-are-not-alone&#34;&gt;You are not alone&lt;/h2&gt;
-
-&lt;p&gt;A few searches showed that USB charging port could be the culprit and many youtube videos showed &lt;a href=&#34;https://www.youtube.com/watch?v=sBtEz6sWzZY&#34; target=&#34;_blank&#34;&gt;how to repair&lt;/a&gt; it&lt;/p&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/sBtEz6sWzZY?&#34;
-  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;go-for-the-fun-fix-it&#34;&gt;Go for the fun: fix it&lt;/h2&gt;
-
-&lt;p&gt;Then the next decision point was: do I try to fix it with the risk of destroying the phone or do I just hand it over to a repair shop?&lt;/p&gt;
-
-&lt;p&gt;No way to find a repair shop who is close enough and competent enough.&lt;/p&gt;
-
-&lt;p&gt;So I decided to give it a go and try to fix it: it is all about taking some screws away and unplug some connectors; no surface mounting soldering or the likes!&lt;/p&gt;
-
-&lt;h2 id=&#34;where-to-buy-the-parts&#34;&gt;Where to buy the parts&lt;/h2&gt;
-
-&lt;p&gt;So once I decided to repair, where to find the parts? Brussels is not the paradise for electronics hobbists.&lt;/p&gt;
-
-&lt;p&gt;EBay to &lt;a href=&#34;http://www.ebay.com/bhp/samsung-galaxy-s2-charging-port&#34; target=&#34;_blank&#34;&gt;the rescue&lt;/a&gt;: one piece can cost as little as 0.30 EUR if bought in lots of thousands (but I need just one!), then I found a single piece at 3.29 CAD (shipping included), still a cheap enough option.
-The order date is Nov 27, 2014, shipped the day after.&lt;/p&gt;
-
-&lt;h2 id=&#34;a-long-wait&#34;&gt;A long wait&lt;/h2&gt;
-
-&lt;p&gt;Here we are! On 29th Dec 2015 I come home from holidays and it arrived!
-And the evening after while the kids play with Legos, Daddy repairs (and has fun with) the phone&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/repair-samsung-s2-play-with-lego.png&#34; alt=&#34;repairing&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br/&gt;
-All is good: USB is charging again, no shortcuts, no erratic shutdowns&amp;hellip;Victory!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/usb-fixed.jpeg&#34; alt=&#34;fixed&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;mayday-mayday&#34;&gt;Mayday, Mayday!&lt;/h2&gt;
-
-&lt;p&gt;All seemed good, but the radio signal is very, very weak!&lt;/p&gt;
-
-&lt;p&gt;So weak that at times I have no gsm/data connection!&lt;/p&gt;
-
-&lt;p&gt;Hhuumm, maybe that is due to the fact that the replacement piece I bought was revision 2.3 &amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/new-usb-charger-connector-samsung-galaxy-s2-i9100.png&#34; alt=&#34;the new piece&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip; while the original one was 2.2 &amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/old-usb-charger-connector-samsung-galaxy-s2-i9100.png&#34; alt=&#34;the new piece&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br/&gt;
-Back to basics, google search to the rescue: I found an &lt;a href=&#34;http://www.oneilusm.com/?p=518&#34; target=&#34;_blank&#34;&gt;article by Rich O’Neil&lt;/a&gt; citing a &lt;a href=&#34;http://forum.xda-developers.com/showpost.php?p=37914192&amp;amp;postcount=32&#34; target=&#34;_blank&#34;&gt;post on xda-developers from a certain Serathian&lt;/a&gt; who simply cut the PCB in two.&lt;/p&gt;
-
-&lt;p&gt;Here is what he did:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/cut-the-pcb.png&#34; alt=&#34;cut the pcb in two&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The left part is responsible for the radio while the right part is the USB.&lt;/p&gt;
-
-&lt;p&gt;&lt;br/&gt;
-Ok, few days later I take a scissor and use the radio part from the old piece (rev 2.2) and the USB part from the new (rev 2.3): &lt;strong&gt;VICTORY&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;p&gt;Phone is now fixed! (It is 6th Jan 2015.)
-&lt;br/&gt;
-Thanks all for sharing (and some &lt;a href=&#34;http://google.com&#34; target=&#34;_blank&#34;&gt;huge company&lt;/a&gt; to let me find it)!&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2015/01/30/how-internet-long-tail-helped-me-fixing-my-smartphone/</guid>
+      <description>I am just more and more amazed by the opportunities offered by the current Internet connectivity: they call it the long tail.
+It strikes me that just few years ago what I have done would have been extreemely difficult or very expensive &amp;hellip; or both.
+ So here is the story of how I was able to fix my Samsung Galaxy S2, the steps I followed and the resources that helped me.</description>
     </item>
     
   </channel>

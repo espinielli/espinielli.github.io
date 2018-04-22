@@ -2,52 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Noweb on Enrico&#39;s Blog</title>
-    <link>/tags/noweb/</link>
+    <link>http://enrico.spinielli.net/tags/noweb/</link>
     <description>Recent content in Noweb on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Sun, 14 Jun 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/noweb/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/noweb/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Scons and noweb</title>
-      <link>/2009/06/14/scons-and-noweb/</link>
+      <link>http://enrico.spinielli.net/2009/06/14/scons-and-noweb/</link>
       <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
       
-      <guid>/2009/06/14/scons-and-noweb/</guid>
-      <description>&lt;p&gt;I was curious to see how I could integrate noweb and Scons.&lt;/p&gt;
-
-&lt;p&gt;You can download my little Sconstruct for this,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/Sconstruct.example&#34; target=&#34;_blank&#34;&gt;Sconstruct.example&lt;/a&gt;.
-It defines two builders. NoWeave is used to produce TeX or LaTeX documents,
-while NoTangle extracts the non-document artefacts, i.e. programs, config files,
-scripts &amp;hellip; It also includes productions for generating a sample program about
-Ackermann function:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;	ackdoc  &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoWeave(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.tex&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
-	ackcode &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)
-	acktest &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; env&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;NoTangle(&lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ackTest.py&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#39;ack.nw&amp;#39;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The noweb source is &lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.nw&#34; target=&#34;_blank&#34;&gt;ack.nw&lt;/a&gt; and
-the companion BibTeX file is
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.bib&#34; target=&#34;_blank&#34;&gt;ack.bib&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It contains the doc chunks describing the function, the source code chunck for
-the relevant Python code and the code chunk for the unit test.&lt;/p&gt;
-
-&lt;p&gt;You can try it out executing&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;	$ scons -f Sconstruct.example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;You will get the following artefacts,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.py&#34; target=&#34;_blank&#34;&gt;ack.py&lt;/a&gt;,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.tex&#34; target=&#34;_blank&#34;&gt;ack.tex&lt;/a&gt;,
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ackTest.py&#34; target=&#34;_blank&#34;&gt;ackTest.py&lt;/a&gt; and
-&lt;a href=&#34;http://enrico.spinielli.googlepages.com/ack.pdf&#34; target=&#34;_blank&#34;&gt;ack.pdf&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Remember to run BibTeX first&amp;hellip;&lt;/p&gt;
-</description>
+      <guid>http://enrico.spinielli.net/2009/06/14/scons-and-noweb/</guid>
+      <description>I was curious to see how I could integrate noweb and Scons.
+You can download my little Sconstruct for this, Sconstruct.example. It defines two builders. NoWeave is used to produce TeX or LaTeX documents, while NoTangle extracts the non-document artefacts, i.e. programs, config files, scripts &amp;hellip; It also includes productions for generating a sample program about Ackermann function:
+ackdoc = env.NoWeave(&amp;#39;ack.tex&amp;#39;, &amp;#39;ack.nw&amp;#39;) ackcode = env.NoTangle(&amp;#39;ack.py&amp;#39;, &amp;#39;ack.nw&amp;#39;) acktest = env.NoTangle(&amp;#39;ackTest.py&amp;#39;, &amp;#39;ack.nw&amp;#39;) The noweb source is ack.</description>
     </item>
     
   </channel>

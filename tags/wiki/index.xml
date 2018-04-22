@@ -2,21 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wiki on Enrico&#39;s Blog</title>
-    <link>/tags/wiki/</link>
+    <link>http://enrico.spinielli.net/tags/wiki/</link>
     <description>Recent content in Wiki on Enrico&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
     <lastBuildDate>Thu, 19 Apr 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/wiki/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://enrico.spinielli.net/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>wiki of the future?</title>
-      <link>/2012/04/19/wiki-of-future/</link>
+      <link>http://enrico.spinielli.net/2012/04/19/wiki-of-future/</link>
       <pubDate>Thu, 19 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/19/wiki-of-future/</guid>
-      <description>Last weekend I have been watching, reading and playing around with Ward Cunningham&#39;s &lt;a href=&#34;http://wardcunningham.github.com/&#34;&gt;Smallest Federated Wiki&lt;/a&gt;. As usual he is a great designer and aims to simple, effective, understandable and useful tools!  I particularly like the plugins idea (not new of course) and how easy it seems to be to add new ones, like support for &lt;a href=&#34;http://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt;: &lt;iframe allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34; height=&#34;300&#34; mozallowfullscreen=&#34;mozallowfullscreen&#34; src=&#34;http://player.vimeo.com/video/33133120?title=0&amp;amp;byline=0&amp;amp;portrait=0&#34; webkitallowfullscreen=&#34;webkitallowfullscreen&#34; width=&#34;400&#34;&gt;&lt;/iframe&gt; &lt;br/&gt;Get inspired you too!</description>
+      <guid>http://enrico.spinielli.net/2012/04/19/wiki-of-future/</guid>
+      <description>Last weekend I have been watching, reading and playing around with Ward Cunningham&#39;s Smallest Federated Wiki. As usual he is a great designer and aims to simple, effective, understandable and useful tools! I particularly like the plugins idea (not new of course) and how easy it seems to be to add new ones, like support for MathJax:  Get inspired you too!</description>
     </item>
     
   </channel>
