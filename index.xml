@@ -795,7 +795,7 @@ for a better approach.&lt;/p&gt;
 
 &lt;h3 id=&#34;bulletwidth&#34;&gt;.bulletWidth&lt;/h3&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  #### .bulletWidth([value])
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Set or get the bullet width.
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
@@ -807,7 +807,7 @@ for a better approach.&lt;/p&gt;
       &lt;span style=&#34;color:#a6e22e&#34;&gt;_bulletWidth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;_&lt;/span&gt;;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_chart&lt;/span&gt;;
   };
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;bulletheight&#34;&gt;.bulletHeight&lt;/h3&gt;
 
