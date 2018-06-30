@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.42.2" />
+  <meta name="author" content="Enrico Spinielli">
+  <meta name="description" content="Curious geek">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-56589946-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="http://enrico.spinielli.net/index.xml" type="application/rss+xml" title="Enrico&#39;s Blog">
+  <link rel="feed" href="http://enrico.spinielli.net/index.xml" type="application/rss+xml" title="Enrico&#39;s Blog">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://enrico.spinielli.net/2018/06/30/writing-a-twitter-bot-in-r/">
+
+  
+
+  <title>Writing a Twitter Bot in R | Enrico&#39;s Blog</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Enrico&#39;s Blog</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#inspirations">
+            
+            <span>Inspirations</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Writing a Twitter Bot in R</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2018-06-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      2018 June 30 00:00 UTC
+    </time>
+  </span>
+
+  
+  
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/r">R</a
+    >, 
+    
+    <a href="/tags/maps">maps</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fenrico.spinielli.net%2f2018%2f06%2f30%2fwriting-a-twitter-bot-in-r%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Writing%20a%20Twitter%20Bot%20in%20R&amp;url=http%3a%2f%2fenrico.spinielli.net%2f2018%2f06%2f30%2fwriting-a-twitter-bot-in-r%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fenrico.spinielli.net%2f2018%2f06%2f30%2fwriting-a-twitter-bot-in-r%2f&amp;title=Writing%20a%20Twitter%20Bot%20in%20R"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fenrico.spinielli.net%2f2018%2f06%2f30%2fwriting-a-twitter-bot-in-r%2f&amp;title=Writing%20a%20Twitter%20Bot%20in%20R"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Writing%20a%20Twitter%20Bot%20in%20R&amp;body=http%3a%2f%2fenrico.spinielli.net%2f2018%2f06%2f30%2fwriting-a-twitter-bot-in-r%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Since a while I am contemplating the possibility of automatically publishing
+on social media some stats and data visualisations from work.</p>
+<p>When I discovered the nice bot <a href="https://twitter.com/everytract">@everytract</a> by
+<a href="https://twitter.com/fitnr">@fitnr</a> (and a little later the
+<a href="https://twitter.com/GVAcartografic">@GVAcartografic</a>’s
+<a href="https://twitter.com/hashtag/Secci%C3%B3censal?src=hash">#Secciócensal</a> tweets)
+I decided to try and do a Twitter bot myself in order to see what is possible and
+how difficult it is.</p>
+<p>I thought that combining maps and some Italian data would be a good recipe
+for having fun and
+so I did set out to use some GIS data from the <a href="https://www.istat.it/en/">Italian National Institute of Statistics (ISTAT)</a>(<a href="https://twitter.com/istat_en">@istat_en</a>)
+in order to publish a map for every Italian <a href="https://en.wikipedia.org/wiki/Comune">comune</a>
+(the basic administrative division in Italy).</p>
+<div id="the-data" class="section level2">
+<h2>The Data</h2>
+<p>The relevant GIS data in the form of Shapefiles can be found on ISTAT’s web site,
+<a href="https://www.istat.it/it/archivio/124086" class="uri">https://www.istat.it/it/archivio/124086</a>.
+I took the most <a href="gis2016wsg84">detailed polygons as for 2016 with WSG84 datum</a>.</p>
+<p>I combined the info from ISTAT in an <code>sf</code> dataframe which looks like the following:</p>
+<pre class="r"><code>&gt; coms %&gt;% as_tibble()
+# A tibble: 7,998 x 6
+   PRO_COM COMUNE          bb         REGIONE  DEN_CMPRO geometry                               
+     &lt;dbl&gt; &lt;fct&gt;           &lt;list&gt;     &lt;fct&gt;    &lt;fct&gt;     &lt;S3: sfc_MULTIPOLYGON&gt;                 
+ 1    1001 Agliè           &lt;S3: bbox&gt; Piemonte Torino    &quot;list(list(c(7.7826615064871, 7.783045…
+ 2    1002 Airasca         &lt;S3: bbox&gt; Piemonte Torino    &quot;list(list(c(7.48794557658868, 7.48797…
+ 3    1003 Ala di Stura    &lt;S3: bbox&gt; Piemonte Torino    &quot;list(list(c(7.27324227448866, 7.27359…
+ 4    1004 Albiano d&#39;Ivrea &lt;S3: bbox&gt; Piemonte Torino    &quot;list(list(c(7.92507300912979, 7.92533…
+ 5    1005 Alice Superiore &lt;S3: bbox&gt; Piemonte Torino    &quot;list(list(c(7.79782897832822, 7.79843…
+ 6    1006 Almese          &lt;S3: bbox&gt; Piemonte Torino    &quot;list(list(c(7.4348997124695, 7.435239…</code></pre>
+<p><code>PRO_COM</code> is the unique numerical code identifying each Italian comune,
+<code>COMUNE</code> is the name of the comune,
+<code>DEN_CMPRO</code> is the name of the relevant super-entity the comune belongs to (either
+Metropolitan City or a Province),
+<code>REGIONE</code> is the name of the region and <code>geometry</code> is the simple feature describing the
+boundary of the comune.
+<code>bb</code> is the axis aligned bounding box of the comune’s polygon and is used to to extract the
+right portion (at the right zoom) of the satellite map.</p>
+<p>All data preparation is documented in
+<a href="https://github.com/espinielli/italian-comuni-bot/blob/master/prepare-data.R"><code>prepare-data.R</code></a>
+file in the <a href="https://github.com/espinielli/italian-comuni-bot/">Italian Comuni Twitter bot</a> repository.</p>
+</div>
+<div id="r-packages-to-the-rescue" class="section level2">
+<h2>R packages to the Rescue</h2>
+<p>I found a lot of examples for developing Twitter bots in Python but I wanted to
+write it in R which we are starting to use more and more at work.</p>
+<p>Of course we all stand on the shoulder of Giants, and there is always somebody who has
+already done bits and pieces of what you need: <a href="http://rtweet.info/">rtweet</a>
+does all you need as a client for accessing Twitter API, while the usual suspects
+<a href="https://ggplot2.tidyverse.org/">ggplot2</a>, <a href="https://r-spatial.github.io/sf/">sf</a> and
+<a href="https://cran.r-project.org/package=ggmap">ggmap</a> cover the maps aspects.</p>
+<p>The setup for Twitter was smooth and I only executed the steps as described in <code>rtweet</code>
+package, so no need to repeat them here.</p>
+</div>
+<div id="maps" class="section level1">
+<h1>Maps</h1>
+<div id="first-attempt" class="section level2">
+<h2>First attempt</h2>
+<p>The first map I produced was a simple ggmap/ggplot map:</p>
+<p><img src="/img/comune_ggmap.jpg" /><!-- --></p>
+<p>This is produced by code similar to this:</p>
+<pre class="r"><code>library(tidyverse)
+library(sf)
+library(ggmap)
+library(rgdal)
+
+# get the data as per Italian Comuni Twitter Bot repo
+# https://github.com/espinielli/italian-comuni-bot/
+coms &lt;- readRDS(&quot;data/coms.rds&quot;)
+
+# just get the first one
+com &lt;- coms %&gt;%
+  dplyr::filter(row_number() == 1) %&gt;%
+  dplyr::slice(1)
+
+com.sp &lt;- as(com, &quot;Spatial&quot;)
+
+# extract its bounding box
+bb &lt;- com$bb[[1]]
+
+# centroid
+centroid &lt;- com %&gt;%
+  st_transform(23032) %&gt;%
+  st_centroid() %&gt;%
+  st_transform(4326) %&gt;%
+  st_coordinates() %&gt;%
+  as_data_frame() %&gt;%
+  `names&lt;-`(c(&quot;lon&quot;, &quot;lat&quot;))
+
+# get Google Map (note: hardcoded zoom level)
+m &lt;- get_map(location = centroid, zoom = 12, maptype = &quot;satellite&quot;)
+
+terrain &lt;- ggmap(m)
+com.sp.df &lt;- com.sp %&gt;% fortify
+
+#----------------------------------------------------------------
+# inspired by
+# https://ryanpeek.github.io/2017-11-21-mapping-with-sf-part-3/
+#----------------------------------------------------------------
+pg &lt;- terrain +
+  geom_polygon(
+    data = com.sp.df,
+    aes(x = long, y = lat),
+    fill=NA,
+    color=&quot;yellow&quot;,
+    lwd = 0.4, alpha=0.5) +
+  labs(x = &quot;Longitude (WGS84)&quot;,
+       y = &quot;Latitude&quot;,
+       caption = &quot;Sources: ISTAT (comuni), Google Maps (satellite)&quot;) +
+  ggtitle(
+    label = str_glue(&quot;{comune} ({id})&quot;,
+                     comune = com$COMUNE,
+                     id = str_pad(com$PRO_COM, 6, pad = &quot;0&quot;)),
+    subtitle = str_c(com$DEN_CMPRO, com$REGIONE, sep = &quot;, &quot;))</code></pre>
+<p>There are few “smelly” things in the code above:</p>
+<ul>
+<li>the zoom level is hardcoded to 12</li>
+<li>the map is not cropped to the boundary</li>
+</ul>
+<p>The solution above is wrapped (with fix to first bullet, see below)
+in the function <code>generate_google_map</code> in the
+<a href="https://github.com/espinielli/italian-comuni-bot/blob/master/tweet-comune.R"><code>tweet-comune.R</code></a>
+file in the <a href="https://github.com/espinielli/italian-comuni-bot/">Italian Comuni Twitter bot</a> repository.</p>
+</div>
+<div id="automatic-zoom-calculation" class="section level2">
+<h2>Automatic Zoom Calculation</h2>
+<p>I was surprised to always see examples with hardcoded zoom levels, but in fact the
+<code>ggmap</code> package has a helper function <code>calc_zoom</code> just for that.
+The only problem is that it is buggy, but
+<a href="https://github.com/dkahle/ggmap/pull/141">pull request #141</a> has a proposed fix
+which I just saved in a local <code>calc_zoom</code> in the repo.</p>
+<p>It is about taking the <em>minimum</em> instead of the maximun of the zoom levels
+in the longitude and latitude direction.</p>
+</div>
+<div id="crop-map-to-polygon" class="section level2">
+<h2>Crop Map to Polygon</h2>
+<p>I had no idea how to crop the Google Map to the comune’s boundary, but Giants exist
+and I have found a nice solution (by <a href="http://www.robinlovelace.net/">Robin Lovelace</a>)
+<a href="https://gis.stackexchange.com/a/155495/7617">posted on GIS SO</a>.</p>
+<p>It boils down to transforming the Google Map to raster and <code>mask</code>ing it with the
+comune’s boundary:</p>
+<pre class="r"><code>  m.rast &lt;- ggmap_rast(map = m)
+  com.only &lt;- mask(m.rast, com.sp)</code></pre>
+<p><img src="/img/comune_raster.jpg" /><!-- --></p>
+<p>This (and bells and whistles) is now wrapped in a function <code>generate_cropped_map</code> in the
+<a href="https://github.com/espinielli/italian-comuni-bot/blob/master/tweet-comune.R"><code>tweet-comune.R</code></a>
+file in the <a href="https://github.com/espinielli/italian-comuni-bot/">Italian Comuni Twitter bot</a> repository.</p>
+</div>
+</div>
+<div id="tweet-it" class="section level1">
+<h1>Tweet It!</h1>
+<p>The logic to tweet the comunes’ maps one by one is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>find out what was sent last</li>
+<li>get the new comune</li>
+<li>decide whether to embelish the tweet with refs &amp; Co.</li>
+<li>tweet and save some sort of proof of which comune has been dealt with</li>
+</ol>
+<pre class="r"><code># set things up for Twitter
+tweet_authorize()
+
+# this is the core of the process:
+# 1. find out what was sent last
+# 2. get the new comune
+# 3. decide whether to embelish the tweet with refs &amp; Co.
+# 4. tweet and save some sort of proof of which comune has been dealt with
+
+# 1. find out what was sent last
+l &lt;- read_file(&quot;last-tweeted.txt&quot;) %&gt;% as.integer()
+n &lt;- (l + 1) %% lc
+
+# 2. get the new comune
+com &lt;- coms %&gt;%
+  dplyr::filter(row_number() == n) %&gt;%
+  dplyr::slice(1)
+
+# 3. decide whether to embelish the tweet with refs &amp; Co.
+msg &lt;- ifelse((n %% 19) == 0,
+              &quot;Done in #rstats using #ggplot2, #rspatial, #ggmap and #rtweet.&quot;,
+              &quot;&quot;)
+credits &lt;- ifelse((n %% 67) == 0,
+                  &quot;Sources @istat_it, @istat_en, @googlemaps.&quot;,
+                  &quot;&quot;)
+
+# 3. decide whether to embelish the tweet with refs &amp; Co.
+tweet_comune(com, n, msg = msg, credits = credits)
+
+# 4. tweet and save some sort of proof of which comune has been dealt with
+writeLines(text = as.character(n) , &quot;last-tweeted.txt&quot;)</code></pre>
+<p>For step 1. I decided to store the <code>index</code> of the last tweeted comune in a file
+named <code>last-tweeted.txt</code>.
+So this is the file read at the beginning in order to know where to continue from, step 2.,
+or eventually start over again.</p>
+<p>Step 3. is about setting some message and credits, but sparingly so as not to annoy
+(i.e. spam) too much the relevant communities.</p>
+<p>Finally step 4 is about posting the tweet, followed by writing out the index of the
+comune.</p>
+<p># ToDo’s</p>
+<p>I am now at the stage where I can execute the 4 steps above and tweet a new map.
+I can execute all the steps on the command line by issuing</p>
+<pre class="bash"><code>$ Rscript tweet-bot.R</code></pre>
+<p>This can easily put into a cron job and, for example, tweet
+a map every hour (so completing the job in 333 days and 6 hours).
+But to be frank the code is not robust enough to run without supervision.</p>
+<p>What I would really like would be to</p>
+<ul>
+<li>use some serverless service like AWS Lambda to trigger the tweeting every hour</li>
+<li>a robust way to keep state (i.e. what can I use to know what was last tweeted comune’s
+index?)</li>
+<li>a robust way to cope with failures to post the tweet (i.e. what to do in case of
+no WIFI/Internet connection)</li>
+</ul>
+<p>If you have any suggestions or comments on the above, feel free to get in touch with me!</p>
+</div>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://enrico.spinielli.net/2018/01/03/ergodox-keyboard/"><span
+      aria-hidden="true">&larr;</span> ErgoDox keyboard</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "enricospinielli" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Enrico Spinielli &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

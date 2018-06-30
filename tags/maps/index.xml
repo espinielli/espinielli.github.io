@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Enrico Spinielli</copyright>
-    <lastBuildDate>Sun, 09 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://enrico.spinielli.net/tags/maps/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing a Twitter Bot in R</title>
+      <link>http://enrico.spinielli.net/2018/06/30/writing-a-twitter-bot-in-r/</link>
+      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/2018/06/30/writing-a-twitter-bot-in-r/</guid>
+      <description>Since a while I am contemplating the possibility of automatically publishing on social media some stats and data visualisations from work.
+When I discovered the nice bot @everytract by @fitnr (and a little later the @GVAcartografic’s #Secciócensal tweets) I decided to try and do a Twitter bot myself in order to see what is possible and how difficult it is.
+I thought that combining maps and some Italian data would be a good recipe for having fun and so I did set out to use some GIS data from the Italian National Institute of Statistics (ISTAT)(@istat_en) in order to publish a map for every Italian comune (the basic administrative division in Italy).</description>
+    </item>
     
     <item>
       <title>Maps and map projections</title>

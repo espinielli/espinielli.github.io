@@ -11,6 +11,228 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Writing a Twitter Bot in R</title>
+      <link>http://enrico.spinielli.net/2018/06/30/writing-a-twitter-bot-in-r/</link>
+      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://enrico.spinielli.net/2018/06/30/writing-a-twitter-bot-in-r/</guid>
+      <description>&lt;p&gt;Since a while I am contemplating the possibility of automatically publishing
+on social media some stats and data visualisations from work.&lt;/p&gt;
+&lt;p&gt;When I discovered the nice bot &lt;a href=&#34;https://twitter.com/everytract&#34;&gt;@everytract&lt;/a&gt; by
+&lt;a href=&#34;https://twitter.com/fitnr&#34;&gt;@fitnr&lt;/a&gt; (and a little later the
+&lt;a href=&#34;https://twitter.com/GVAcartografic&#34;&gt;@GVAcartografic&lt;/a&gt;’s
+&lt;a href=&#34;https://twitter.com/hashtag/Secci%C3%B3censal?src=hash&#34;&gt;#Secciócensal&lt;/a&gt; tweets)
+I decided to try and do a Twitter bot myself in order to see what is possible and
+how difficult it is.&lt;/p&gt;
+&lt;p&gt;I thought that combining maps and some Italian data would be a good recipe
+for having fun and
+so I did set out to use some GIS data from the &lt;a href=&#34;https://www.istat.it/en/&#34;&gt;Italian National Institute of Statistics (ISTAT)&lt;/a&gt;(&lt;a href=&#34;https://twitter.com/istat_en&#34;&gt;@istat_en&lt;/a&gt;)
+in order to publish a map for every Italian &lt;a href=&#34;https://en.wikipedia.org/wiki/Comune&#34;&gt;comune&lt;/a&gt;
+(the basic administrative division in Italy).&lt;/p&gt;
+&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Data&lt;/h2&gt;
+&lt;p&gt;The relevant GIS data in the form of Shapefiles can be found on ISTAT’s web site,
+&lt;a href=&#34;https://www.istat.it/it/archivio/124086&#34; class=&#34;uri&#34;&gt;https://www.istat.it/it/archivio/124086&lt;/a&gt;.
+I took the most &lt;a href=&#34;gis2016wsg84&#34;&gt;detailed polygons as for 2016 with WSG84 datum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I combined the info from ISTAT in an &lt;code&gt;sf&lt;/code&gt; dataframe which looks like the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;&amp;gt; coms %&amp;gt;% as_tibble()
+# A tibble: 7,998 x 6
+   PRO_COM COMUNE          bb         REGIONE  DEN_CMPRO geometry                               
+     &amp;lt;dbl&amp;gt; &amp;lt;fct&amp;gt;           &amp;lt;list&amp;gt;     &amp;lt;fct&amp;gt;    &amp;lt;fct&amp;gt;     &amp;lt;S3: sfc_MULTIPOLYGON&amp;gt;                 
+ 1    1001 Agliè           &amp;lt;S3: bbox&amp;gt; Piemonte Torino    &amp;quot;list(list(c(7.7826615064871, 7.783045…
+ 2    1002 Airasca         &amp;lt;S3: bbox&amp;gt; Piemonte Torino    &amp;quot;list(list(c(7.48794557658868, 7.48797…
+ 3    1003 Ala di Stura    &amp;lt;S3: bbox&amp;gt; Piemonte Torino    &amp;quot;list(list(c(7.27324227448866, 7.27359…
+ 4    1004 Albiano d&amp;#39;Ivrea &amp;lt;S3: bbox&amp;gt; Piemonte Torino    &amp;quot;list(list(c(7.92507300912979, 7.92533…
+ 5    1005 Alice Superiore &amp;lt;S3: bbox&amp;gt; Piemonte Torino    &amp;quot;list(list(c(7.79782897832822, 7.79843…
+ 6    1006 Almese          &amp;lt;S3: bbox&amp;gt; Piemonte Torino    &amp;quot;list(list(c(7.4348997124695, 7.435239…&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;PRO_COM&lt;/code&gt; is the unique numerical code identifying each Italian comune,
+&lt;code&gt;COMUNE&lt;/code&gt; is the name of the comune,
+&lt;code&gt;DEN_CMPRO&lt;/code&gt; is the name of the relevant super-entity the comune belongs to (either
+Metropolitan City or a Province),
+&lt;code&gt;REGIONE&lt;/code&gt; is the name of the region and &lt;code&gt;geometry&lt;/code&gt; is the simple feature describing the
+boundary of the comune.
+&lt;code&gt;bb&lt;/code&gt; is the axis aligned bounding box of the comune’s polygon and is used to to extract the
+right portion (at the right zoom) of the satellite map.&lt;/p&gt;
+&lt;p&gt;All data preparation is documented in
+&lt;a href=&#34;https://github.com/espinielli/italian-comuni-bot/blob/master/prepare-data.R&#34;&gt;&lt;code&gt;prepare-data.R&lt;/code&gt;&lt;/a&gt;
+file in the &lt;a href=&#34;https://github.com/espinielli/italian-comuni-bot/&#34;&gt;Italian Comuni Twitter bot&lt;/a&gt; repository.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-packages-to-the-rescue&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R packages to the Rescue&lt;/h2&gt;
+&lt;p&gt;I found a lot of examples for developing Twitter bots in Python but I wanted to
+write it in R which we are starting to use more and more at work.&lt;/p&gt;
+&lt;p&gt;Of course we all stand on the shoulder of Giants, and there is always somebody who has
+already done bits and pieces of what you need: &lt;a href=&#34;http://rtweet.info/&#34;&gt;rtweet&lt;/a&gt;
+does all you need as a client for accessing Twitter API, while the usual suspects
+&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;ggplot2&lt;/a&gt;, &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;sf&lt;/a&gt; and
+&lt;a href=&#34;https://cran.r-project.org/package=ggmap&#34;&gt;ggmap&lt;/a&gt; cover the maps aspects.&lt;/p&gt;
+&lt;p&gt;The setup for Twitter was smooth and I only executed the steps as described in &lt;code&gt;rtweet&lt;/code&gt;
+package, so no need to repeat them here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;maps&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Maps&lt;/h1&gt;
+&lt;div id=&#34;first-attempt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;First attempt&lt;/h2&gt;
+&lt;p&gt;The first map I produced was a simple ggmap/ggplot map:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://enrico.spinielli.net/img/comune_ggmap.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;This is produced by code similar to this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(sf)
+library(ggmap)
+library(rgdal)
+
+# get the data as per Italian Comuni Twitter Bot repo
+# https://github.com/espinielli/italian-comuni-bot/
+coms &amp;lt;- readRDS(&amp;quot;data/coms.rds&amp;quot;)
+
+# just get the first one
+com &amp;lt;- coms %&amp;gt;%
+  dplyr::filter(row_number() == 1) %&amp;gt;%
+  dplyr::slice(1)
+
+com.sp &amp;lt;- as(com, &amp;quot;Spatial&amp;quot;)
+
+# extract its bounding box
+bb &amp;lt;- com$bb[[1]]
+
+# centroid
+centroid &amp;lt;- com %&amp;gt;%
+  st_transform(23032) %&amp;gt;%
+  st_centroid() %&amp;gt;%
+  st_transform(4326) %&amp;gt;%
+  st_coordinates() %&amp;gt;%
+  as_data_frame() %&amp;gt;%
+  `names&amp;lt;-`(c(&amp;quot;lon&amp;quot;, &amp;quot;lat&amp;quot;))
+
+# get Google Map (note: hardcoded zoom level)
+m &amp;lt;- get_map(location = centroid, zoom = 12, maptype = &amp;quot;satellite&amp;quot;)
+
+terrain &amp;lt;- ggmap(m)
+com.sp.df &amp;lt;- com.sp %&amp;gt;% fortify
+
+#----------------------------------------------------------------
+# inspired by
+# https://ryanpeek.github.io/2017-11-21-mapping-with-sf-part-3/
+#----------------------------------------------------------------
+pg &amp;lt;- terrain +
+  geom_polygon(
+    data = com.sp.df,
+    aes(x = long, y = lat),
+    fill=NA,
+    color=&amp;quot;yellow&amp;quot;,
+    lwd = 0.4, alpha=0.5) +
+  labs(x = &amp;quot;Longitude (WGS84)&amp;quot;,
+       y = &amp;quot;Latitude&amp;quot;,
+       caption = &amp;quot;Sources: ISTAT (comuni), Google Maps (satellite)&amp;quot;) +
+  ggtitle(
+    label = str_glue(&amp;quot;{comune} ({id})&amp;quot;,
+                     comune = com$COMUNE,
+                     id = str_pad(com$PRO_COM, 6, pad = &amp;quot;0&amp;quot;)),
+    subtitle = str_c(com$DEN_CMPRO, com$REGIONE, sep = &amp;quot;, &amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are few “smelly” things in the code above:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the zoom level is hardcoded to 12&lt;/li&gt;
+&lt;li&gt;the map is not cropped to the boundary&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The solution above is wrapped (with fix to first bullet, see below)
+in the function &lt;code&gt;generate_google_map&lt;/code&gt; in the
+&lt;a href=&#34;https://github.com/espinielli/italian-comuni-bot/blob/master/tweet-comune.R&#34;&gt;&lt;code&gt;tweet-comune.R&lt;/code&gt;&lt;/a&gt;
+file in the &lt;a href=&#34;https://github.com/espinielli/italian-comuni-bot/&#34;&gt;Italian Comuni Twitter bot&lt;/a&gt; repository.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;automatic-zoom-calculation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Automatic Zoom Calculation&lt;/h2&gt;
+&lt;p&gt;I was surprised to always see examples with hardcoded zoom levels, but in fact the
+&lt;code&gt;ggmap&lt;/code&gt; package has a helper function &lt;code&gt;calc_zoom&lt;/code&gt; just for that.
+The only problem is that it is buggy, but
+&lt;a href=&#34;https://github.com/dkahle/ggmap/pull/141&#34;&gt;pull request #141&lt;/a&gt; has a proposed fix
+which I just saved in a local &lt;code&gt;calc_zoom&lt;/code&gt; in the repo.&lt;/p&gt;
+&lt;p&gt;It is about taking the &lt;em&gt;minimum&lt;/em&gt; instead of the maximun of the zoom levels
+in the longitude and latitude direction.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;crop-map-to-polygon&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Crop Map to Polygon&lt;/h2&gt;
+&lt;p&gt;I had no idea how to crop the Google Map to the comune’s boundary, but Giants exist
+and I have found a nice solution (by &lt;a href=&#34;http://www.robinlovelace.net/&#34;&gt;Robin Lovelace&lt;/a&gt;)
+&lt;a href=&#34;https://gis.stackexchange.com/a/155495/7617&#34;&gt;posted on GIS SO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It boils down to transforming the Google Map to raster and &lt;code&gt;mask&lt;/code&gt;ing it with the
+comune’s boundary:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;  m.rast &amp;lt;- ggmap_rast(map = m)
+  com.only &amp;lt;- mask(m.rast, com.sp)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;http://enrico.spinielli.net/img/comune_raster.jpg&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;This (and bells and whistles) is now wrapped in a function &lt;code&gt;generate_cropped_map&lt;/code&gt; in the
+&lt;a href=&#34;https://github.com/espinielli/italian-comuni-bot/blob/master/tweet-comune.R&#34;&gt;&lt;code&gt;tweet-comune.R&lt;/code&gt;&lt;/a&gt;
+file in the &lt;a href=&#34;https://github.com/espinielli/italian-comuni-bot/&#34;&gt;Italian Comuni Twitter bot&lt;/a&gt; repository.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tweet-it&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Tweet It!&lt;/h1&gt;
+&lt;p&gt;The logic to tweet the comunes’ maps one by one is as follows:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;find out what was sent last&lt;/li&gt;
+&lt;li&gt;get the new comune&lt;/li&gt;
+&lt;li&gt;decide whether to embelish the tweet with refs &amp;amp; Co.&lt;/li&gt;
+&lt;li&gt;tweet and save some sort of proof of which comune has been dealt with&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# set things up for Twitter
+tweet_authorize()
+
+# this is the core of the process:
+# 1. find out what was sent last
+# 2. get the new comune
+# 3. decide whether to embelish the tweet with refs &amp;amp; Co.
+# 4. tweet and save some sort of proof of which comune has been dealt with
+
+# 1. find out what was sent last
+l &amp;lt;- read_file(&amp;quot;last-tweeted.txt&amp;quot;) %&amp;gt;% as.integer()
+n &amp;lt;- (l + 1) %% lc
+
+# 2. get the new comune
+com &amp;lt;- coms %&amp;gt;%
+  dplyr::filter(row_number() == n) %&amp;gt;%
+  dplyr::slice(1)
+
+# 3. decide whether to embelish the tweet with refs &amp;amp; Co.
+msg &amp;lt;- ifelse((n %% 19) == 0,
+              &amp;quot;Done in #rstats using #ggplot2, #rspatial, #ggmap and #rtweet.&amp;quot;,
+              &amp;quot;&amp;quot;)
+credits &amp;lt;- ifelse((n %% 67) == 0,
+                  &amp;quot;Sources @istat_it, @istat_en, @googlemaps.&amp;quot;,
+                  &amp;quot;&amp;quot;)
+
+# 3. decide whether to embelish the tweet with refs &amp;amp; Co.
+tweet_comune(com, n, msg = msg, credits = credits)
+
+# 4. tweet and save some sort of proof of which comune has been dealt with
+writeLines(text = as.character(n) , &amp;quot;last-tweeted.txt&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For step 1. I decided to store the &lt;code&gt;index&lt;/code&gt; of the last tweeted comune in a file
+named &lt;code&gt;last-tweeted.txt&lt;/code&gt;.
+So this is the file read at the beginning in order to know where to continue from, step 2.,
+or eventually start over again.&lt;/p&gt;
+&lt;p&gt;Step 3. is about setting some message and credits, but sparingly so as not to annoy
+(i.e. spam) too much the relevant communities.&lt;/p&gt;
+&lt;p&gt;Finally step 4 is about posting the tweet, followed by writing out the index of the
+comune.&lt;/p&gt;
+&lt;p&gt;# ToDo’s&lt;/p&gt;
+&lt;p&gt;I am now at the stage where I can execute the 4 steps above and tweet a new map.
+I can execute all the steps on the command line by issuing&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;$ Rscript tweet-bot.R&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This can easily put into a cron job and, for example, tweet
+a map every hour (so completing the job in 333 days and 6 hours).
+But to be frank the code is not robust enough to run without supervision.&lt;/p&gt;
+&lt;p&gt;What I would really like would be to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;use some serverless service like AWS Lambda to trigger the tweeting every hour&lt;/li&gt;
+&lt;li&gt;a robust way to keep state (i.e. what can I use to know what was last tweeted comune’s
+index?)&lt;/li&gt;
+&lt;li&gt;a robust way to cope with failures to post the tweet (i.e. what to do in case of
+no WIFI/Internet connection)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have any suggestions or comments on the above, feel free to get in touch with me!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ErgoDox keyboard</title>
       <link>http://enrico.spinielli.net/2018/01/03/ergodox-keyboard/</link>
       <pubDate>Wed, 03 Jan 2018 15:00:00 +0000</pubDate>
@@ -1188,10 +1410,10 @@ The situation was annoying but, to be frank, not frequent enough to push me to i
 &lt;p&gt;A few searches showed that USB charging port could be the culprit and many youtube videos showed &lt;a href=&#34;https://www.youtube.com/watch?v=sBtEz6sWzZY&#34; target=&#34;_blank&#34;&gt;how to repair&lt;/a&gt; it&lt;/p&gt;
 
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/sBtEz6sWzZY?&#34;
-  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/sBtEz6sWzZY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
+
 
 &lt;h2 id=&#34;go-for-the-fun-fix-it&#34;&gt;Go for the fun: fix it&lt;/h2&gt;
 
@@ -1374,86 +1596,6 @@ Spherical Geometry Toolkit)&lt;/li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Originally written and published with &lt;a href=&#34;https://stackedit.io/&#34; target=&#34;_blank&#34;&gt;StackEdit&lt;/a&gt;, later moved to &lt;a href=&#34;http://jekyllrb.com/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Failing to be recruited...</title>
-      <link>http://enrico.spinielli.net/2014/08/29/impressions-about-selection-process-of/</link>
-      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://enrico.spinielli.net/2014/08/29/impressions-about-selection-process-of/</guid>
-      <description>
-
-&lt;p&gt;This post title to be frank should have been &amp;ldquo;&lt;em&gt;Impressions about the selection process of a big Internet company (and my failure to go to the next steps after initial engagement)&lt;/em&gt;,&amp;rdquo; but that is obviously too long.&lt;/p&gt;
-
-&lt;p&gt;So I only kept the &lt;em&gt;failure&lt;/em&gt; part with the aim to bring home some lessons from it ! 😏&lt;/p&gt;
-
-&lt;h3 id=&#34;chronology-more-or-less&#34;&gt;Chronology, more or less&lt;/h3&gt;
-
-&lt;p&gt;It all started with an email at the end of July 2014 from the company&amp;rsquo;s recruiter, let&amp;rsquo;s call her Alice.&lt;/p&gt;
-
-&lt;p&gt;My first reaction was: SPAM!!!! 😱&lt;/p&gt;
-
-&lt;p&gt;Well, no. It was a genuine ping with too many realistic references about me (not that difficult given my CV is public on LinkedIn) and about her&amp;hellip;but I could only reply when back home from my first slot of holidays: the family still at the beach, I am home alone, with tons of projects accumulated throughout the year (yes, year) since last summer&amp;hellip;and this email!&lt;/p&gt;
-
-&lt;p&gt;Now, I am not at all looking for changing job: I know for sure my current employment conditions and benefits are extremely difficult to match. Even by big Internet companies.&lt;/p&gt;
-
-&lt;p&gt;But I am definitely piqued by the technical side of it! (Good job Alice!)&lt;/p&gt;
-
-&lt;p&gt;So we exchange few email with various links to job/site descriptions/videos from Alice and few replies from me with links (web presence/open source/tinkering around) and attachments to describe myself.&lt;/p&gt;
-
-&lt;p&gt;I am delighted when Alice tells me the position she is selecting for is about managing a team but it involves coding (&amp;ldquo;Good&amp;rdquo; I think, &amp;ldquo;I love that&amp;rdquo;&amp;hellip;and say I do it too, even if just in my limited free time &amp;ndash; 4hr per weekend; hey I have 4 kids! &amp;ndash;). Once she mentioned people in the position spend 30 plus % of time coding, then later she mentioned few times 20%&amp;hellip;anyway much much better than 0% I am currently stuck with at work.&lt;/p&gt;
-
-&lt;p&gt;Then we come to fix a video conf with the following &lt;em&gt;declaration of intents&lt;/em&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Our chat will be more of an open discussion than a formal interview - we will discuss your current situation, the roles at XYZZY and if at that point there is a mutual interest, we can proceed to a technical chat.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;To prepare for it I am handed a self evaluation form with scales from &lt;strong&gt;0&lt;/strong&gt; (unfamiliar with the subject area) to &lt;strong&gt;10&lt;/strong&gt; (Wrote the book in the subject area or similar expertise.) and subject areas from TCP/IP to People and Project Management going through C/Java/Go/SQL.&lt;/p&gt;
-
-&lt;p&gt;Good, I can fill a form and, as suggested, keep modest: for sure &lt;a href=&#34;http://en.wikipedia.org/wiki/I_know_that_I_know_nothing&#34; target=&#34;_blank&#34;&gt;I know I know nothing&lt;/a&gt; but there are good &lt;a href=&#34;http://giyf.com/&#34; target=&#34;_blank&#34;&gt;search engines&lt;/a&gt; around and lots of &lt;a href=&#34;http://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;people to ask and collaborate with&lt;/a&gt; ;-)&lt;/p&gt;
-
-&lt;p&gt;A week later we set for the video conf and start the business chat, things like whether I had to recruit or fire people, team size, sort of &lt;em&gt;chit-chatting&lt;/em&gt; ;-)&lt;/p&gt;
-
-&lt;p&gt;And then the technical questions starts: and frankly it has been a &lt;em&gt;disaster&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;Even on questions (Unix file system and inode [4.14 of &lt;a href=&#34;http://www.kohala.com/start/apue.html&#34; target=&#34;_blank&#34;&gt;Advance Programming in the UNIX Environment&lt;/a&gt; {yes, I still have the 1992 edition!}]) I used to ask to people I was recruiting some 12 years ago!&lt;/p&gt;
-
-&lt;h3 id=&#34;lessons-learnt-for-when-i-am-recruiting&#34;&gt;Lessons learnt for when I am recruiting&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make sure the context of the interview is clear: subject, what is expected, timing, steps, process.
-I usually do this but we all tend to forget. This is a reminder for myself.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;lessons-learnt-for-when-i-want-to-be-recruited&#34;&gt;Lessons learnt (for when I want to be recruited ;-)&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I should have clearly asked to separate the chat on current/future position from the technical chat as in the &lt;em&gt;declaration of intents&lt;/em&gt; above.
-Maybe I assumed it would have been in 2 separate sessions but I was taken off balance by it happening in the same video conf.
-&lt;img src=&#34;http://imgs.xkcd.com/comics/when_you_assume.png&#34; alt=&#34;Never ASS U ME&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;I should have asked more about the technical interview, i.e. examples of questions&lt;/li&gt;
-&lt;li&gt;I should have asked more time to prepare if I felt I was too rusty on the subjects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;observations-about-the-specific-recruiting-techniques&#34;&gt;Observations about the specific recruiting techniques&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I was positively impressed by the fact I follow similar steps as in big Internet companies: we have a phone interview to assess the minimum level of technical competencies before we proceed with deeper &lt;em&gt;hands-on&lt;/em&gt; assessments.&lt;/li&gt;
-&lt;li&gt;The post and place descriptions and the videos were good.
-We should prepare more material (web based and videos) to describe the consultants positions we look for.
-But here we are limited by our IT infrastructure, the framework contract we have for recruiting&amp;hellip;&lt;/li&gt;
-&lt;li&gt;I liked the video conf (&lt;a href=&#34;http://www.skype.com/en/&#34; target=&#34;_blank&#34;&gt;Skype&lt;/a&gt; and &lt;a href=&#34;https://www.google.com/+/learnmore/hangouts/&#34; target=&#34;_blank&#34;&gt;the likes&lt;/a&gt;): I have used it only when interviewing a Canadian (and even then he had the support from his university to use their video conference) but we should do it more&amp;hellip;if only our IT infrastructure/policies would permit it (we have &lt;a href=&#34;http://www.webex.com/&#34; target=&#34;_blank&#34;&gt;WebEx&lt;/a&gt; but I have never seen it used for recruiting&amp;hellip;can we?)&lt;/li&gt;
-&lt;li&gt;I really disliked the narrowness of some of the questions I have been asked, things like the signature of certain Unix sys calls. This, I hope, was probably suited for the very specific needs of the job at hand, but in general IMHO they do not show anything about the capabilities of the person you are selecting. &lt;em&gt;When I select people I prefer to watch/discuss about their journey to the destination/solution: the destination itself doesn&amp;rsquo;t tell me anything about how they do reason/think&lt;/em&gt;. (That is why I am usually happy with &amp;ndash; and I also ask about &amp;ndash; a book they would pick up to find some inspiration or the kind of web search they would use to start tackling a problem&amp;hellip;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;feedback-from-friends&#34;&gt;Feedback from friends&lt;/h3&gt;
-
-&lt;p&gt;Few friends working at the same big Internet company (both in USA and Europe) told me that they were not surprised of the outcome because, even if they think I could have made it, the whole selection process is skewed towards the negative: it only takes one &lt;em&gt;no&lt;/em&gt; from the interview panel to get a negative feedback.&lt;/p&gt;
-
-&lt;p&gt;Well, I am sure I got more than one &lt;em&gt;no&lt;/em&gt;!&lt;/p&gt;
 </description>
     </item>
     
