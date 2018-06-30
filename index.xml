@@ -212,7 +212,9 @@ or eventually start over again.&lt;/p&gt;
 (i.e. spam) too much the relevant communities.&lt;/p&gt;
 &lt;p&gt;Finally step 4 is about posting the tweet, followed by writing out the index of the
 comune.&lt;/p&gt;
-&lt;p&gt;# ToDo’s&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;todos&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ToDo’s&lt;/h1&gt;
 &lt;p&gt;I am now at the stage where I can execute the 4 steps above and tweet a new map.
 I can execute all the steps on the command line by issuing&lt;/p&gt;
 &lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;$ Rscript tweet-bot.R&lt;/code&gt;&lt;/pre&gt;
